@@ -29,7 +29,7 @@ In PyCharm:
 
 Installing all libraries:
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 
