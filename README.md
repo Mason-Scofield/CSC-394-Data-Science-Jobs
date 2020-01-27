@@ -44,8 +44,28 @@ Assure you are signed in to GitHub:
 
 ### Run Web App Locally
 
-Within the PyCharm Terminal run:
+Within the PyCharm Terminal navigate to the webApp directory:
 
 ```
-run.py
+cd webApp
+flask FLASK_APP = run.py
+flask run
+```
+
+If successuful it should output the following:
+
+```
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+```
+
+If an error occurs on output be sure you have navigated to the correct directory (ie rootRepo/webApp) when setting the flask app variable and when running locally.
+
+On your prefered browser view the web app locally: 
+```
+http://127.0.0.1:5000/
 ```
