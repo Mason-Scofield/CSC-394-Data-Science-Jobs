@@ -24,6 +24,8 @@ In PyCharm:
 		1. Navigate to VCS -> Get from Version Control
 		2. Assure Version Control is Git
 		3. In URL enter: https://github.com/Mason-Scofield/CSC-394-Data-Science-Jobs.git
+			- Or through SSH (easier in my opinion) git@github.com:Mason-Scofield/CSC-394-Data-Science-Jobs.git
+			- See for collaborators 1.a for more help
 		4. Leave deafult directory or add custom path
 		5. Click clone
 
