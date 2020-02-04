@@ -46,11 +46,10 @@ Assure you are signed in to GitHub:
 
 ### Run Web App Locally
 
-Within the PyCharm Terminal navigate to the webApp directory:
+Within the PyCharm Terminal in the remain in the repo root directory:
 
 ```
-cd webApp
-flask FLASK_APP = run.py
+set FLASK_APP=run.py
 flask run
 ```
 
