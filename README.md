@@ -66,6 +66,9 @@ If successuful it should output the following:
 If an error occurs on output be sure you have navigated to the correct directory (ie rootRepo/webApp) when setting the flask app variable and when running locally.
 
 On your prefered browser view the web app locally: 
+
+https://www.quora.com/Which-job-boards-provide-an-api-data-feed-enabling-integration-with-other-sites
+link to free job board api's on github
 ```
 http://127.0.0.1:5000/
 ```
