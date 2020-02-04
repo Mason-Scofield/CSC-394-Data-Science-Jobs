@@ -69,8 +69,6 @@ If an error occurs on output be sure you have navigated to the correct directory
 
 On your prefered browser view the web app locally: 
 
-https://www.quora.com/Which-job-boards-provide-an-api-data-feed-enabling-integration-with-other-sites
-link to free job board api's on github
 ```
 http://127.0.0.1:5000/
 ```
