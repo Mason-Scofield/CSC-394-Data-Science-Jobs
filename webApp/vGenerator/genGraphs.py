@@ -9,6 +9,7 @@ def dynamicGph():
     '''
     This essentially returns in Figure class to
     Flask in app.py to display in realtime
+    eats up memory so only ideal if data is actually changing
     :return:
     '''
     fig = Figure()
