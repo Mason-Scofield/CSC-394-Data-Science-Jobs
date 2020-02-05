@@ -10,14 +10,14 @@ app.config['DEBUG'] = True
 def index():
     return render_template('index.html')
 
-@app.route("/graph1")
+@app.route("/dynamicGph")
 def graph1():
     '''
     test use case of returning a graph in html see index.html
     :return:
     '''
 
-    fig = genGraphs.test()
+    fig = genGraphs.dynamicGph()
     output = io.BytesIO()
     FigureCanvas(fig).print_png(output)
     return Response(output.getvalue(), mimetype='image/png')
