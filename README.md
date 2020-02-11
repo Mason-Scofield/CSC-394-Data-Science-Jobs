@@ -1,6 +1,6 @@
 # CSC-394-Data-Science-Jobs
 
-Web Application that analyzes Data Sience Positions
+Web Application that analyzes Data Science Positions
 
 ### Getting Started
 
@@ -24,7 +24,9 @@ In PyCharm:
 		1. Navigate to VCS -> Get from Version Control
 		2. Assure Version Control is Git
 		3. In URL enter: https://github.com/Mason-Scofield/CSC-394-Data-Science-Jobs.git
-		4. Leave deafult directory or add custom path
+			- Or through SSH (easier in my opinion) git@github.com:Mason-gtScofield/CSC-394-Data-Science-Jobs.git
+			- See for collaborators 1.a for more help
+		4. Leave default directory or add custom path
 		5. Click clone
 
 Installing all libraries:
@@ -44,15 +46,14 @@ Assure you are signed in to GitHub:
 
 ### Run Web App Locally
 
-Within the PyCharm Terminal navigate to the webApp directory:
+Within the PyCharm Terminal in the remain in the repo root directory:
 
 ```
-cd webApp
-flask FLASK_APP = run.py
+set FLASK_APP=run.py
 flask run
 ```
 
-If successuful it should output the following:
+If successful it should output the following:
 
 ```
  * Environment: production
@@ -65,7 +66,8 @@ If successuful it should output the following:
 
 If an error occurs on output be sure you have navigated to the correct directory (ie rootRepo/webApp) when setting the flask app variable and when running locally.
 
-On your prefered browser view the web app locally: 
+On your preferred browser view the web app locally: 
+
 ```
 http://127.0.0.1:5000/
 ```
