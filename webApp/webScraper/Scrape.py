@@ -1,7 +1,8 @@
 import requests
 import json
 
-if __name__ == '__main__':
+
+def usajob(token, email, parameter, search):
     '''
     For api reference: https://developer.usajobs.gov/API-Reference
     
@@ -24,33 +25,39 @@ if __name__ == '__main__':
     For more information visit: https://developer.usajobs.gov/Guides/Authentication
     '''
 
-    url = 'https://data.usajobs.gov/api/Search?PositionTitle=Software%20Engineer'
-    headers = {'Host': 'data.usajobs.gov', 'User-Agent': 'mbadel@mail.depaul.edu',
-               'Authorization-Key': 'LKp4YzNOxEDqV+UQAm18dIH3g6ttpzc1NGwpO3n2zso='}
+    if usajob:
+        url = 'https://data.usajobs.gov/api/Search?' + parameter + '=' + search
+        headers = {'Host': 'data.usajobs.gov', 'User-Agent': email, 'Authorization-Key': token}
 
-    r = requests.get(url, headers=headers)
+        r = requests.get(url, headers=headers)
 
-    data = json.loads(r.text)
-    data = data['SearchResult']['SearchResultItems']
+        data = r.json()
+        data = data['SearchResult']['SearchResultItems']
 
-    # Loads data.json with all the raw data collected
-    outfile =  open('data.json', 'w')
-    json.dump(data, outfile)
-    outfile.close()
+        # Loads data.json with all the raw data collected
+        outfile = open('raw-data.json', 'w')
+        json.dump(data, outfile)
+        outfile.close()
 
-    # An example of how to parse the data.
-    # Eventually we want to get to the point where we can send data to populateDB.py
-    outfile = open('CleanedData.txt', "w")
+        # An example of how to parse the data.
+        # Eventually we want to get to the point where we can send data to populateDB.py
+        outfile = open('CleanedData.txt', "w")
 
-    for d in data:
-        # print(d['MatchedObjectDescriptor'])
-        d = d['MatchedObjectDescriptor']
-        outfile.write('JobRole: ' + d['PositionTitle'])
-        outfile.write('\nCompany: ' + d['OrganizationName'])
-        outfile.write('\nJobType: ' + d['JobCategory'][0]['Name'])
-        outfile.write('\nPay: ' + d['PositionRemuneration'][0]['MinimumRange'])
-        # Qualifications will have to be looked at to see if we can further improve its parsing
-        # outfile.write('\nQualifications: ' + d['QualificationSummary'])
-        outfile.write('\nLocation: ' + d['PositionLocationDisplay'])
-        outfile.write('\n-----------------------\n')
-    outfile.close()
+        # Convert CleanedData.txt to data.json
+        # This means building a JSON object so that we write proper JSON
+        for d in data:
+            # print(d['MatchedObjectDescriptor'])
+            d = d['MatchedObjectDescriptor']
+            outfile.write('JobRole: ' + d['PositionTitle'])
+            outfile.write('\nCompany: ' + d['OrganizationName'])
+            outfile.write('\nJobType: ' + d['JobCategory'][0]['Name'])
+            outfile.write('\nPay: ' + d['PositionRemuneration'][0]['MinimumRange'])
+            # Qualifications will have to be looked at to see if we can further improve its parsing
+            # outfile.write('\nQualifications: ' + d['QualificationSummary'])
+            outfile.write('\nLocation: ' + d['PositionLocationDisplay'])
+            outfile.write('\n-----------------------\n')
+        outfile.close()
+
+
+def github():
+    print("Github api not yet implemented")
