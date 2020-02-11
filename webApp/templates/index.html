@@ -1,13 +1,353 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-  <title>DATA SCIENCE JOBS</title>
-</head>
-<body>
-  <h1>Hello World!</h1>
-  <p>Stuff goes here</p>
-  <img src="/dynamicGph" alt="Dynamic Graph">
-  <img src="../static/staticGph.png" alt="Static Graph">
+<title>CSC 394 - Software Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- W3.CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/f15e7c6ba2.js" crossorigin="anonymous"></script>
+
+<!-- W3.JS -->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+  // NEED TO MOVE TO SEPARATE FILE EVENTUALLY
+
+  var skills = {};
+
+  window.onload = function() {
+    var sliders = document.getElementsByClassName('slider');
+
+    for (var i = 0; i != sliders.length; ++i) {
+      slider(sliders[i].value, i + 1);
+    }
+  };
+
+  function slider(value, index) {
+    id    = 'slider' + String(index);
+    skill = 'skill'  + String(index);
+
+    skills[id] = value;
+    w3.displayObject(id, skills); // BADGE
+
+    console.log(skill);
+
+    var obj = {}
+    obj[skill] = skill_value_to_level(value);
+
+    // SKILL LEVEL
+    w3.displayObject(skill, obj);
+
+    // OVERALL PROFICIENCY
+    calculate_proficiency();
+  }
+
+  function calculate_proficiency() {
+    slider_values = 0;
+
+    for (skill in skills) {
+      if (!skills.hasOwnProperty(skill)) continue;
+      slider_values += Number(skills[skill]);
+    }
+
+    w3.displayObject('role', {
+      'role' : total_values_to_role(slider_values)
+    });
+  }
+
+  function skill_value_to_level(value) {
+    var proficiency = 'Novice';
+    if (value == 10)     proficiency = 'Expert';
+    else if (value >= 7) proficiency = 'Advanced';
+    else if (value >= 4) proficiency = 'Intermediate';
+
+    return proficiency;
+  }
+
+  function total_values_to_role(value) {
+    var role = 'Entry-level'
+
+    if (value >= 33)      role = 'Senior-level';
+    else if (value >= 23) role = 'Junior-level';
+
+    return role;
+  }
+
+</script>
+
+
+<style>
+
+/* MOVE ALL THIS INTO A .CSS FILE AT SOME POINT */
+
+body, h1, h2, h3, h4, h5, h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+#slider-container {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 25px;
+  background: #D3D3D3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider:active {
+  border: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 25px;
+  background: #000;
+  cursor: pointer;
+  border: solid 5px navyblue;
+  outline: white solid 3px;
+}
+
+.slider::-moz-range-thumb {
+  width: 50px;
+  height: 25px;
+  background: #000;
+  cursor: pointer;
+  border: solid 5px blue;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 50px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  // left: 180%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+th {
+  font-variant: small-caps;
+  font-size: 1.3em;
+}
+
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-check-square-o w3-xxlarge"></i>
+    <p>SKILLS</p>
+  </a>
+  <a href="#data" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-line-chart w3-xxlarge"></i>
+    <p>DATA</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-info w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#skills" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
+    <a href="#data" class="w3-bar-item w3-button" style="width:25% !important">DATA</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">Software Projects.</h1>
+    <p>A job aggregator for data scientists.</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="skills">
+    <h2 class="w3-text-light-grey" style="margin-bottom: 0; !important">Your Skills</h2>
+    <hr style="width:150px; margin-top: 5px" class="w3-opacity">
+    <p style="margin-bottom:50px;">In order to best tailor our search results, please rate your proficieny (all data is recorded anonymously):</p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Technologies</h3>
+
+    <div id="slider-container" class="w3-margin-bottom">
+      <p style="letter-spacing: 2px;">HTML, CSS, &amp; JavaScript</p>
+      <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 1)">
+      <span class="w3-badge w3-xlarge w3-white" style="width: 40px; position: relative; bottom: 5px; left: 20px;" id="slider1">{{slider1}}</span>
+
+      <p style="letter-spacing: 2px;">Python</p>
+      <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 2)">
+      <span class="w3-badge w3-xlarge w3-white" style="width: 40px; position: relative; bottom: 5px; left: 20px;" id="slider2">{{slider2}}</span>
+
+      <p style="letter-spacing: 2px;">R</p>
+      <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 3)">
+      <span class="w3-badge w3-xlarge w3-white" style="width: 40px; position: relative; bottom: 5px; left: 20px;" id="slider3">{{slider3}}</span>
+
+      <p style="letter-spacing: 2px;">SQL</p>
+      <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 4)">
+      <span class="w3-badge w3-xlarge w3-white" style="width: 40px; position: relative; bottom: 5px; left: 20px;" id="slider4">{{slider4}}</span>
+    </div>
+
+    <h3 class="w3-padding-16 w3-text-light-grey w3-margin-top">Summary</h3>
+    <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" style="position: sticky; bottom: 0; width: 97.5%;">
+      <div class="w3-quarter w3-section">
+        <i class="fab fa-html5 w3-xxxlarge tooltip">
+          <span class="tooltiptext w3-small" style="left: 150%;">HTML</span>
+        </i>
+        <i class="fab fa-css3-alt w3-xxxlarge w3-margin-left tooltip">
+          <span class="tooltiptext w3-small" style="left: 155%; width: 45px;">CSS</span>
+        </i>
+        <i class="fab fa-js-square w3-xxxlarge w3-margin-left tooltip">
+          <span class="tooltiptext w3-small" style="left: 105%; width: 75px">JavaScript</span>
+        </i><br><p class="w3-large" id="skill1">{{skill1}}</p>
+      </div>
+      <div class="w3-quarter w3-section">
+        <i class="fab fa-python w3-xxxlarge tooltip">
+          <span class="tooltiptext w3-small" style="left: 115%; width: 65px;">Python</span>
+        </i><br><p class="w3-large" id="skill2">{{skill2}}</p>
+      </div>
+      <div class="w3-quarter w3-section">
+        <i class="fab fa-r-project w3-xxxlarge tooltip">
+          <span class="tooltiptext w3-small" style="left: 140%; width: 30px;">R</span>
+        </i><br><p class="w3-large" id="skill3">{{skill3}}</p>
+      </div>
+      <div class="w3-quarter w3-section" style="margin-bottom: 50px!important;">
+        <i class="fas fa-database w3-xxxlarge tooltip">
+          <span class="tooltiptext w3-small" style="left: 140%; width: 45px; font-weight: normal;">SQL</span>
+        </i><br><p class="w3-large" id="skill4">{{skill4}}</p>
+      </div>
+      <p class="w3-xlarge" id="role"><b>Expected role:</b> {{role}}</p>
+    </div>
+
+    <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" style="width: 97.5%;">
+      <h3 style="margin-top: 0;">Job postings curated for you:</h3>
+      <table class="w3-table w3-table-all w3-hoverable">
+        <tr>
+          <th>position</th>
+          <th>company</th>
+          <th>location</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Data Scientist</td>
+          <td>Google</td>
+          <td>Chicago, IL</td>
+          <td><i class="fas fa-external-link-alt"></i></td>
+        </tr>
+        <tr>
+          <td>Data Scientist</td>
+          <td>Microsoft</td>
+          <td>Chicago, IL</td>
+          <td><i class="fas fa-external-link-alt"></i></td>
+        </tr>
+        <tr>
+          <td>Data Scientist</td>
+          <td>Amazon</td>
+          <td>Chicago, IL</td>
+          <td><i class="fas fa-external-link-alt"></i></td>
+        </tr>
+        <tr>
+          <td>Data Scientist</td>
+          <td>Facebook</td>
+          <td>Chicago, IL</td>
+          <td><i class="fas fa-external-link-alt"></i></td>
+        </tr>
+        <tr>
+          <td>Data Scientist</td>
+          <td>Apple</td>
+          <td>Chicago, IL</td>
+          <td><i class="fas fa-external-link-alt"></i></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="about">
+    <h2 class="w3-text-light-grey" style="margin-bottom: 0; !important">About Us</h2>
+    <hr style="width:140px; margin-top: 5px;" class="w3-opacity">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">W3.CSS</a> &amp; <a href="https://www.w3schools.com/w3js/default.asp" target="_blank" class="w3-hover-text-green">W3.JS</a>.</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
