@@ -3,7 +3,7 @@ import json
 
 
 
-def usajob(token, email, parameter, search, argv):
+def usajob(token, email, parameter, search):
     '''
     For api reference: https://developer.usajobs.gov/API-Reference
     

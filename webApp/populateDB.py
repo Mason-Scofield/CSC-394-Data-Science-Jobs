@@ -9,10 +9,11 @@ import boto3
 
 def main(argv):
     dbConnection = 'boto3()'
-    pushDB(dbConnection, getJSON())
+    pushDB(dbConnection, getJSON(argv))
 
-def getJSON():
-    if (len(argv) < 3):
+def getJSON(argv):
+    if (len(argv) < 3
+    ):
         print("Usage: python3 populateDB.py <token> <email> <search_param>")
     else:
         token = argv[0]
