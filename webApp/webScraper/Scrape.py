@@ -2,7 +2,8 @@ import requests
 import json
 
 
-def usajob(token, email, parameter, search):
+
+def usajob(token, email, parameter, search, argv):
     '''
     For api reference: https://developer.usajobs.gov/API-Reference
     
@@ -26,7 +27,7 @@ def usajob(token, email, parameter, search):
     '''
 
     if usajob:
-        url = 'https://data.usajobs.gov/api/Search?' + parameter + '=' + search
+        url = 'https://data.usajobs.gov/api/Search?' + parameter + '=' + search.replace(' ', '%20')
         headers = {'Host': 'data.usajobs.gov', 'User-Agent': email, 'Authorization-Key': token}
 
         r = requests.get(url, headers=headers)
@@ -35,29 +36,57 @@ def usajob(token, email, parameter, search):
         data = data['SearchResult']['SearchResultItems']
 
         # Loads data.json with all the raw data collected
-        outfile = open('raw-data.json', 'w')
-        json.dump(data, outfile)
+        outfile = open('usajob_raw.json', 'w')
+        outfile.write(json.dumps(data, indent=2))
         outfile.close()
 
-        # An example of how to parse the data.
-        # Eventually we want to get to the point where we can send data to populateDB.py
-        outfile = open('CleanedData.txt', "w")
 
-        # Convert CleanedData.txt to data.json
-        # This means building a JSON object so that we write proper JSON
+        cleaned_data = []
+        dict = {}
         for d in data:
-            # print(d['MatchedObjectDescriptor'])
             d = d['MatchedObjectDescriptor']
-            outfile.write('JobRole: ' + d['PositionTitle'])
-            outfile.write('\nCompany: ' + d['OrganizationName'])
-            outfile.write('\nJobType: ' + d['JobCategory'][0]['Name'])
-            outfile.write('\nPay: ' + d['PositionRemuneration'][0]['MinimumRange'])
-            # Qualifications will have to be looked at to see if we can further improve its parsing
-            # outfile.write('\nQualifications: ' + d['QualificationSummary'])
-            outfile.write('\nLocation: ' + d['PositionLocationDisplay'])
-            outfile.write('\n-----------------------\n')
+            temp_dict = {}
+            temp_dict['JobRole'] = d['PositionTitle']
+            temp_dict['CompanyName'] = d['OrganizationName']
+            temp_dict['JobType'] = d['JobCategory'][0]['Name']
+            temp_dict['Pay'] = d['PositionRemuneration'][0]['MinimumRange']
+            temp_dict['City'] = d['PositionLocationDisplay'][0:d['PositionLocationDisplay'].find(',')]
+            temp_dict['State'] = d['PositionLocationDisplay'][d['PositionLocationDisplay'].find(',') + 1:].replace(' ', '')
+            temp_dict['Experience'] = ''
+            temp_dict['Skills'] = ''
+            # tempDict['Qualifications'] = d['QualificationSummary']
+            cleaned_data.append(temp_dict)
+
+        outfile = open('usajob_data.json', "w")
+        dict = cleaned_data
+        json.dump(dict, outfile, indent=2)
         outfile.close()
 
 
-def github():
-    print("Github api not yet implemented")
+def github(description):
+    url = 'https://jobs.github.com/positions.json?description=' + description.replace(' ', '%20')
+    r = requests.get(url)
+    data = r.json()
+    outfile = open("github_raw.json", "w")
+    json.dump(data, outfile, indent=2)
+    outfile.close()
+
+    cleaned_data = []
+    dict = {}
+    for d in data:
+        temp_dict = {}
+        temp_dict['JobRole'] = d['title']
+        temp_dict['CompanyName'] = d['company']
+        temp_dict['JobType'] = description
+        temp_dict['Pay'] = ''
+        temp_dict['City'] = d['location'][0:d['location'].find(',')]
+        temp_dict['State'] = d['location'][d['location'].find(',')+1:].replace(' ', '')
+        temp_dict['Experience'] = ''
+        temp_dict['Skills'] = ''
+        cleaned_data.append(temp_dict)
+
+    outfile = open("github_data.json", "w")
+    dict = cleaned_data
+    json.dump(dict, outfile, indent=2)
+    outfile.close()
+
