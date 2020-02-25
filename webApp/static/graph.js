@@ -3,8 +3,7 @@ $(document).ready(function() {
   var STACKED = false;
 
   var TITLE = 'Data Science';
-
-  var LABELS = 'Keyword';  // Column to define  x axis
+  var LABELS = 'Keyword';         // column to define x-axis
 
   var SERIES = [
     {
@@ -21,13 +20,13 @@ $(document).ready(function() {
 
   ];
 
-  var X_AXIS = 'Skills';  // x-axis label
-  var Y_AXIS = 'Python'; // y-axis label
+  var X_AXIS = 'Skills';          // x-axis label
+  var Y_AXIS = 'Python';          // y-axis label
 
-  var SHOW_GRID = true; // To show the grid
-  var SHOW_LEGEND = true; // To show the legends
+  var SHOW_GRID = true;           // show the grid
+  var SHOW_LEGEND = true;         // show the legends
 
-  // D3 to read data from csv and then map it to the values to make a chart
+  // D3 to read data from the CSV and then map it to the values to make a chart
   d3.csv('data.csv').then(function(rows) {
     console.log(rows);
 
@@ -46,7 +45,7 @@ $(document).ready(function() {
       })
     });
 
-		var barChartData = {
+    var barChartData = {
       labels: rows.map(function(el) { return el[LABELS] }),
 			datasets: datasets
     };
