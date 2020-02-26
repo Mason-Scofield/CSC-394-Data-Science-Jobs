@@ -28,7 +28,7 @@ $(document).ready(function() {
   var SHOW_LEGEND = true; // To show the legends
 
   // D3 to read data from csv and then map it to the values to make a chart
-  d3.csv('data.csv').then(function(rows) {
+  d3.csv("../static/data.csv").then(function(rows) {
     console.log(rows);
 
     var datasets = SERIES.map(function(el) {

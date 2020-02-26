@@ -15,7 +15,7 @@ function slider(value, index) {
   skills[id] = value;
   w3.displayObject(id, skills); // BADGE
   
-  console.log(skill);
+  console.log(skill, value);
   
   var obj = {}
   obj[skill] = skill_value_to_level(value);
