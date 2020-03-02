@@ -1,9 +1,11 @@
 import boto3
+import os
+
 dynamoDB = boto3.client(
-   'dynamodb', aws_access_key_id="AKIA5KVCCTT2T4RRCDF7",aws_secret_access_key="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", region_name='us-east-2'
+   'dynamodb',aws_access_key_id='AKIA5KVCCTT2WXS2FYS3', aws_secret_access_key='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', region_name='us-east-2'
  )
-dynamo = boto3.resource('dynamodb', region_name='us-west-2')
-table = dynamo.create_table(
+
+table = dynamoDB.create_table(
     TableName='PhoneBook',
     KeySchema=[
         {
@@ -32,4 +34,4 @@ table = dynamo.create_table(
     }
 )
 
-print("Table status:", table.table_status)
+# print("Table status:", table.table_status)
