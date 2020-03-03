@@ -1,12 +1,12 @@
 var skills = {};
 
-window.onload = function() {
+window.addEventListener('load', function() {
   var sliders = document.getElementsByClassName('slider');
   
   for (var i = 0; i != sliders.length; ++i) {      
     slider(sliders[i].value, i + 1);
   }
-};
+});
 
 function slider(value, index) {
   id    = 'slider' + String(index);

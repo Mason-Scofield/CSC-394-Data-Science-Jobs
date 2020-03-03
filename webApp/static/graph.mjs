@@ -1,39 +1,55 @@
-function graphInit(data) {
-    console.log(data)
-    var context   = document.getElementById('chart');
-    var chart = new Chart(context, {
+var chart;
+
+export function graphInit(graphData) {
+    var context = document.getElementById('chart');
+    chart = new Chart(context, {
         // bar chart
         type: 'bar',
         data: {
-            labels: ['HTML, CSS, & JavaScript', 'Python', 'R', 'SQL'],
+            labels: graphData.labels,
             datasets: [
             {
-                label: 'GitHub Jobs',
-                data: [10, 20, 30, 40],
-                backgroundColor: '#D6E9C6'
+                label: graphData.dataset[0].source,
+                data: graphData.dataset[0].data,
+                backgroundColor: '#58D68D'
             },
             {
-                label: 'USA Jobs',
-                data: [10, 20, 30, 40],
-                backgroundColor: '#FAEBCC'
+                label: graphData.dataset[1].source,
+                data: graphData.dataset[1].data,
+                backgroundColor: '#3498DB'
             }]
         },
         options: {
+            legend: { labels: { fontSize: 15 } },
             scales: {
                 xAxes: [{
                     stacked: true,
-                }],
+                    ticks: { fontSize: 15 }
+                 }],
                 yAxes: [{
                     stacked: true,
-                }]
+                    ticks: { fontSize: 20 }
+                 }]
             },
             tooltips: {
                 callbacks: {
                     title: function(tooltipItem, data) {
                           return '';
-                     }
+                    }
                 }
             }
         }
     });
-});
+};
+
+export function drawGraph(graphData) {
+    chart.data.labels = graphData.labels;
+
+    var i = 0;
+    chart.data.datasets.forEach(function(dataset) {
+        dataset.data  = graphData.dataset[i].data;
+        ++i;
+    });
+
+    chart.update();
+}

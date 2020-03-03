@@ -9,15 +9,38 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">                                           <!-- W3.CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">                                 <!-- Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font Awesome 4 -->
-    <link rel="stylesheet" href="../static/index.css">                                                                          <!-- Our CSS -->
+    <link rel="stylesheet" href="../static/index.css">                                                                <!-- Our CSS -->
 
     <!-- JavaScript -->
     <script src="https://kit.fontawesome.com/f15e7c6ba2.js" crossorigin="anonymous"></script>                         <!-- Font Awesome 5 -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>                                                       <!-- W3.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>                         <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>                 <!-- Chart.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>                                 <!-- D3.js -->
-    <script src="../static/index.js"></script>                                                                                  <!-- Our JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>                                               <!-- Chart.js -->
+    <!-- Our JavaScript -->
+    <script src="../static/index.js"></script>
+    <script src="../static/graph.mjs" type="module"></script>
+
+    <script type="module">
+      import { graphInit, drawGraph } from '../static/graph.mjs';
+
+      var keywords  = {{keywords|tojson}};
+      var pays      = {{pays|tojson}};
+      var locations = {{locations|tojson}};
+
+      window.addEventListener('load', graphInit(keywords));
+      document.getElementById('chartSelect').addEventListener('change', function(e) {
+        switch(e.target.value) {
+          case 'keywords':
+            drawGraph(keywords);
+            break;
+          case 'pays':
+            drawGraph(pays);
+            break;
+          case 'locations':
+            drawGraph(locations);
+            break;
+        }
+      });
+    </script>
   </head>
 
   <body class="w3-black">
@@ -165,11 +188,14 @@
       <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="data">
         <h2 class="w3-text-light-grey" style="margin-bottom: 0 !important;">Our Findings</h2>
         <hr style="width:195px; margin-top: 5px" class="w3-opacity">
-
-        <canvas id="container" style="width:200%; height:450px;"></canvas>
-        <script src="../static/graph.js"></script>
       </div>
 
+      <select id="chartSelect">
+        <option value="keywords">Skills</option>
+        <option value="pays">Pay</option>
+        <option value="locations">Locations</option>
+      </select>
+      <canvas id="chart"></canvas>
 
       <!-- About Us -->
       <div class="w3-padding-64 w3-content w3-text-grey" id="about">
