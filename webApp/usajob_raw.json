@@ -1,0 +1,1055 @@
+[
+  {
+    "MatchedObjectId": "535208200",
+    "MatchedObjectDescriptor": {
+      "PositionID": "DEST-10510411-19-CB",
+      "PositionTitle": "Technical Developer",
+      "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/535208200",
+      "ApplyURI": [
+        "https://www.usajobs.gov:443/GetJob/ViewDetails/535208200?PostingChannelID=RESTAPI"
+      ],
+      "PositionLocationDisplay": "Washington, District of Columbia",
+      "PositionLocation": [
+        {
+          "LocationName": "Washington, District of Columbia",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "District of Columbia",
+          "CityName": "Washington, District of Columbia",
+          "Longitude": -77.032,
+          "Latitude": 38.8904
+        }
+      ],
+      "OrganizationName": "Central Intelligence Agency",
+      "DepartmentName": "Other Agencies and Independent Organizations",
+      "JobCategory": [
+        {
+          "Name": "Engineering Technical",
+          "Code": "0802"
+        }
+      ],
+      "JobGrade": [
+        {
+          "Code": "GS"
+        }
+      ],
+      "PositionSchedule": [
+        {
+          "Name": "Full-Time",
+          "Code": "1"
+        }
+      ],
+      "PositionOfferingType": [
+        {
+          "Name": "Permanent",
+          "Code": "15317"
+        }
+      ],
+      "QualificationSummary": "Minimum Qualifications: Bachelor's degree in one of the following fields or related studies: Biology Chemistry Computer Science Engineering disciplines (Electrical, Computer, Mechanical, Nuclear, Aerospace etc.). Material Science Mathematics/Statistics Physics GPA of at least 3.0 on a 4-point scale. Experience in one or more of the following areas: Additive manufacturing/Rapid Prototyping. Advanced data recovery from damaged storage media. Advanced digital data recovery. Analog design and circuits. Digital design and circuits. Digital Signal Processing design and programming. Fabrication skills in a Prototype Environment Project/program management. Fiber optics and cable communications. Internet/Web technology. Network security and engineering. Programming (C, C++, Internet, Windows 3.X/95/NT applications development, interrupt processing/service routines, device drivers, RS-232 communication applications). Project/program management. Signal processing and analysis. Software Reverse Engineering. Systems Architecting. Systems Engineering. Video design and circuits. Audio design and circuits. Voice/data communications (satellite, RF, wireless and telecommunications networks). Self-starter attitude with initiative. Creativity. Strong interpersonal and communications skills. Ability to work independently and in a group. Desired Qualifications: Advanced degree. For further information and to apply, please visit: https://www.cia.gov/careers/opportunities/science-technology/technical-developer.html",
+      "PositionRemuneration": [
+        {
+          "MinimumRange": "56233.0",
+          "MaximumRange": "148967.0",
+          "RateIntervalCode": "Per Year"
+        }
+      ],
+      "PositionStartDate": "2019-05-31",
+      "PositionEndDate": "2020-05-30",
+      "PublicationStartDate": "2019-05-31",
+      "ApplicationCloseDate": "2020-05-30",
+      "PositionFormattedDescription": [
+        {
+          "Label": "Dynamic Teaser",
+          "LabelDescription": "Hit highlighting for keyword searches."
+        }
+      ],
+      "UserArea": {
+        "Details": {
+          "JobSummary": "As a Technical Developer, you will drive critical engineering programs and turn user needs into successful development &amp; production programs. You will analyze requirements, propose solutions, conduct engineering analyses, manage development activities, and transition systems to full operation. You will also define baseline project scope &amp; conduct acquisition planning and source selection.",
+          "WhoMayApply": {
+            "Name": "",
+            "Code": ""
+          },
+          "LowGrade": "10",
+          "HighGrade": "12",
+          "PromotionPotential": "None",
+          "HiringPath": [
+            "public"
+          ],
+          "TotalOpenings": "Many",
+          "AgencyMarketingStatement": "The Directorate of Science and Technology (DS&amp;T) addresses national intelligence problems with effective targeting, bold technology and superb tradecraft by applying innovative scientific, engineering and technical solutions. Learn more about the Directorate of Science and Technology at https://www.cia.gov/offices-of-cia/science-technology/",
+          "TravelCode": "1"
+        },
+        "IsRadialSearch": false
+      }
+    },
+    "RelevanceRank": 0.0
+  },
+  {
+    "MatchedObjectId": "550878000",
+    "MatchedObjectDescriptor": {
+      "PositionID": "20CE4-ITX0072-2210-5T12-C",
+      "PositionTitle": "Information Technology Specialist (Systems Analysis/Applications Software) *Roster* (Java Applications Developer)",
+      "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/550878000",
+      "ApplyURI": [
+        "https://www.usajobs.gov:443/GetJob/ViewDetails/550878000?PostingChannelID=RESTAPI"
+      ],
+      "PositionLocationDisplay": "Multiple Locations",
+      "PositionLocation": [
+        {
+          "LocationName": "Fresno, California",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "California",
+          "CityName": "Fresno, California",
+          "Longitude": -119.785683,
+          "Latitude": 36.7406158
+        },
+        {
+          "LocationName": "Washington, District of Columbia",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "District of Columbia",
+          "CityName": "Washington, District of Columbia",
+          "Longitude": -77.032,
+          "Latitude": 38.8904
+        },
+        {
+          "LocationName": "Jacksonville, Florida",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Florida",
+          "CityName": "Jacksonville, Florida",
+          "Longitude": -81.6558,
+          "Latitude": 30.33138
+        },
+        {
+          "LocationName": "Plantation, Florida",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Florida",
+          "CityName": "Plantation, Florida",
+          "Longitude": -80.2451,
+          "Latitude": 26.1274
+        },
+        {
+          "LocationName": "Atlanta, Georgia",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Georgia",
+          "CityName": "Atlanta, Georgia",
+          "Longitude": -84.39111,
+          "Latitude": 33.7483139
+        },
+        {
+          "LocationName": "Chamblee, Georgia",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Georgia",
+          "CityName": "Chamblee, Georgia",
+          "Longitude": -84.29867,
+          "Latitude": 33.89412
+        },
+        {
+          "LocationName": "Covington, Kentucky",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Kentucky",
+          "CityName": "Covington, Kentucky",
+          "Longitude": -84.51018,
+          "Latitude": 39.08378
+        },
+        {
+          "LocationName": "Florence, Kentucky",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Kentucky",
+          "CityName": "Florence, Kentucky",
+          "Longitude": -84.631,
+          "Latitude": 39.0008
+        },
+        {
+          "LocationName": "Andover, Massachusetts",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Massachusetts",
+          "CityName": "Andover, Massachusetts",
+          "Longitude": -71.1442,
+          "Latitude": 42.6530151
+        },
+        {
+          "LocationName": "Lanham-Seabrook, Maryland",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Maryland",
+          "CityName": "Lanham-Seabrook, Maryland",
+          "Longitude": -76.84861,
+          "Latitude": 38.9677773
+        },
+        {
+          "LocationName": "Clinton Township, Michigan",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Michigan",
+          "CityName": "Clinton Township, Michigan",
+          "Longitude": -82.9205,
+          "Latitude": 42.5871
+        },
+        {
+          "LocationName": "Detroit, Michigan",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Michigan",
+          "CityName": "Detroit, Michigan",
+          "Longitude": -83.0479,
+          "Latitude": 42.3317
+        },
+        {
+          "LocationName": "Kansas City, Missouri",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Missouri",
+          "CityName": "Kansas City, Missouri",
+          "Longitude": -94.58306,
+          "Latitude": 39.10296
+        },
+        {
+          "LocationName": "Charlotte, North Carolina",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "North Carolina",
+          "CityName": "Charlotte, North Carolina",
+          "Longitude": -80.83754,
+          "Latitude": 35.2225
+        },
+        {
+          "LocationName": "Holtsville, New York",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "New York",
+          "CityName": "Holtsville, New York",
+          "Longitude": -73.0418549,
+          "Latitude": 40.81469
+        },
+        {
+          "LocationName": "Philadelphia, Pennsylvania",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Pennsylvania",
+          "CityName": "Philadelphia, Pennsylvania",
+          "Longitude": -75.16237,
+          "Latitude": 39.95227
+        },
+        {
+          "LocationName": "Memphis, Tennessee",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Tennessee",
+          "CityName": "Memphis, Tennessee",
+          "Longitude": -90.04893,
+          "Latitude": 35.14968
+        },
+        {
+          "LocationName": "Nashville, Tennessee",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Tennessee",
+          "CityName": "Nashville, Tennessee",
+          "Longitude": -86.7783661,
+          "Latitude": 36.16778
+        },
+        {
+          "LocationName": "Austin, Texas",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Texas",
+          "CityName": "Austin, Texas",
+          "Longitude": -97.743,
+          "Latitude": 30.2676
+        },
+        {
+          "LocationName": "Dallas, Texas",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Texas",
+          "CityName": "Dallas, Texas",
+          "Longitude": -96.7954,
+          "Latitude": 32.7781563
+        },
+        {
+          "LocationName": "Ogden, Utah",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Utah",
+          "CityName": "Ogden, Utah",
+          "Longitude": -111.970459,
+          "Latitude": 41.2223663
+        },
+        {
+          "LocationName": "Kearneysville, West Virginia",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "West Virginia",
+          "CityName": "Kearneysville, West Virginia",
+          "Longitude": -77.90795,
+          "Latitude": 39.37064
+        },
+        {
+          "LocationName": "Martinsburg, West Virginia",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "West Virginia",
+          "CityName": "Martinsburg, West Virginia",
+          "Longitude": -77.96456,
+          "Latitude": 39.45637
+        }
+      ],
+      "OrganizationName": "Internal Revenue Service",
+      "DepartmentName": "Department of the Treasury",
+      "JobCategory": [
+        {
+          "Name": "Information Technology Management",
+          "Code": "2210"
+        }
+      ],
+      "JobGrade": [
+        {
+          "Code": "GS"
+        }
+      ],
+      "PositionSchedule": [
+        {
+          "Name": "Full-Time",
+          "Code": "1"
+        }
+      ],
+      "PositionOfferingType": [
+        {
+          "Name": "Permanent",
+          "Code": "15317"
+        }
+      ],
+      "QualificationSummary": "You must meet the following requirements by the closing date of this announcement:5 LEVEL: Three years of IT-related experience one year of which was equivalent to at least a level of difficulty and responsibility equivalent to the GS-4 grade level in the Federal service. This experience must include Information Technology (IT) related experience that demonstrates each of the following four competencies: 1) Attention to Detail, 2) Customer Service, 3) Oral Communication and 4) Problem Solving. IT related experience for this position includes: Basic knowledge of IT processing functions to understand the stages to automate a work process. Experience must have also included work with clients and customers to assess and/or address their needs, and provide information or assistance relative to the products or services; communicate effectively both orally and in writing; and, identify and resolve problems, determine relevant information, demonstrate using sound judgment, and making recommendations. Experience may have been gained in work such as computer operator or assistant, computer sales representative, program analyst or other positions that required the use or adaptation of one or more of the fields identified and required computer programs and systems. OR Bachelor's or equivalent degree at an accredited college or university In computer science, engineering, information science, information systems management, mathematics, operations research, statistics, or technology management OR A degree that provided a minimum of 24 semester hours in the development or adaptation of applications, systems or networks. OR A combination of experience and education at an accredited college or university equivalent to 4 years as described in paragraphs above. You may combine the college credits you completed with any qualifying experience you have to total the equivalent of a four-year college education.\nGS-7 LEVEL: You must have one year of specialized experience at a level of difficulty and responsibility equivalent to the GS-5 grade level in the Federal service. This experience must include Information Technology (IT) related experience that demonstrates each of the following four competencies: 1) Attention to Detail, 2) Customer Service, 3) Oral Communication and 4) Problem Solving. Specialized experience for this position must have been in an IT field or work where the primary concern was the subject matter of the IT application. The assignments must have shown completion of the following, or the equivalent: Interviewing subject-matter personnel to get facts regarding work processes, and synthesizing the resulting data into charts showing information flow; operating computer consoles where this involved choosing from among various procedures in responding to machine commands or unscheduled halts; scheduling the sequence of programs to be processed by computers where alternatives had to be weighed with a view to production efficiency; preparing documentation on cost/benefit studies where this involved summarizing the material and organizing it in a logical fashion; working directly with customers in obtaining information needed to establish or change accounts; translating detailed logical steps developed by others into language codes that computers accept where this required understanding of procedures and limitations appropriate to use of a programming language. In addition to the above you must have a basic knowledge of Java. Skill in applying application software principles and methods, programming languages, systems development processes, and technical documentation procedures sufficient to perform highly-structured, entry-level work (i.e. implement a specific bug fix or software code modification under the direction of a senior software developer). OR You may substitute education for specialized experience as follows: 1 year of graduate level education at an accredited college or university in computer science, engineering, information science, information systems management, mathematics, operations research, statistics, or technology management or in one or more of the fields identified above and required the development or adaptation of applications, systems or networks. OR You may qualify by a combination of experience and education. Options for qualifying based on a combination will be identified in the online questions.\nGS-9 LEVEL: You must have 1 year of specialized experience at a level of difficulty and responsibility equivalent to the GS-7 grade level in the Federal service. This experience must include Information Technology (IT) related experience that demonstrates each of the following four competencies: 1) Attention to Detail, 2) Customer Service, 3) Oral Communication and 4) Problem Solving. Specialized experience for this position includes: Experience that demonstrated knowledge of computer requirements and techniques in carrying out project assignments consisting of several related tasks, such as typically is the case in development of minor modifications to parts of a system on the basis of detailed specifications provided. The assignments must have shown completion of the following, or the equivalent: Analyzing the interrelationships of pertinent components of the system. Ability to plan the sequence of actions necessary to accomplish the assignment. Personal responsibility for at least a segment of the overall project. In addition to the above you must have general knowledge of Java and web application development. Skill in applying application software principles and methods, programming languages, systems development processes, and technical documentation procedures sufficient to document customer business rules and to develop flow diagrams and pseudo-code (i.e. implement software code modifications [e.g., customer change request] under the direction of a senior software developer). OR You may substitute education for specialized experience as follows: Master's or equivalent graduate degree in computer science, engineering, information science, information systems management, mathematics, operations research, statistics, or technology management or in one or more of the fields identified above and required the development or adaptation of applications, systems or networks. OR 2 full years of progressively higher level graduate education leading to a master's or equivalent graduate degree in computer science, engineering, information science, information systems management, mathematics, operations research, statistics, or technology management or in one or more of the fields identified above and required the development or adaptation of applications, systems or networks. One year of graduate education is creditable in accordance with its relationship to a year of full-time study at the school attended.",
+      "PositionRemuneration": [
+        {
+          "MinimumRange": "33949.0",
+          "MaximumRange": "111558.0",
+          "RateIntervalCode": "Per Year"
+        }
+      ],
+      "PositionStartDate": "2019-11-12",
+      "PositionEndDate": "2020-08-17",
+      "PublicationStartDate": "2019-11-12",
+      "ApplicationCloseDate": "2020-08-17",
+      "PositionFormattedDescription": [
+        {
+          "Label": "Dynamic Teaser",
+          "LabelDescription": "Hit highlighting for keyword searches."
+        }
+      ],
+      "UserArea": {
+        "Details": {
+          "JobSummary": "The U.S. Department of the Treasury has a distinguished history dating back to the founding of our nation. As the steward of U.S. economic and financial systems, Treasury is a major and influential leader in today's global economy. We have over 100,000 employees across the country and around the world. Come Join the Department of the Treasury and Invest in Tomorrow.\nSee &ldquo;Other Information&rdquo; for Locations.",
+          "WhoMayApply": {
+            "Name": "",
+            "Code": ""
+          },
+          "LowGrade": "05",
+          "HighGrade": "12",
+          "PromotionPotential": "12",
+          "HiringPath": [
+            "public"
+          ],
+          "TotalOpenings": "100",
+          "AppointmentExplanationText": "Permanent",
+          "AgencyMarketingStatement": "WHY IS THE IRS A GREAT PLACE TO WORK? As an IRS employee, you will feel proud knowing you helped make America stronger while working at one of the world&rsquo;s biggest financial institutions. You will be part of an organization that collects over $2 trillion in revenue and processes over 200 million tax returns annually. We are proud of how we apply the tax law with integrity and fairness to all. The IRS hires talented and dedicated individuals from many backgrounds, including accounting, business, finance, law enforcement&amp; information technology. You will be challenged&amp; supported on a daily basis. Whether you are just starting out or looking for a new opportunity, consider an IRS career.",
+          "TravelCode": "1",
+          "ApplyOnlineUrl": "https://careerconnector.jobs.treas.gov/cc/irs/ros/rosDashboard.hms?O=2&J=189991",
+          "DetailStatusUrl": "https://careerconnector.jobs.treas.gov/cc/irs/ros/rosDashboard.hms?O=2&J=189991&S=1"
+        },
+        "IsRadialSearch": false
+      }
+    },
+    "RelevanceRank": 0.0
+  },
+  {
+    "MatchedObjectId": "560296200",
+    "MatchedObjectDescriptor": {
+      "PositionID": "DE-10720233-20-MML",
+      "PositionTitle": "IT SPECIALIST (APPLICATION SOFTWARE)",
+      "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/560296200",
+      "ApplyURI": [
+        "https://www.usajobs.gov:443/GetJob/ViewDetails/560296200?PostingChannelID=RESTAPI"
+      ],
+      "PositionLocationDisplay": "Indianapolis, Indiana",
+      "PositionLocation": [
+        {
+          "LocationName": "Indianapolis, Indiana",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Indiana",
+          "CityName": "Indianapolis, Indiana",
+          "Longitude": -86.14996,
+          "Latitude": 39.76691
+        }
+      ],
+      "OrganizationName": "U.S. Marine Corps",
+      "DepartmentName": "Department of the Navy",
+      "JobCategory": [
+        {
+          "Name": "Information Technology Management",
+          "Code": "2210"
+        }
+      ],
+      "JobGrade": [
+        {
+          "Code": "GS"
+        }
+      ],
+      "PositionSchedule": [
+        {
+          "Name": "Full-Time",
+          "Code": "1"
+        }
+      ],
+      "PositionOfferingType": [
+        {
+          "Name": "Permanent",
+          "Code": "15317"
+        }
+      ],
+      "QualificationSummary": "GS-11: Your resume must demonstrate at least one year of specialized experience at or equivalent to the GS-9 grade level or pay band in the Federal service or equivalent experience in the private or public sector. Specialized experience must demonstrate the following: planning and coordinating the installation, testing, operation, troubleshooting, and maintenance of IT software systems and applications, AND researching problem areas and make recommendations for corrective actions, AND ensuring the rigorous application of information security/information assurance policies, principles, and practices GS-9: Your resume must demonstrate at least one year of specialized experience at or equivalent to the GS-7 grade level or pay band in the Federal service or equivalent experience in the private or public sector. Specialized experience must demonstrate the following: planning and coordinating the installation, testing, operation, troubleshooting, and maintenance of IT software systems and applications AND researching problem areas and make recommendations for corrective actions. Your experience must reflect skills in the following areas: attention to detail, customer service, oral communication, and problem solving. 1. Attention to Detail - Is thorough when performing work and conscientious about attending to detail. IT-related experience demonstrating this competency include: preparing programming specifications and specifying programming instructions, inputs and outputs, structures, and other analytical products. 2. Customer Service - Works with clients and customers (that is, any individuals who use or receive the services or products that your work unit produces, including the general public, individuals who work in the agency, other agencies, or organizations outside the Government) to assess their needs, provide information or assistance, resolve their problems, or satisfy their expectations; knows about available products and services; is committed to providing quality products and services. IT-related experience demonstrating this competency include: ensuring customer understanding through the preparation of technical guidance and training on software and computer use and capabilities. 3. Oral Communication - Expresses information (for example, ideas or facts) to individuals or groups effectively, taking into account the audience and nature of the information (for example, technical, sensitive, controversial); makes clear and convincing oral presentations; listens to others, attends to nonverbal cues, and responds appropriately. IT-related experience demonstrating this competency include: serving as a member of one or more boards, committees, panels, or teams in support of special projects or programs. 4. Problem Solving - Identifies problems; determines accuracy and relevance of information; uses sound judgment to generate and evaluate alternatives, and to make recommendations. IT-related experience demonstrating this competency include: analyzing and resolving system or software failures. Additional qualification information can be found from the following Office of Personnel Management web site: https://www.opm.gov/policy-data-oversight/classification-qualifications/general-schedule-qualification-standards/2200/information-technology-it-management-series-2210-alternative-a/. Experience refers to paid and unpaid experience, including volunteer work done through National Service programs (e.g., professional, philanthropic, religious, spiritual, community, student, social). Volunteer work helps build critical competencies, knowledge, and skills and can provide valuable training and experience that translates directly to paid employment.",
+      "PositionRemuneration": [
+        {
+          "MinimumRange": "59315.0",
+          "MaximumRange": "84682.0",
+          "RateIntervalCode": "Per Year"
+        }
+      ],
+      "PositionStartDate": "2020-02-19",
+      "PositionEndDate": "2020-03-16",
+      "PublicationStartDate": "2020-02-19",
+      "ApplicationCloseDate": "2020-03-16",
+      "PositionFormattedDescription": [
+        {
+          "Label": "Dynamic Teaser",
+          "LabelDescription": "Hit highlighting for keyword searches."
+        }
+      ],
+      "UserArea": {
+        "Details": {
+          "JobSummary": "This announcement uses the Post-Secondary Students and Recent Graduates direct hire authority to recruit and appoint qualified candidates to certain positions in the competitive service. This is a public notice flyer to notify interested applicants of anticipated vacancies. Applications will not be accepted through this flyer. Interested applicants must follow the directions in the \"How to Apply\" section of this flyer to be considered.",
+          "WhoMayApply": {
+            "Name": "",
+            "Code": ""
+          },
+          "LowGrade": "9",
+          "HighGrade": "11",
+          "PromotionPotential": "11",
+          "HiringPath": [
+            "graduates",
+            "student"
+          ],
+          "AgencyMarketingStatement": "The Navy and Marine Corps team offers innovative, exciting and meaningful work linking military and civilian talents to achieve our mission and safeguard our freedoms. Department of the Navy provides competitive salaries, comprehensive benefits, and extensive professional development and training. From pipefitters to accountants, scientists to engineers, doctors to nurses-the careers and opportunities to make a difference are endless. Civilian careers-where purpose and patriotism unite!",
+          "TravelCode": "1"
+        },
+        "IsRadialSearch": false
+      }
+    },
+    "RelevanceRank": 0.0
+  },
+  {
+    "MatchedObjectId": "561110700",
+    "MatchedObjectDescriptor": {
+      "PositionID": "EPD-114326-01-ELHR",
+      "PositionTitle": "IT SPECIALIST (Application Software)",
+      "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/561110700",
+      "ApplyURI": [
+        "https://www.usajobs.gov:443/GetJob/ViewDetails/561110700?PostingChannelID=RESTAPI"
+      ],
+      "PositionLocationDisplay": "Washington, District of Columbia",
+      "PositionLocation": [
+        {
+          "LocationName": "Washington, District of Columbia",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "District of Columbia",
+          "CityName": "Washington, District of Columbia",
+          "Longitude": -77.032,
+          "Latitude": 38.8904
+        }
+      ],
+      "OrganizationName": "Defense Intelligence Agency",
+      "DepartmentName": "Department of Defense",
+      "JobCategory": [
+        {
+          "Name": "Information Technology Management",
+          "Code": "2210"
+        }
+      ],
+      "JobGrade": [
+        {
+          "Code": "GG"
+        }
+      ],
+      "PositionSchedule": [
+        {
+          "Name": "Full Time",
+          "Code": "1"
+        }
+      ],
+      "PositionOfferingType": [
+        {
+          "Name": "Permanent",
+          "Code": "15317"
+        }
+      ],
+      "QualificationSummary": "ASSESSMENT FACTORS1. Works with customer to elicit, understand, interpret, and document system and user requirements.2. Identifies, manages, and mitigates risks associated with systems.3. Develops procedures to discover and correct data integrity problems; provides working-level support to users.4. Develops systems with increasing complexity and interoperability.HIGHLY DESIRED SKILLS 1. Experience writing web applications using server side languages such as ColdFusion, PHP, Python, or client-side technologies such as Angular, JavaScript, XML, CSS/Bootstrap.2. Experience with backend technologies such as SOLR or Postgres.3. Experience with developing using an AGILE methodology, including, but not limited to, working closely with AGILE sprint teams and tracking tasks via JIRA, or similar, project tracking architecture.4. Evaluates new information and identifies opportunities to improve current policies, procedures, and/or technology for integration into the DODIIS enterprise.POSITION REQUIREMENTSAll Applicants must meet the following minimum qualification requirements in order to be considered for this position: Requirements may be met either through Education and/or Experience and/or a combination of both.Education:All academic degrees and coursework must be from accredited or pre-accredited institutions. The coursework must be either undergraduate or graduate and must include a minimum of 24 semester hours in one, or a combination of the following: computer science, engineering, information science, information systems management, mathematics, operations research, statistics, or technology management.Level/Education:GG-07 : One (1) full year of graduate level education; or Bachelor\u2019s degree with superior academic achievementGG-09: Master\u2019s degree or equivalent graduate degree; OR two (2) full years of progressively higher level graduate education leading to a master\u2019s degree or equivalent graduate degreeGG-11 and above: Ph.D or equivalent doctoral degree; OR three (3) full years of progressively higher level graduate education leading to a Ph.D. or equivalent doctoral degreeExperience\u2022 Must be IT-related (paid or unpaid);\u2022 May have involved the completion of specific and intensive training (for example, IT certification);\u2022 Should have equipped the applicant with the particular competencies/knowledge, skills and abilities to successfully perform the duties of the position and should have been gained in the same or related field as the work of the position being filled;\u2022 Should have been gained in the IT field or through the performance of work where the primary concern was IT; \u2022 Should consist of at least one year at a level equivalent to the next lower GG level; And\u2022 Must have demonstrated each of the following four competencies: 1. Attention to detail: thorough when performing work and conscientious about attending to detail;2. Customer Service: works with clients and customers to assess their needs, provide information or assistance, resolve their problems, or satisfy their expectations, knows about available products and services and is committed to providing quality products and services;3. Oral Communication: effectively expresses information, takes into account the audience and nature of the information, makes clear and convincing oral presentations, listens to others, attends to nonverbal cues and responds appropriately;4. Problem Solving: identifies problems, determines accuracy and relevance of information, uses sound judgment to generate and evaluate alternatives and makes appropriate recommendations. and Specialized ExperienceSpecialized experience is experience that has equipped the applicant with the particular competencies/knowledge, skills and abilities to successfully perform the duties of the position and is typically in or related to the work of the position to be filled.",
+      "PositionRemuneration": [
+        {
+          "MinimumRange": "86335.0",
+          "MaximumRange": "112240.0",
+          "RateIntervalCode": "Per Year"
+        }
+      ],
+      "PositionStartDate": "2020-02-25",
+      "PositionEndDate": "2020-03-10",
+      "PublicationStartDate": "2020-02-25",
+      "ApplicationCloseDate": "2020-03-10",
+      "PositionFormattedDescription": [
+        {
+          "Label": "Dynamic Teaser",
+          "LabelDescription": "Hit highlighting for keyword searches."
+        }
+      ],
+      "UserArea": {
+        "Details": {
+          "JobSummary": "We are committed to: Teamwork: Partnering at all levels and across organizational boundaries for mission accomplishment. Integrity: Adherence to the highest legal and ethical principles in our responsibilities. Excellence: Unrivaled defense intelligence expertise. Service: Putting the welfare of the Nation and commitment to our mission before oneself.",
+          "WhoMayApply": {
+            "Name": "",
+            "Code": ""
+          },
+          "LowGrade": "12",
+          "HighGrade": "12",
+          "PromotionPotential": "12",
+          "HiringPath": [
+            "public",
+            "vet",
+            "fed-excepted",
+            "nguard"
+          ],
+          "AgencyMarketingStatement": "",
+          "TravelCode": "-1"
+        },
+        "IsRadialSearch": false
+      }
+    },
+    "RelevanceRank": 0.0
+  },
+  {
+    "MatchedObjectId": "560369600",
+    "MatchedObjectDescriptor": {
+      "PositionID": "GS20H0035",
+      "PositionTitle": "Computer Engineer, AST, Software Systems",
+      "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/560369600",
+      "ApplyURI": [
+        "https://www.usajobs.gov:443/GetJob/ViewDetails/560369600?PostingChannelID=RESTAPI"
+      ],
+      "PositionLocationDisplay": "Greenbelt, Maryland",
+      "PositionLocation": [
+        {
+          "LocationName": "Greenbelt, Maryland",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Maryland",
+          "CityName": "Greenbelt, Maryland",
+          "Longitude": -76.8789,
+          "Latitude": 39.0002632
+        }
+      ],
+      "OrganizationName": "Goddard Space Flight Center",
+      "DepartmentName": "National Aeronautics and Space Administration",
+      "JobCategory": [
+        {
+          "Name": "Computer Engineering",
+          "Code": "0854"
+        }
+      ],
+      "JobGrade": [
+        {
+          "Code": "GS"
+        }
+      ],
+      "PositionSchedule": [
+        {
+          "Name": "Full-Time",
+          "Code": "1"
+        }
+      ],
+      "PositionOfferingType": [
+        {
+          "Name": "Permanent",
+          "Code": "15317"
+        }
+      ],
+      "QualificationSummary": "In addition to the Basic Education Requirement, you must have one year of specialized experience equivalent to the next lower grade, which has equipped you with the particular competencies needed to successfully perform the duties of the position described above. To qualify for the GS-07:1. Applicants must meet one of the following requirements in addition to the Basic Education Requirement: 2.a. One year of specialized experience at least equivalent in difficulty and responsibility to GS-05 level work in the Federal service defined as professional working experience that demonstrates knowledge of programming languages, and/or embedded operating systems; software or Field Programmable Gate Array (FPGA) development; embedded hardware/software, artificial intelligence/machine learning, augmented/virtual reality, printed circuit board (PCB) design, and/or Very High Speed Integrated Circuit Hardware Description Language (VHDL) of the NASA technological specialties;ORb. Successfully completed 1 full academic year of graduate study in an appropriate field at an accredited institution. ORc. Any equivalent combination of experience and graduate study described above.Note: Applicants that do not meet 2a, 2b, or 2c, above, may qualify for a GS-7 position if they meet any of the criteria outlined below under the Special provisions for GS-7. Special Provisions for GS-7: Applicants may qualify at the GS-7 level if they meet any of the following criteria: 1. Are in the upper third of their class, based on completed college work at the time of filing an application. This is the upper third of the class in the college, university, or major subdivision (e.g., school of engineering). 2. Have an average of 2.90 or better on a 4.0 scale for either all completed college work at the time of application or all college courses completed during the last 2 years of the undergraduate curriculum. 3. Have achieved a grade average of B+ (3.5 on a 4.0 scale) or better in the major field of study where such field is fully qualifying. This is either the average of all completed college work in the major field of study at the time of application or the average of all college courses completed in the major field of study during the last 2 years of the undergraduate curriculum. Senior students may be rated provisionally eligible under one of those criteria, provided they had the required average in the junior year. In these situations, applicants are required to submit evidence, prior to appointment, that the required average was maintained during their senior year. 4. Have been elected to membership in one of the national honorary scholastic societies meeting the minimum requirements of the Association of College Honor Societies (other than freshman honor societies). 5. Have completed 12 months under the Pathways Internship Program (does not include periods of Leave Without Pay (LWOP)) that includes: At least one work period (2 months or 320 hours) equivalent to GS-5. OR At least 15 months of appropriate student trainee experience which includes one work period (2 months or 320 hours) equivalent to the GS-4 level. 6. For engineering positions, have successfully completed a 5-year program of study (e.g., one designed to be completed in no less than 5 years) or at least 160 semester hours leading to a bachelor?s degree in an accredited college or university. 7. For engineering positions, in addition to a professional engineering degree, have up to 12 months of experience gained as a technician or technologist equivalent to the GS-5 or higher level. 8. Have successfully completed all requirements for two bachelor?s degrees, one in an appropriate field of science or engineering. 9. Have 6 months of directly related/specialized experience or training, including 3 months gained after the junior year of college. This experience may have been obtained on a part-time or intermittent basis and may have been paid or unpaid. 10. Have received honors or elective positions indicating superior leadership outside of the applicant?s academic setting. Additionally, the applicant?s academic standing must have been in the upper half of the graduating class. 11. Have established a pattern of completing courses that include unusual preparatory value or direct relation to the particular aerospace specialty for which they are being considered. 12. Have creative research aptitude or special talent for NASA scientific or engineering work. This must be shown by evidence obtained and documented by NASA in certifications from college professors or officials, or standardized questionnaires, or similar techniques.To qualify for the GS-09:Applicants must meet one of the following requirements in addition to the Basic Education Requirement: One year of specialized experience at least equivalent in difficulty and responsibility to GS-07 level work in the Federal service defined as professional experience working with various programming languages, and/or embedded operating systems. Experience that demonstrates ability to develop software or Field Programmable Gate Arrays (FPGAs), embedded hardware/software, artificial intelligence/machine learning, augmented/virtual reality, printed circuit board (PCB) design, and/or Very High Speed Integrated Circuit Hardware Description Language (VHDL).ORCompletion of all requirements for a master's or equivalent graduate degree in an appropriate field; ORTwo full academic years of graduate education in an appropriate field; ORAn equivalent combination of experience and graduate study described above.",
+      "PositionRemuneration": [
+        {
+          "MinimumRange": "50356.0",
+          "MaximumRange": "77396.0",
+          "RateIntervalCode": "Per Year"
+        }
+      ],
+      "PositionStartDate": "2020-02-24",
+      "PositionEndDate": "2020-03-03",
+      "PublicationStartDate": "2020-02-24",
+      "ApplicationCloseDate": "2020-03-03",
+      "PositionFormattedDescription": [
+        {
+          "Label": "Dynamic Teaser",
+          "LabelDescription": "Hit highlighting for keyword searches."
+        }
+      ],
+      "UserArea": {
+        "Details": {
+          "JobSummary": "NASA Goddard Space Flight Center is seeking an entry level Software Engineer who is committed to learning new technologies and skills in the Science Data Software Branch of the Software Engineering Division in Greenbelt, MD. This position is responsible for assisting with the software and/or hardware design, development, implementation and integration of science data processing applications and technology for flight, in-situ and ground based systems.",
+          "WhoMayApply": {
+            "Name": "",
+            "Code": ""
+          },
+          "LowGrade": "7",
+          "HighGrade": "9",
+          "PromotionPotential": "13",
+          "HiringPath": [
+            "public"
+          ],
+          "TotalOpenings": "1",
+          "AgencyMarketingStatement": "",
+          "TravelCode": "1",
+          "ApplyOnlineUrl": "https://applyonline.nasa.gov/apply",
+          "DetailStatusUrl": "https://applyonline.nasa.gov/status"
+        },
+        "IsRadialSearch": false
+      }
+    },
+    "RelevanceRank": 0.0
+  },
+  {
+    "MatchedObjectId": "560921200",
+    "MatchedObjectDescriptor": {
+      "PositionID": "GS20H0040",
+      "PositionTitle": "Computer Engineer, AST, Software Systems",
+      "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/560921200",
+      "ApplyURI": [
+        "https://www.usajobs.gov:443/GetJob/ViewDetails/560921200?PostingChannelID=RESTAPI"
+      ],
+      "PositionLocationDisplay": "Greenbelt, Maryland",
+      "PositionLocation": [
+        {
+          "LocationName": "Greenbelt, Maryland",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Maryland",
+          "CityName": "Greenbelt, Maryland",
+          "Longitude": -76.8789,
+          "Latitude": 39.0002632
+        }
+      ],
+      "OrganizationName": "Goddard Space Flight Center",
+      "DepartmentName": "National Aeronautics and Space Administration",
+      "JobCategory": [
+        {
+          "Name": "Computer Engineering",
+          "Code": "0854"
+        }
+      ],
+      "JobGrade": [
+        {
+          "Code": "GS"
+        }
+      ],
+      "PositionSchedule": [
+        {
+          "Name": "Full-Time",
+          "Code": "1"
+        }
+      ],
+      "PositionOfferingType": [
+        {
+          "Name": "",
+          "Code": "15317"
+        }
+      ],
+      "QualificationSummary": "In addition to the Basic Education Requirement, you must have one year of specialized experience equivalent to the next lower grade, which has equipped you with the particular competencies needed to successfully perform the duties of the position described above. To qualify for the GS-07 grade level, applicants must meet one of the following requirements in addition to the Basic Education Requirement: One year of specialized experience at least equivalent in difficulty and responsibility to GS-05 level work in the Federal service defined as professional working experience that demonstrates ability or aptitude to do aerospace research, development design, operations, or closely related functions in one of the NASA technological specialties;ORCompleted 1 full academic year of graduate study in an appropriate field. ORA combination of experience and graduate study in an appropriate field described above.ORApplicants may also qualify at the GS-07 level by meeting one of the Special Provisions listed below (a.- l.):a. Are in the upper third of their class, based on completed college work at the time of filing an application. b. Have an average of 2.90 or better on a 4.0 scale for either all completed college work at the time of application or all college courses completed during the last 2 years of the undergraduate curriculum. c. Achieved a grade average of B+ (3.5 on a 4.0 scale) or better in the major field of study where such field is fully qualifying. This is either the average of all completed college work in the major field of study at the time of application or the average of all college courses completed in the major field of study during the last 2 years of the undergraduate curriculum. d. Elected to membership in one of the national honorary scholastic societies meeting the minimum requirements of the Association of College Honor Societies (other than freshman honor societies). These honor societies are listed at ACHS e. Completed 12 months of student trainee experience that includes one work period equivalent to the GS-05. OR At least 15 months of appropriate student trainee experience which includes one work period equivalent to the GS-4 level. One work period is 2 months or 320 hours. f. Successfully completed a 5-year program of study, or at least 160 semester hours, leading to a bachelor's degree. g. Have a professional engineering degree, and up to 12 months of experience gained as a technician or technologist equivalent to the GS-05 or higher level. h. Successfully completed all requirements for two bachelor's degrees, one in an appropriate field of science or engineering. i. Have six months of directly related/specialized experience or training, including 3 months gained after the junior year of college. This experience may have been obtained on a part-time or intermittent basis and may have been paid or unpaid. j. Received honors or elective positions indicating superior leadership outside of the applicant's academic setting. Additionally, the applicant's academic standing must have been in the upper half of the graduating class. k. Have pattern of completing courses that include unusual preparatory value or direct relation to the particular aerospace specialty for which they are being considered. l. Have creative research aptitude or special talent for NASA scientific or engineering work. This must be shown by evidence obtained and documented by NASA in certifications from college professors or officials, or standardized questionnaires, or similar techniques.To qualify for the GS-09 grade level, applicants must meet one of the following requirements in addition to the Basic Education Requirement: One year of specialized experience at least equivalent in difficulty and responsibility to GS-07 level work in the Federal service defined as professional experience in basic coding/programming software and data systems; and experience modifying the design, and testing of software systems. ORCompletion of all requirements for a master's or equivalent graduate degree in an appropriate field;ORTwo full academic years of graduate education in an appropriate field;ORAn equivalent combination of experience and graduate study described above.To qualify for the GS-11 grade level, applicants must meet one of the following requirements in addition to the Basic Education Requirement: One year of specialized experience at least equivalent in difficulty and responsibility to GS-09 level work in the Federal service defined as professional experience in software development, software engineering, programming languages, operating systems and engineering practices and principles as they apply to the development and operation of aerospace, aeronautical, space science and/or earth science vehicles, spacecraft and/or instruments.ORCompletion of all requirements for a doctoral degree (Ph.D. or equivalent) in an appropriate field;ORCompletion of three full academic years of graduate education in an appropriate field;ORAn equivalent combination of experience and graduate education described above.",
+      "PositionRemuneration": [
+        {
+          "MinimumRange": "50356.0",
+          "MaximumRange": "93638.0",
+          "RateIntervalCode": "Per Year"
+        }
+      ],
+      "PositionStartDate": "2020-02-27",
+      "PositionEndDate": "2020-03-06",
+      "PublicationStartDate": "2020-02-27",
+      "ApplicationCloseDate": "2020-03-06",
+      "PositionFormattedDescription": [
+        {
+          "Label": "Dynamic Teaser",
+          "LabelDescription": "Hit highlighting for keyword searches."
+        }
+      ],
+      "UserArea": {
+        "Details": {
+          "JobSummary": "NASA Goddard Space Center is seeking individuals to develop flight and ground data systems, and software systems for the Engineering and Technology Directorate, Software Engineering Division (SED) in Greenbelt, MD. You will serve as a technical expert in Command and Data Handling (C&DH) or Guidance, Navigation, and Control (GN&C) Flight Software, or Flight Software Testing on projects such as SmallSats and the core Flight System software framework.",
+          "WhoMayApply": {
+            "Name": "",
+            "Code": ""
+          },
+          "LowGrade": "7",
+          "HighGrade": "11",
+          "PromotionPotential": "13",
+          "HiringPath": [
+            "public"
+          ],
+          "TotalOpenings": "3",
+          "AgencyMarketingStatement": "",
+          "TravelCode": "1",
+          "ApplyOnlineUrl": "https://applyonline.nasa.gov/apply",
+          "DetailStatusUrl": "https://applyonline.nasa.gov/status"
+        },
+        "IsRadialSearch": false
+      }
+    },
+    "RelevanceRank": 0.0
+  },
+  {
+    "MatchedObjectId": "560167100",
+    "MatchedObjectDescriptor": {
+      "PositionID": "SWDM202932928015",
+      "PositionTitle": "Information Technology Specialist (Application Software)",
+      "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/560167100",
+      "ApplyURI": [
+        "https://www.usajobs.gov:443/GetJob/ViewDetails/560167100?PostingChannelID=RESTAPI"
+      ],
+      "PositionLocationDisplay": "Fort Knox, Kentucky",
+      "PositionLocation": [
+        {
+          "LocationName": "Fort Knox, Kentucky",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Kentucky",
+          "CityName": "Fort Knox, Kentucky",
+          "Longitude": -85.90228,
+          "Latitude": 37.89799
+        }
+      ],
+      "OrganizationName": "US ARMY HUMAN RESOURCES COMMAND (DRU)",
+      "DepartmentName": "Department of the Army",
+      "SubAgency": "Human Resources Command, Personnel Information Systems Directorate (PERSINSD)",
+      "JobCategory": [
+        {
+          "Name": "Information Technology Management",
+          "Code": "2210"
+        }
+      ],
+      "JobGrade": [
+        {
+          "Code": "GS"
+        }
+      ],
+      "PositionSchedule": [
+        {
+          "Name": "Full-Time",
+          "Code": "1"
+        }
+      ],
+      "PositionOfferingType": [
+        {
+          "Name": "Permanent",
+          "Code": "15317"
+        }
+      ],
+      "QualificationSummary": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 30 Percent or More Disabled VeteransCurrent Department of Army Civilian EmployeesCurrent Permanent Department of Defense (DOD) Civilian Employee (non-Army)Domestic Defense Industrial Base/Major Range and Test Facilities Base Civilian Personnel WorkforceExecutive Order (E.O.) 12721Interagency Career Transition Assistance PlanLand Management Workforce Flexibility ActMilitary Spouses, under Executive Order (E.O.) 13473Non-Department of Defense (DoD) TransferPriority Placement Program, DoD Military Spouse Preference (MSP) EligibleReinstatementVeterans Employment Opportunity Act (VEOA) of 1998 In order to qualify, you must meet the experience requirements described below. Experience refers to paid and unpaid experience, including volunteer work done through National Service programs (e.g., Peace Corps, AmeriCorps) and other organizations (e.g., professional; philanthropic; religious; spiritual; community; student; social). You will receive credit for all qualifying experience, including volunteer experience. Your resume must clearly describe your relevant experience; if qualifying based on education, your transcripts will be required as part of your application. Additional information about transcripts is in this document. Basic Requirement for IT SPECIALIST (APPSW): Specialized and Other Experience: One year specialized experience equivalent to the GS-11 grade level in the Federal service which includes work/experience preparing system documentation in accordance with DoD, agency, major command, and local standards. Possess demonstrated experience performing in-depth analysis of automated and manual systems to accomplish design and programming assignment. Possess demonstrated experience and proficiency selecting appropriate programming language and utility routines or adaptations. Possess experience coding, testing, debugging, and documenting the application. Possess experience maintaining program(s) to support the needs of the customer. The specialized experience must include, or be supplemented by, information technology related experience (paid or unpaid experience and/or completion of specific, intensive training, as appropriate) which demonstrates each of the four competencies, as defined: (1) Attention to Detail - Is thorough when performing work and conscientious about attending to detail. Examples of IT-related experience demonstrating this competency include: completing thorough and accurate work independently, even in the most difficult or stressful situations; occasionally reviewing work completed by others. (2) Customer Service - Works with clients and customers (that is, any individuals who use or receive the services or products that your work unit produces, including the general public, individuals who work in the agency, other agencies, or organizations outside the Government) to assess their needs, provide information or assistance, resolve their problems, or satisfy their expectations; knows about available products and services; is committed to providing quality products and services. Examples of IT-related experience demonstrating this competency include: resolving routine and non-routine problems, questions, or complaints; developing and maintaining strong, mutually supportive working relationships with customers; conducting evaluation of support to determine quality of services and customer satisfaction, and recommending procedural changes based on customer need or changes in policy and/or regulation. (3) Oral Communication - Expresses information (for example, ideas or facts) to individuals or groups effectively, taking into account the audience and nature of the information (for example, technical, sensitive, controversial); makes clear and convincing oral presentations; listens to others, attends to nonverbal cues, and responds appropriately. Examples of IT-related experience demonstrating this competency include: convincingly conveying complex information to customers; presenting thoughts that are well-organized and demonstrating confidence in the facts and ideas; adjusting style when working with individuals with different levels of understanding; using various methods to explain and convey information. (4) Problem Solving - Identifies problems; determines accuracy and relevance of information; uses sound judgment to generate and evaluate alternatives, and to make recommendations. Examples of IT-related experience demonstrating this competency include: solving complex or sensitive problems by developing and proposing strategic alternatives; identifying possible conflicts and shared benefits; helping team anticipate problems and identifying and evaluating potential sources of information; providing feedback and coaching to others to help solve problems; engaging appropriate stakeholders when developing solutions in order to understand and incorporate multiple perspectives and needs; evaluating the effectiveness of decisions and adjusting future decisions as appropriate. You will be evaluated on the basis of your level of competency in the following areas:\nProblem SolvingSoftware DevelopmentSystems IntegrationTechnical CompetenceTechnology Awareness Time in Grade Requirement: Applicants who have held a General Schedule (GS) position within the last 52 weeks must have 52 weeks of Federal service at the next lower grade or equivalent (GS-11).",
+      "PositionRemuneration": [
+        {
+          "MinimumRange": "76721.0",
+          "MaximumRange": "99741.0",
+          "RateIntervalCode": "Per Year"
+        }
+      ],
+      "PositionStartDate": "2020-02-18",
+      "PositionEndDate": "2020-03-03",
+      "PublicationStartDate": "2020-02-18",
+      "ApplicationCloseDate": "2020-03-03",
+      "PositionFormattedDescription": [
+        {
+          "Label": "Dynamic Teaser",
+          "LabelDescription": "Hit highlighting for keyword searches."
+        }
+      ],
+      "UserArea": {
+        "Details": {
+          "JobSummary": "About the Position: This position is located at the US Army Human Resources Command, Personnel Information Systems Directorate.",
+          "WhoMayApply": {
+            "Name": "",
+            "Code": ""
+          },
+          "LowGrade": "12",
+          "HighGrade": "12",
+          "PromotionPotential": "12",
+          "HiringPath": [
+            "fed-transition",
+            "fed-competitive",
+            "land",
+            "mspouse",
+            "vet"
+          ],
+          "TotalOpenings": "1",
+          "AgencyMarketingStatement": "Civilian employees serve a vital role in supporting the Army mission. They provide the skills that are not readily available in the military, but crucial to support military operations. The Army integrates the talents and skills of its military and civilian members to form a Total Army. Located just 40 miles from Louisville and 17 miles from Elizabethtown, Kentucky, Fort Knox encompasses some 190,000 acres in three, beautiful Kentucky counties. Fort Knox has a population of over 40,000 soldiers, family members, and civilian employees. There are many sightseeing/ recreational opportunities in the Fort Knox area and the cost of living in this area is very reasonable. Sightseeing and recreational opportunities include Churchill Downs (site of the Kentucky Derby), the Louisville Slugger Museum, the Muhammad Ali Center, the Kentucky Center of Performing Arts, the Louisville Bats baseball team (a triple-A affiliate of the Cincinnati Reds), world famous bourbon distilleries, first-rate hunting and fishing sites, and sweeping, scenic hiking trails and driving tours. Nearby Louisville International Airport offers nonstop service to more than 20 destinations and convenient connections to cities worldwide. For the driver, Fort Knox is just a short drive from Louisville, Lexington, and Bowling Green, KY; Cincinnati, OH; Indianapolis, IN; and Nashville, TN.",
+          "TravelCode": "1",
+          "ApplyOnlineUrl": "https://apply.usastaffing.gov/Application/Apply",
+          "DetailStatusUrl": "https://apply.usastaffing.gov/Application/ApplicationStatus"
+        },
+        "IsRadialSearch": false
+      }
+    },
+    "RelevanceRank": 0.0
+  },
+  {
+    "MatchedObjectId": "560535600",
+    "MatchedObjectDescriptor": {
+      "PositionID": "SWDM203021321183",
+      "PositionTitle": "Information Technology Specialist (Application Software)",
+      "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/560535600",
+      "ApplyURI": [
+        "https://www.usajobs.gov:443/GetJob/ViewDetails/560535600?PostingChannelID=RESTAPI"
+      ],
+      "PositionLocationDisplay": "Fort Knox, Kentucky",
+      "PositionLocation": [
+        {
+          "LocationName": "Fort Knox, Kentucky",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Kentucky",
+          "CityName": "Fort Knox, Kentucky",
+          "Longitude": -85.90228,
+          "Latitude": 37.89799
+        }
+      ],
+      "OrganizationName": "US ARMY HUMAN RESOURCES COMMAND (DRU)",
+      "DepartmentName": "Department of the Army",
+      "SubAgency": "Personnel Information Systems Directorate (PERSINSD)",
+      "JobCategory": [
+        {
+          "Name": "Information Technology Management",
+          "Code": "2210"
+        }
+      ],
+      "JobGrade": [
+        {
+          "Code": "GS"
+        }
+      ],
+      "PositionSchedule": [
+        {
+          "Name": "Full-Time",
+          "Code": "1"
+        }
+      ],
+      "PositionOfferingType": [
+        {
+          "Name": "Permanent",
+          "Code": "15317"
+        }
+      ],
+      "QualificationSummary": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 30 Percent or More Disabled VeteransCurrent Department of Army Civilian EmployeesCurrent Permanent Department of Defense (DOD) Civilian Employee (non-Army)Domestic Defense Industrial Base/Major Range and Test Facilities Base Civilian Personnel WorkforceExecutive Order (E.O.) 12721Interagency Career Transition Assistance PlanLand Management Workforce Flexibility ActMilitary Spouses, under Executive Order (E.O.) 13473Non-Department of Defense (DoD) TransferPriority Placement Program, DoD Military Spouse Preference (MSP) EligibleReinstatementVeterans Employment Opportunity Act (VEOA) of 1998 In order to qualify, you must meet the education requirements described below. Experience refers to paid and unpaid experience, including volunteer work done through National Service programs (e.g., Peace Corps, AmeriCorps) and other organizations (e.g., professional; philanthropic; religious; spiritual; community; student; social). You will receive credit for all qualifying experience, including volunteer experience. Your resume must clearly describe your relevant experience; if qualifying based on education, your transcripts will be required as part of your application. Additional information about transcripts is in this document. Basic Requirement for Information Technology Specialist (Application Software) GS-12 Specialized and Other Experience: One year of specialized experience which includes demonstrated experience and proficiency planning and coordination of the installation, testing, operation, troubleshooting, and maintenance of hardware and software within the System Integration formal test environments. Possess operational experience managing system resources including performance, capacity, availability, serviceability, and recoverability; thereby ensuring system availability, functionality, integrity, and efficiency. Possess demonstrated experience participating as a member of a multi-disciplinary team responsible for testing the architecture, design, development, execution and maintenance of all systems within an organizational system test environment. Possess detailed experience providing testing, assistance, and evaluation services for computer hardware and software implementation. The OPM Qualification Standard provides the following definition: specialized experience is experience that has equipped the applicant with the particular competencies/knowledge, skills, and abilities to successfully perform the duties of the position and is typically in or related to the work of the position to be filled. Such experience is typically gained in the IT field or through the performance of work where the primary concern is IT. My specialized experience includes, or was supplemented by, information technology related experience (paid or unpaid experience and/or completion of specific, intensive training, as appropriate) which demonstrates each of the four competencies, as defined:\n(1) Attention to Detail - Is thorough when performing work and conscientious about attending to detail. Examples of IT-related experience demonstrating this competency include: completing thorough and accurate work independently, even in the most difficult or stressful situations; occasionally reviewing work completed by others;\n(2) Customer Service - Works with clients and customers (that is, any individuals who use or receive the services or products that your work unit produces, including the general public, individuals who work in the agency, other agencies, or organizations outside the Government) to assess their needs, provide information or assistance, resolve their problems, or satisfy their expectations; knows about available products and services; is committed to providing quality products and services. Examples of IT-related experience demonstrating this competency include: resolving routine and non-routine problems, questions, or complaints; developing and maintaining strong, mutually supportive working relationships with customers; conducting evaluation of support to determine quality of services and customer satisfaction, and recommending procedural changes based on customer need or changes in policy and/or regulation;\n(3) Oral Communication - Expresses information (for example, ideas or facts) to individuals or groups effectively, taking into account the audience and nature of the information (for example, technical, sensitive, controversial); makes clear and convincing oral presentations; listens to others, attends to nonverbal cues, and responds appropriately. Examples of IT-related experience demonstrating this competency include: convincingly conveying complex information to customers; presenting thoughts that are well-organized and demonstrating confidence in the facts and ideas; adjusting style when working with individuals with different levels of understanding; using various methods to explain and convey information; and\n(4) Problem Solving - Identifies problems; determines accuracy and relevance of information; uses sound judgment to generate and evaluate alternatives, and to make recommendations. Examples of IT-related experience demonstrating this competency include: solving complex or sensitive problems by developing and proposing strategic alternatives; identifying possible conflicts and shared benefits; helping team anticipate problems and identifying and evaluating potential sources of information; providing feedback and coaching to others to help solve problems; engaging appropriate stakeholders when developing solutions in order to understand and incorporate multiple perspectives and needs; evaluating the effectiveness of decisions and adjusting future decisions as appropriate. You will be evaluated on the basis of your level of competency in the following areas:\nProject ManagementSoftware DevelopmentSoftware Testing and EvaluationSystems Testing and EvaluationWriting Time in Grade Requirement: Applicants who have held a General Schedule (GS) position within the last 52 weeks must have 52 weeks of Federal service at the next lower grade or equivalent (GS-11).",
+      "PositionRemuneration": [
+        {
+          "MinimumRange": "76721.0",
+          "MaximumRange": "99741.0",
+          "RateIntervalCode": "Per Year"
+        }
+      ],
+      "PositionStartDate": "2020-02-21",
+      "PositionEndDate": "2020-03-02",
+      "PublicationStartDate": "2020-02-21",
+      "ApplicationCloseDate": "2020-03-02",
+      "PositionFormattedDescription": [
+        {
+          "Label": "Dynamic Teaser",
+          "LabelDescription": "Hit highlighting for keyword searches."
+        }
+      ],
+      "UserArea": {
+        "Details": {
+          "JobSummary": "About the Position: This position is located within the Human Resources Command PERSINSD, Fort Knox, KY.",
+          "WhoMayApply": {
+            "Name": "",
+            "Code": ""
+          },
+          "LowGrade": "12",
+          "HighGrade": "12",
+          "PromotionPotential": "None",
+          "HiringPath": [
+            "fed-transition",
+            "overseas",
+            "fed-competitive",
+            "land",
+            "mspouse",
+            "vet"
+          ],
+          "AgencyMarketingStatement": "Civilian employees serve a vital role in supporting the Army mission. They provide the skills that are not readily available in the military, but crucial to support military operations. The Army integrates the talents and skills of its military and civilian members to form a Total Army.\nOther Advantages: Located just 40 miles from Louisville and 17 miles from Elizabethtown, Kentucky, Fort Knox encompasses some 190,000 acres in three, beautiful Kentucky counties. Fort Knox has a population of over 40,000 soldiers, family members, and civilian employees. There are many sightseeing/recreational opportunities in the Fort Knox area and the cost of living in this area is very reasonable. Sightseeing and recreational opportunities include Churchill Downs (site of the Kentucky Derby), the Louisville Slugger Museum, the Muhammad Ali Center, the Kentucky Center of Performing Arts, the Louisville Bats baseball team (a triple-A affiliate of the Cincinnati Reds), world famous bourbon distilleries, first-rate hunting and fishing sites, and sweeping, scenic hiking trails and driving tours. Nearby Louisville International Airport offers nonstop service to more than 20 destinations and convenient connections to cities worldwide. For the driver, Fort Knox is just a short drive from Louisville, Lexington, and Bowling Green, KY; Cincinnati, OH; Indianapolis, IN; and Nashville, TN.",
+          "TravelCode": "1",
+          "ApplyOnlineUrl": "https://apply.usastaffing.gov/Application/Apply",
+          "DetailStatusUrl": "https://apply.usastaffing.gov/Application/ApplicationStatus"
+        },
+        "IsRadialSearch": false
+      }
+    },
+    "RelevanceRank": 0.0
+  },
+  {
+    "MatchedObjectId": "560755400",
+    "MatchedObjectDescriptor": {
+      "PositionID": "CO-114270-01-RS",
+      "PositionTitle": "Information Technology Specialist (Application Software)",
+      "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/560755400",
+      "ApplyURI": [
+        "https://www.usajobs.gov:443/GetJob/ViewDetails/560755400?PostingChannelID=RESTAPI"
+      ],
+      "PositionLocationDisplay": "Molesworth, United Kingdom",
+      "PositionLocation": [
+        {
+          "LocationName": "Molesworth, United Kingdom",
+          "CountryCode": "United Kingdom",
+          "CityName": "Molesworth, United Kingdom",
+          "Longitude": -0.422989726,
+          "Latitude": 52.36647
+        }
+      ],
+      "OrganizationName": "Defense Intelligence Agency",
+      "DepartmentName": "Department of Defense",
+      "JobCategory": [
+        {
+          "Name": "Information Technology Management",
+          "Code": "2210"
+        }
+      ],
+      "JobGrade": [
+        {
+          "Code": "GG"
+        }
+      ],
+      "PositionSchedule": [
+        {
+          "Name": "Full Time",
+          "Code": "1"
+        }
+      ],
+      "PositionOfferingType": [
+        {
+          "Name": "Permanent",
+          "Code": "15317"
+        }
+      ],
+      "QualificationSummary": "ASSESSMENT FACTORS1. Presents a positive, professional image of the office to all clients, colleagues, and leadership in spoken and written complex communications2. Consults with customers to help them identify new requirements and refine existing requirements.3. Facilitates the development of more integrated solutions by engaging and actively working with others who have unique but relevant expertise4. Makes informed decisions about work priorities to ensure accurate completion of assignments and projects, and makes adjustments as required5. Manages basic projects, to include client management; establishes clear, realistic measurable milestones/objectives to ensure others understand direction, deadlines, and expected outcomes.HIGHLY DESIRED SKILLS 1. Experience in languages such as PHP, Python, JavaScript, Java, XSLT, XML, or HTML with direct experience managing web servers (UNIX/LINUX).2. Experience writing production grade front-end applications with EmberJS or ReactJS, building production grade web services using SailsJS, express.js or another MVC style framework, and a solid understanding of JavaScript fundamentals and knowledge of the modern ES6/ES7 language additions.3. Experience building applications for MongoDB and MySQL datastores with a solid understanding of Openshift and/or C2S/Amazon Web Services.POSITION REQUIREMENTSAll Applicants must meet the following minimum qualification requirements in order to be considered for this position: Requirements may be met either through Education and/or Experience and/or a combination of both.Education:All academic degrees and coursework must be from accredited or pre-accredited institutions. The coursework must be either undergraduate or graduate and must include a minimum of 24 semester hours in one, or a combination of the following: computer science, engineering, information science, information systems management, mathematics, operations research, statistics, or technology management.Level/Education:GG-07 : One (1) full year of graduate level education; or Bachelor\u2019s degree with superior academic achievementGG-09: Master\u2019s degree or equivalent graduate degree; OR two (2) full years of progressively higher level graduate education leading to a master\u2019s degree or equivalent graduate degreeGG-11 and above: Ph.D or equivalent doctoral degree; OR three (3) full years of progressively higher level graduate education leading to a Ph.D. or equivalent doctoral degreeExperience\u2022 Must be IT-related (paid or unpaid);\u2022 May have involved the completion of specific and intensive training (for example, IT certification);\u2022 Should have equipped the applicant with the particular competencies/knowledge, skills and abilities to successfully perform the duties of the position and should have been gained in the same or related field as the work of the position being filled;\u2022 Should have been gained in the IT field or through the performance of work where the primary concern was IT; \u2022 Should consist of at least one year at a level equivalent to the next lower GG level; And\u2022 Must have demonstrated each of the following four competencies: 1. Attention to detail: thorough when performing work and conscientious about attending to detail;2. Customer Service: works with clients and customers to assess their needs, provide information or assistance, resolve their problems, or satisfy their expectations, knows about available products and services and is committed to providing quality products and services;3. Oral Communication: effectively expresses information, takes into account the audience and nature of the information, makes clear and convincing oral presentations, listens to others, attends to nonverbal cues and responds appropriately;4. Problem Solving: identifies problems, determines accuracy and relevance of information, uses sound judgment to generate and evaluate alternatives and makes appropriate recommendations. and Specialized ExperienceSpecialized experience is experience that has equipped the applicant with the particular competencies/knowledge, skills and abilities to successfully perform the duties of the position and is typically in or related to the work of the position to be filled.",
+      "PositionRemuneration": [
+        {
+          "MinimumRange": "86335.0",
+          "MaximumRange": "112240.0",
+          "RateIntervalCode": "Per Year"
+        }
+      ],
+      "PositionStartDate": "2020-02-27",
+      "PositionEndDate": "2020-03-26",
+      "PublicationStartDate": "2020-02-27",
+      "ApplicationCloseDate": "2020-03-26",
+      "PositionFormattedDescription": [
+        {
+          "Label": "Dynamic Teaser",
+          "LabelDescription": "Hit highlighting for keyword searches."
+        }
+      ],
+      "UserArea": {
+        "Details": {
+          "JobSummary": "We are committed to: Teamwork: Partnering at all levels and across organizational boundaries for mission accomplishment. Integrity: Adherence to the highest legal and ethical principles in our responsibilities. Excellence: Unrivaled defense intelligence expertise. Service: Putting the welfare of the Nation and commitment to our mission before oneself.",
+          "WhoMayApply": {
+            "Name": "",
+            "Code": ""
+          },
+          "LowGrade": "12",
+          "HighGrade": "12",
+          "PromotionPotential": "12",
+          "HiringPath": [
+            "public",
+            "vet",
+            "fed-excepted",
+            "nguard"
+          ],
+          "AgencyMarketingStatement": "",
+          "TravelCode": "-1"
+        },
+        "IsRadialSearch": false
+      }
+    },
+    "RelevanceRank": 0.0
+  },
+  {
+    "MatchedObjectId": "561341500",
+    "MatchedObjectDescriptor": {
+      "PositionID": "NEAI203051207915HD",
+      "PositionTitle": "Information Technology Specialist (Applications Software/Systems Analysis)",
+      "PositionURI": "https://www.usajobs.gov:443/GetJob/ViewDetails/561341500",
+      "ApplyURI": [
+        "https://www.usajobs.gov:443/GetJob/ViewDetails/561341500?PostingChannelID=RESTAPI"
+      ],
+      "PositionLocationDisplay": "Tobyhanna, Pennsylvania",
+      "PositionLocation": [
+        {
+          "LocationName": "Tobyhanna, Pennsylvania",
+          "CountryCode": "United States",
+          "CountrySubDivisionCode": "Pennsylvania",
+          "CityName": "Tobyhanna, Pennsylvania",
+          "Longitude": -75.45005,
+          "Latitude": 41.1861267
+        }
+      ],
+      "OrganizationName": "U.S. Army Communications Electronics Command",
+      "DepartmentName": "Department of the Army",
+      "SubAgency": "Tobyhanna Army Depot",
+      "JobCategory": [
+        {
+          "Name": "Information Technology Management",
+          "Code": "2210"
+        }
+      ],
+      "JobGrade": [
+        {
+          "Code": "GS"
+        }
+      ],
+      "PositionSchedule": [
+        {
+          "Name": "Full-Time",
+          "Code": "1"
+        }
+      ],
+      "PositionOfferingType": [
+        {
+          "Name": "Permanent",
+          "Code": "15317"
+        }
+      ],
+      "QualificationSummary": "Who May Apply: US Citizens In order to qualify, you must meet the education and/or experience requirements described below. Experience refers to paid and unpaid experience, including volunteer work done through National Service programs (e.g., Peace Corps, AmeriCorps) and other organizations (e.g., professional; philanthropic; religious; spiritual; community; student; social). You will receive credit for all qualifying experience, including volunteer experience. Your resume must clearly describe your relevant experience; if qualifying based on education, your transcripts will be required as part of your application. Additional information about transcripts is in this document. Basic Requirement for Information Technology Specialist (Applications Software/Systems Analysis): Specialized and Other Experience: One year of specialized experience which includes 1.) Aiding in the designing and programming of user interfaces, 2.) Assisting in performing writing, debugging and maintaining code, AND 3.) Assisting in preparing business cases for the application of Information Technology solutions. This definition of specialized experience is typical of work performed at the second lower grade/level position in the federal service (GS-09). The specialized experience must include, or be supplemented by, information technology related experience (paid or unpaid experience and/or completion of specific, intensive training, as appropriate) which demonstrates each of the four competencies, as defined: (1) Attention to Detail - Is thorough when performing work and conscientious about attending to detail. Examples of IT-related experience demonstrating this competency include: completing work independently that rarely requires editing or review by others. (2) Customer Service - Works with clients and customers (that is, any individuals who use or receive the services or products that your work unit produces, including the general public, individuals who work in the agency, other agencies, or organizations outside the Government) to assess their needs, provide information or assistance, resolve their problems, or satisfy their expectations; knows about available products and services; is committed to providing quality products and services. Examples of IT-related experience demonstrating this competency include: resolving simple and routine problems, questions, or complaints and providing support and guidance to customers on non-routine issues; serving as a primary resource for customers, requesting assistance with complex issues when necessary; and participating in meetings and providing advice to customers in own area of expertise. (3) Oral Communication - Expresses information (for example, ideas or facts) to individuals or groups effectively, taking into account the audience and nature of the information (for example, technical, sensitive, controversial); makes clear and convincing oral presentations; listens to others, attends to nonverbal cues, and responds appropriately. Examples of IT-related experience demonstrating this competency include: expressing facts and ideas in a clear, concise, convincing, and organized manner; clearly conveying moderately complex ideas, concepts, and information to customers; exhibiting active listening by demonstrating understanding of audience comments and/or questions. (4) Problem Solving - Identifies problems; determines accuracy and relevance of information; uses sound judgment to generate and evaluate alternatives, and to make recommendations. Examples of IT-related experience demonstrating this competency include: identifying and solving problems by gathering and applying information from a variety of materials or sources that provide several alternatives; recognizing and taking action to address non-routine problems; soliciting feedback from multiple stakeholders to understand an issue or problem and accurately assess its root causes and potential solutions; seeking supervisory review where appropriate. OR Education: Ph.D. or equivalent doctoral degree or 3 full years of progressively higher level graduate education leading to such a degree from an accredited or pre-accredited institution in computer science, engineering, information science, information systems management, mathematics, operations research, statistics, or technology management; or, three full years of graduate education from an accredited or pre-accredited institution that provided a minimum of 24 semester hours in one or more of the fields identified above and required the development or adaptation of applications, systems, or networks. You will be evaluated on the basis of your level of competency in the following areas:\nProblem SolvingSoftware DevelopmentSoftware EngineeringSoftware Testing and EvaluationTechnology Awareness",
+      "PositionRemuneration": [
+        {
+          "MinimumRange": "73962.0",
+          "MaximumRange": "96149.0",
+          "RateIntervalCode": "Per Year"
+        }
+      ],
+      "PositionStartDate": "2020-03-02",
+      "PositionEndDate": "2020-03-11",
+      "PublicationStartDate": "2020-03-02",
+      "ApplicationCloseDate": "2020-03-11",
+      "PositionFormattedDescription": [
+        {
+          "Label": "Dynamic Teaser",
+          "LabelDescription": "Hit highlighting for keyword searches."
+        }
+      ],
+      "UserArea": {
+        "Details": {
+          "JobSummary": "About the Position: Civilian employees serve a vital role in supporting the Army mission. They provide the skills that are not readily available in the military, but crucial to support military operations. The Army integrates the talents and skills of its military and civilian members to form a Total Army. This position will be filled under Direct Hire Authority (DHA) for Domestic Defense Industrial Base (DIB) and Major Range and Test Facilities Base (MRTFB) in Department of Defense (DoD).",
+          "WhoMayApply": {
+            "Name": "",
+            "Code": ""
+          },
+          "LowGrade": "11",
+          "HighGrade": "11",
+          "PromotionPotential": "None",
+          "HiringPath": [
+            "public"
+          ],
+          "TotalOpenings": "1",
+          "AgencyMarketingStatement": "Tobyhanna Army Depot (TYAD) is a recognized leader in providing world-class logistics support for Command, Control, Communications, Computers, Cyber, Intelligence, Surveillance and Reconnaissance (C5ISR) Systems across the Department of Defense. TYAD's Corporate Philosophy, dedicated workforce and electronics expertise ensure the depot is the Joint C5ISR provider of choice for all branches of the Armed Forces and our industry partners. Tobyhanna Army Depot's (TYAD) unique; and unparalleled, capabilities include full-spectrum support for sustainment, overhaul and repair, fabrication and manufacturing, engineering design and development, systems integration, technology insertion, modification, and global field support to our Warfighters.Located in the heart of the Pocono Mountain Region; in Northeastern Pennsylvania, the area offers a low cost of living while providing ready access to many indoor and outdoor recreational activities. There are 36 colleges and universities in the local area, and the cities of New York, Philadelphia, Scranton, Stroudsburg, and Wilkes-Barre are only a short commute away. To learn more about our area and what employment at TYAD has to offer, please visit:\nhttp://www.monroecountypa.gov/Pages/Living-ere.aspx\nhttps://www.poconomountains.com/\nhttp://www.tobyhanna.army.mil/\nhttp://www.visitnepa.org/",
+          "TravelCode": "1",
+          "ApplyOnlineUrl": "https://apply.usastaffing.gov/Application/Apply",
+          "DetailStatusUrl": "https://apply.usastaffing.gov/Application/ApplicationStatus"
+        },
+        "IsRadialSearch": false
+      }
+    },
+    "RelevanceRank": 0.0
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "JobRole": "Senior React Engineer",
+    "CompanyName": "Founders Table (Chopt & Dos Toros)",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "New York City (or Remote",
+    "State": "NewYorkCity(orRemote)",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Software Developer",
+    "CompanyName": "INFICON",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Austin",
+    "State": "Texas,UnitedStates,78744",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "TypeScript/JavaScript Software Developer (w/m/d)",
+    "CompanyName": "encoway GmbH",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Breme",
+    "State": "Bremen",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": ".NET Developer",
+    "CompanyName": "Matrix42",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Mins",
+    "State": "Minsk",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Integratie Specialist (Red Hat)",
+    "CompanyName": "Finalist",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Rotterda",
+    "State": "Rotterdam",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Front End Developer (Angular 5+) ",
+    "CompanyName": "Lawrence Berkeley National Laboratory (LBNL)",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Berkele",
+    "State": "Berkeley",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior Software Engineer",
+    "CompanyName": "Prota Ventures",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Remot",
+    "State": "Remote",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior Frontend Engineer",
+    "CompanyName": "Face Hired Inc",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "San Mate",
+    "State": "SanMateo",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior Software Developer (m/f/d)",
+    "CompanyName": "neuroloop GmbH",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Freiburg im Breisga",
+    "State": "FreiburgimBreisgau",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Development Engineer (Server-side) , (English and Japanese speakers welcome)",
+    "CompanyName": "LINE Fukuoka",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Fukuoka",
+    "State": "Japan",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Development Engineer (iOS/Android)",
+    "CompanyName": "LINE Fukuoka",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Fukuoka",
+    "State": "Japan",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior software engineer",
+    "CompanyName": "Noordhoff",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Utrech",
+    "State": "Utrecht",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Rust Developer (C/C++/Java to Rust)",
+    "CompanyName": "Binance",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Singapore / Asi",
+    "State": "Singapore/Asia",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior fullstack React / Ruby developer",
+    "CompanyName": "GOhiring GmbH",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Berlin | Remot",
+    "State": "Berlin|Remote",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Software QA Engineer",
+    "CompanyName": "Cobiro ApS",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Copenhage",
+    "State": "Copenhagen",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior Software Development Engineer",
+    "CompanyName": "GunTRAC LLC",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "PHOENIX",
+    "State": "ARIZONA",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "C/C++ Software Developer / DevOps Engineer (w/m/d)",
+    "CompanyName": "encoway GmbH",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Breme",
+    "State": "Bremen",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior Software Engineer",
+    "CompanyName": "Southern California Public Radio",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Pasadena",
+    "State": "CA",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Java Software Developer",
+    "CompanyName": "InComm",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Downtown Atlanta",
+    "State": "DowntownAtlanta",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior Python Engineer - Evolving Systems (d/f/m)",
+    "CompanyName": "Stylight GmbH",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Munich",
+    "State": "Germany",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "SEO Python Engineer (d/f/m)",
+    "CompanyName": "Stylight GmbH",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Munich",
+    "State": "Germany",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Tech Lead (d/f/m)",
+    "CompanyName": "Stylight GmbH",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Munich",
+    "State": "Germany",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Full-Stack Web Developer",
+    "CompanyName": "Klewel, the webcasting company",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Martigny",
+    "State": "Switzerland",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Lead Developer e-Sant\u00e9",
+    "CompanyName": "CGM France",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Nanterr",
+    "State": "Nanterre",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Software Engineer, Developer Tools",
+    "CompanyName": "Kite",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "San Francisc",
+    "State": "SanFrancisco",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Software Developer C# (m/w/d)",
+    "CompanyName": "Matrix42",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Frankfurt am Mai",
+    "State": "FrankfurtamMain",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "(Senior) Java Developer",
+    "CompanyName": "InnoGames GmbH",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Hambur",
+    "State": "Hamburg",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Experienced JavaScript Front End Developer",
+    "CompanyName": "Combinaut",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Chicag",
+    "State": "Chicago",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Dynamics CRM 365 Developer",
+    "CompanyName": "Bromelkamp Company",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Remot",
+    "State": "Remote",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "SAP\u00ae Entwickler/Developer (m/w/d)",
+    "CompanyName": "Aareon Deutschland GmbH",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Mainz oder Hambur",
+    "State": "MainzoderHamburg",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "EXPERIENCED TWILIO JS DEVELOPER",
+    "CompanyName": "Combinaut",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Chicago or Remot",
+    "State": "ChicagoorRemote",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Front-End Web Developer",
+    "CompanyName": "Tynker",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Mountain Vie",
+    "State": "MountainView",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior Full stack Developer to take Lead on Web app",
+    "CompanyName": "Pasion",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Remot",
+    "State": "Remote",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Software developer (games and front-end) - remote working - full or part time",
+    "CompanyName": "Wordwall",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "United Kingdo",
+    "State": "UnitedKingdom",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Tech Manager (Tech Lead)",
+    "CompanyName": "FCB Health NY",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "NEW YOR",
+    "State": "NEWYORK",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Backend PHP Developer (experience required)",
+    "CompanyName": "Dancor Solutions",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Columbus",
+    "State": "OH",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Business Intelligence and Reporting Analyst",
+    "CompanyName": "Harvey Mudd College",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Claremont",
+    "State": "CA",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Sr. Software Engineer (Back End)",
+    "CompanyName": "NIKE",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Beaverton",
+    "State": "Oregon",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior Software Engineer (Front End)",
+    "CompanyName": "NIKE",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Beaverton",
+    "State": "Oregon",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Full Stack Web Developer",
+    "CompanyName": "KinaTrax",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Remot",
+    "State": "Remote",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior Front End and Backend Developers",
+    "CompanyName": "Mindhive",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Brisbane CBD Australi",
+    "State": "BrisbaneCBDAustralia",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Cybersecurity Firm Seeks Senior Developer",
+    "CompanyName": "Aon Cyber Solutions",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "NY or L",
+    "State": "NYorLA",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Mobile Application Tester",
+    "CompanyName": "Signify",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Eindhove",
+    "State": "Eindhoven",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Mobile Software Engineer (C++) - Philips HUE",
+    "CompanyName": "Signify",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Eindhove",
+    "State": "Eindhoven",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Mobil Application Developer iOS",
+    "CompanyName": "Signify",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Eindhove",
+    "State": "Eindhoven",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Software Developer",
+    "CompanyName": "The Franklin Report",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "New York",
+    "State": "NY",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Sr PHP Developer (Full-stack)",
+    "CompanyName": "SunteckTTS",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Jacksonville",
+    "State": "FL(OrRemote)",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Software Developer - Microsoft Azure (m/w)",
+    "CompanyName": "doubleSlash Net-Business GmbH",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "M\u00fcnche",
+    "State": "M\u00fcnchen",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior Software Engineer - Ruby on Rails / React ",
+    "CompanyName": "Ikayzo",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Vancouver (remote",
+    "State": "Vancouver(remote)",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Senior Quantitative Developer, Multi-Asset Class Strategies ",
+    "CompanyName": "Acadian Asset Management",
+    "JobType": "Software Developer",
+    "Pay": "",
+    "City": "Boston",
+    "State": "MA",
+    "Experience": "",
+    "Skills": ""
+  }
+]

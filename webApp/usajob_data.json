@@ -1,0 +1,102 @@
+[
+  {
+    "JobRole": "Technical Developer",
+    "CompanyName": "Central Intelligence Agency",
+    "JobType": "Engineering Technical",
+    "Pay": "56233.0",
+    "City": "Washington",
+    "State": "DistrictofColumbia",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Information Technology Specialist (Systems Analysis/Applications Software) *Roster* (Java Applications Developer)",
+    "CompanyName": "Internal Revenue Service",
+    "JobType": "Information Technology Management",
+    "Pay": "33949.0",
+    "City": "Multiple Location",
+    "State": "MultipleLocations",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "IT SPECIALIST (APPLICATION SOFTWARE)",
+    "CompanyName": "U.S. Marine Corps",
+    "JobType": "Information Technology Management",
+    "Pay": "59315.0",
+    "City": "Indianapolis",
+    "State": "Indiana",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "IT SPECIALIST (Application Software)",
+    "CompanyName": "Defense Intelligence Agency",
+    "JobType": "Information Technology Management",
+    "Pay": "86335.0",
+    "City": "Washington",
+    "State": "DistrictofColumbia",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Computer Engineer, AST, Software Systems",
+    "CompanyName": "Goddard Space Flight Center",
+    "JobType": "Computer Engineering",
+    "Pay": "50356.0",
+    "City": "Greenbelt",
+    "State": "Maryland",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Computer Engineer, AST, Software Systems",
+    "CompanyName": "Goddard Space Flight Center",
+    "JobType": "Computer Engineering",
+    "Pay": "50356.0",
+    "City": "Greenbelt",
+    "State": "Maryland",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Information Technology Specialist (Application Software)",
+    "CompanyName": "US ARMY HUMAN RESOURCES COMMAND (DRU)",
+    "JobType": "Information Technology Management",
+    "Pay": "76721.0",
+    "City": "Fort Knox",
+    "State": "Kentucky",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Information Technology Specialist (Application Software)",
+    "CompanyName": "US ARMY HUMAN RESOURCES COMMAND (DRU)",
+    "JobType": "Information Technology Management",
+    "Pay": "76721.0",
+    "City": "Fort Knox",
+    "State": "Kentucky",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Information Technology Specialist (Application Software)",
+    "CompanyName": "Defense Intelligence Agency",
+    "JobType": "Information Technology Management",
+    "Pay": "86335.0",
+    "City": "Molesworth",
+    "State": "UnitedKingdom",
+    "Experience": "",
+    "Skills": ""
+  },
+  {
+    "JobRole": "Information Technology Specialist (Applications Software/Systems Analysis)",
+    "CompanyName": "U.S. Army Communications Electronics Command",
+    "JobType": "Information Technology Management",
+    "Pay": "73962.0",
+    "City": "Tobyhanna",
+    "State": "Pennsylvania",
+    "Experience": "",
+    "Skills": ""
+  }
+]
