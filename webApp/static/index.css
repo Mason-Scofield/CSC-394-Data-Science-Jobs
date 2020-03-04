@@ -6,6 +6,8 @@ body, h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif; }
   background: #222;
 }
 
+tr:not(:nth-child(1)) { cursor: pointer; }
+
 main { margin-left: 120px; }                                         /* matches the width of the sidebar */
 
 #summary             { position: sticky; bottom: -125px; width: 95.5%; transition: bottom 1s; }
