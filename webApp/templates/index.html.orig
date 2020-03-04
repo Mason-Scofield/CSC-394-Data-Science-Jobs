@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">                                           <!-- W3.CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">                                 <!-- Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font Awesome 4 -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="../static/index.css">                                                                <!-- Our CSS -->
-    <link rel="stylesheet" href="../static/index.css">                                                                <!-- Our CSS -->
+=======
+    <link rel="stylesheet" href="../static/index.css">                                                                          <!-- Our CSS -->
+>>>>>>> 82922c75017c37fa3b5cbccafca38b5f1779cf5b
 
     <!-- JavaScript -->
     <script src="https://kit.fontawesome.com/f15e7c6ba2.js" crossorigin="anonymous"></script>                         <!-- Font Awesome 5 -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>                                                       <!-- W3.JS -->
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>                                               <!-- Chart.js -->
     <!-- Our JavaScript -->
     <script src="../static/index.js"></script>
@@ -26,6 +30,8 @@
       // for job recommendations
       document.getElementById('refresh').addEventListener('click', function(e) {
         // var sliders = document.getElementsByClassName('slider');
+
+
 
         fetch('/jobs?Web=1&Python=2&R=3&SQL=4')
           .then(function(response) {
@@ -82,6 +88,12 @@
         }
       });
     </script>
+=======
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>                         <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>                 <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>                                 <!-- D3.js -->
+    <script src="../static/index.js"></script>                                                                                  <!-- Our JavaScript -->
+>>>>>>> 82922c75017c37fa3b5cbccafca38b5f1779cf5b
   </head>
 
   <body class="w3-black">
@@ -132,6 +144,7 @@
         <div id="slider-container" class="w3-margin-bottom">
           <p style="letter-spacing: 2px;">HTML, CSS, &amp; JavaScript</p>
           <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 1)">
+<<<<<<< HEAD
           <span class="w3-badge w3-xlarge w3-white" id="slider1">{% raw %}{{slider1}}{% endraw %}</span>
 
           <p style="letter-spacing: 2px;">Python</p>
@@ -145,6 +158,21 @@
           <p style="letter-spacing: 2px;">SQL</p>
           <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 4)">
           <span class="w3-badge w3-xlarge w3-white" id="slider4">{% raw %}{{slider4}}{% endraw %}</span>
+=======
+          <span class="w3-badge w3-xlarge w3-white" id="slider1">{{slider1}}</span>
+
+          <p style="letter-spacing: 2px;">Python</p>
+          <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 2)">
+          <span class="w3-badge w3-xlarge w3-white" id="slider2">{{slider2}}</span>
+
+          <p style="letter-spacing: 2px;">R</p>
+          <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 3)">
+          <span class="w3-badge w3-xlarge w3-white" id="slider3">{{slider3}}</span>
+
+          <p style="letter-spacing: 2px;">SQL</p>
+          <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 4)">
+          <span class="w3-badge w3-xlarge w3-white" id="slider4">{{slider4}}</span>
+>>>>>>> 82922c75017c37fa3b5cbccafca38b5f1779cf5b
         </div>
 
         <h3 class="w3-padding-16 w3-text-light-grey w3-margin-top">Summary</h3>
@@ -159,31 +187,45 @@
             <i class="fab fa-js-square w3-xxxlarge w3-margin-left tooltip">
               <span class="tooltiptext w3-small" style="left: 105%; width: 75px;">JavaScript</span>
             </i><br>
+<<<<<<< HEAD
             <p class="w3-large" id="skill1">{% raw %}{{skill1}}{% endraw %}</p>
+=======
+            <p class="w3-large" id="skill1">{{skill1}}</p>
+>>>>>>> 82922c75017c37fa3b5cbccafca38b5f1779cf5b
           </div>
-
           <div class="w3-quarter w3-section">
             <i class="fab fa-python w3-xxxlarge tooltip">
               <span class="tooltiptext w3-small" style="left: 115%; width: 65px;">Python</span>
             </i><br>
+<<<<<<< HEAD
             <p class="w3-large" id="skill2">{% raw %}{{skill2}}{% endraw %}</p>
+=======
+            <p class="w3-large" id="skill2">{{skill2}}</p>
+>>>>>>> 82922c75017c37fa3b5cbccafca38b5f1779cf5b
           </div>
-
           <div class="w3-quarter w3-section">
             <i class="fab fa-r-project w3-xxxlarge tooltip">
               <span class="tooltiptext w3-small" style="left: 140%; width: 30px;">R</span>
             </i><br>
+<<<<<<< HEAD
             <p class="w3-large" id="skill3">{% raw %}{{skill3}}{% endraw %}</p>
+=======
+            <p class="w3-large" id="skill3">{{skill3}}</p>
+>>>>>>> 82922c75017c37fa3b5cbccafca38b5f1779cf5b
           </div>
-
           <div class="w3-quarter w3-section" style="margin-bottom: 50px !important;">
             <i class="fas fa-database w3-xxxlarge tooltip">
               <span class="tooltiptext w3-small" style="left: 140%; width: 45px; font-weight: normal;">SQL</span>
             </i><br>
+<<<<<<< HEAD
             <p class="w3-large" id="skill4">{% raw %}{{skill4}}{% endraw %}</p>
           </div>
-
-          <p class="w3-xlarge" id="role"><b>Expected role: </b>{% raw %}{{role}}{% endraw %}</p>
+          <p class="w3-xlarge" id="role"><b>Expected role:</b>{% raw %} {{role}}{% endraw %}</p>
+=======
+            <p class="w3-large" id="skill4">{{skill4}}</p>
+          </div>
+          <p class="w3-xlarge" id="role"><b>Expected role:</b>{{role}}</p>
+>>>>>>> 82922c75017c37fa3b5cbccafca38b5f1779cf5b
         </div>
 
         <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" style="width: 95.5%; position: relative;">
@@ -196,6 +238,36 @@
               <th>location</th>
               <th></th>
             </tr>
+            <tr>
+              <td>Data Scientist</td>
+              <td>Google</td>
+              <td>Chicago, IL</td>
+              <td><i class="fas fa-external-link-alt"></i></td>
+            </tr>
+            <tr>
+              <td>Data Scientist</td>
+              <td>Microsoft</td>
+              <td>Chicago, IL</td>
+              <td><i class="fas fa-external-link-alt"></i></td>
+            </tr>
+            <tr>
+              <td>Data Scientist</td>
+              <td>Amazon</td>
+              <td>Chicago, IL</td>
+              <td><i class="fas fa-external-link-alt"></i></td>
+            </tr>
+            <tr>
+              <td>Data Scientist</td>
+              <td>Facebook</td>
+              <td>Chicago, IL</td>
+              <td><i class="fas fa-external-link-alt"></i></td>
+            </tr>
+            <tr>
+              <td>Data Scientist</td>
+              <td>Apple</td>
+              <td>Chicago, IL</td>
+              <td><i class="fas fa-external-link-alt"></i></td>
+            </tr>
           </table>
         </div>
       </div>
@@ -204,6 +276,12 @@
       <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="data">
         <h2 class="w3-text-light-grey" style="margin-bottom: 0 !important;">Our Findings</h2>
         <hr style="width:195px; margin-top: 5px" class="w3-opacity">
+<<<<<<< HEAD
+=======
+
+        <canvas id="container" style="width:200%; height:450px;"></canvas>
+        <script src="../static/graph.js"></script>
+>>>>>>> 82922c75017c37fa3b5cbccafca38b5f1779cf5b
       </div>
 
       <select id="chartSelect">
