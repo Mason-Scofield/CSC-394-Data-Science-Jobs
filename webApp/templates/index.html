@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">                                 <!-- Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font Awesome 4 -->
     <link rel="stylesheet" href="../static/index.css">                                                                <!-- Our CSS -->
+    <link rel="stylesheet" href="../static/index.css">                                                                <!-- Our CSS -->
 
     <!-- JavaScript -->
     <script src="https://kit.fontawesome.com/f15e7c6ba2.js" crossorigin="anonymous"></script>                         <!-- Font Awesome 5 -->
@@ -25,8 +26,6 @@
       // for job recommendations
       document.getElementById('refresh').addEventListener('click', function(e) {
         // var sliders = document.getElementsByClassName('slider');
-
-
 
         fetch('/jobs?Web=1&Python=2&R=3&SQL=4')
           .then(function(response) {
@@ -162,25 +161,29 @@
             </i><br>
             <p class="w3-large" id="skill1">{% raw %}{{skill1}}{% endraw %}</p>
           </div>
+
           <div class="w3-quarter w3-section">
             <i class="fab fa-python w3-xxxlarge tooltip">
               <span class="tooltiptext w3-small" style="left: 115%; width: 65px;">Python</span>
             </i><br>
             <p class="w3-large" id="skill2">{% raw %}{{skill2}}{% endraw %}</p>
           </div>
+
           <div class="w3-quarter w3-section">
             <i class="fab fa-r-project w3-xxxlarge tooltip">
               <span class="tooltiptext w3-small" style="left: 140%; width: 30px;">R</span>
             </i><br>
             <p class="w3-large" id="skill3">{% raw %}{{skill3}}{% endraw %}</p>
           </div>
+
           <div class="w3-quarter w3-section" style="margin-bottom: 50px !important;">
             <i class="fas fa-database w3-xxxlarge tooltip">
               <span class="tooltiptext w3-small" style="left: 140%; width: 45px; font-weight: normal;">SQL</span>
             </i><br>
             <p class="w3-large" id="skill4">{% raw %}{{skill4}}{% endraw %}</p>
           </div>
-          <p class="w3-xlarge" id="role"><b>Expected role:</b>{% raw %} {{role}}{% endraw %}</p>
+
+          <p class="w3-xlarge" id="role"><b>Expected role:</b>{% raw %}{{role}}{% endraw %}</p>
         </div>
 
         <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" style="width: 95.5%; position: relative;">
@@ -192,36 +195,6 @@
               <th>company</th>
               <th>location</th>
               <th></th>
-            </tr>
-            <tr>
-              <td>Data Scientist</td>
-              <td>Google</td>
-              <td>Chicago, IL</td>
-              <td><i class="fas fa-external-link-alt"></i></td>
-            </tr>
-            <tr>
-              <td>Data Scientist</td>
-              <td>Microsoft</td>
-              <td>Chicago, IL</td>
-              <td><i class="fas fa-external-link-alt"></i></td>
-            </tr>
-            <tr>
-              <td>Data Scientist</td>
-              <td>Amazon</td>
-              <td>Chicago, IL</td>
-              <td><i class="fas fa-external-link-alt"></i></td>
-            </tr>
-            <tr>
-              <td>Data Scientist</td>
-              <td>Facebook</td>
-              <td>Chicago, IL</td>
-              <td><i class="fas fa-external-link-alt"></i></td>
-            </tr>
-            <tr>
-              <td>Data Scientist</td>
-              <td>Apple</td>
-              <td>Chicago, IL</td>
-              <td><i class="fas fa-external-link-alt"></i></td>
             </tr>
           </table>
         </div>
