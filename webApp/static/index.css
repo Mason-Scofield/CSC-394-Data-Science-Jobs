@@ -13,6 +13,8 @@ main { margin-left: 120px; }                                         /* matches 
 #summary             { position: sticky; bottom: -125px; width: 95.5%; transition: bottom 1s; }
 #summary:hover       { bottom: 0px; }
 
+select       { color: #FFF; background-color: #000; font-size: 1.25em; }
+select:focus { outline: none; }
 
 /* PHONES */
 @media only screen and (max-width: 600px) { 
@@ -111,4 +113,14 @@ th {
   position: relative; 
   bottom: 2.5px;
   left: 20px;
+}
+
+.links {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.links::after {
+    font-size: .75em;
+    content: " \1F855"
 }

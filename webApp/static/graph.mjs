@@ -11,7 +11,7 @@ export function graphInit(graphData) {
             {
                 label: graphData.dataset[0].source,
                 data: graphData.dataset[0].data,
-                backgroundColor: '#58D68D'
+                backgroundColor: '#82E0AA'
             },
             {
                 label: graphData.dataset[1].source,

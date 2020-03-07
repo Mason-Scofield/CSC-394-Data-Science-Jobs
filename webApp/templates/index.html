@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../static/favicon.ico">
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">                                           <!-- W3.CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">                                 <!-- Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font Awesome 4 -->
-    <link rel="stylesheet" href="../static/index.css">                                                                <!-- Our CSS -->
     <link rel="stylesheet" href="../static/index.css">                                                                <!-- Our CSS -->
 
     <!-- JavaScript -->
@@ -23,9 +25,16 @@
     <script type="module">
       import { graphInit, drawGraph } from '../static/graph.mjs';
 
+//      skills = {
+//        'skill1': 'web'
+//        'skill2': ''
+//        'skill3': ''
+//        'skill4': ''
+//      }
+
       // for job recommendations
       document.getElementById('refresh').addEventListener('click', function(e) {
-        // var sliders = document.getElementsByClassName('slider');
+        var sliders = document.getElementsByClassName('slider');
 
         fetch('/jobs?Web=1&Python=2&R=3&SQL=4')
           .then(function(response) {
@@ -100,10 +109,6 @@
         <i class="fa fa-line-chart w3-xxlarge"></i>
         <p>DATA</p>
       </a>
-      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-info w3-xxlarge"></i>
-        <p>ABOUT</p>
-      </a>
     </nav>
 
     <!-- Navbar (hidden on tablets & PCs) -->
@@ -112,7 +117,6 @@
         <a href="#" class="w3-bar-item w3-button" style="width: 25% !important;">HOME</a>
         <a href="#skills" class="w3-bar-item w3-button" style="width: 25% !important;">SKILLS</a>
         <a href="#data" class="w3-bar-item w3-button" style="width: 25% !important;">DATA</a>
-        <a href="#about" class="w3-bar-item w3-button" style="width: 25% !important;">ABOUT</a>
       </div>
     </div>
 
@@ -202,36 +206,13 @@
 
       <!-- Data -->
       <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="data">
-        <h2 class="w3-text-light-grey" style="margin-bottom: 0 !important;">Our Findings</h2>
-        <hr style="width:195px; margin-top: 5px" class="w3-opacity">
-      </div>
-
-      <select id="chartSelect">
-        <option value="keywords">Skills</option>
-        <option value="pays">Pay</option>
-        <option value="locations">Locations</option>
-      </select>
-      <canvas id="chart"></canvas>
-
-      <!-- About Us -->
-      <div class="w3-padding-64 w3-content w3-text-grey" id="about">
-        <h2 class="w3-text-light-grey" style="margin-bottom: 0; !important">About Us</h2>
-        <hr style="width: 140px; margin-top: 5px;" class="w3-opacity">
-        <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-           Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.
-           Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.
-           Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit.
-           Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam.
-           Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi.
-           Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque.
-           Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat.
-           Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi.
-           Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
-        </p>
+        <p class="w3-center w3-xlarge" style="margin-bottom:75px;">Analyzing <span style="color: #FFF;">14</span> data science positions from <a href="https://jobs.github.com/" target="_blank" class="links">GitHub Jobs</a> & <a href="https://www.usajobs.gov/" target="_blank" class="links">USAJobs</a>, here are our findings.</p>
+        <select id="chartSelect">
+          <option value="keywords">Skills</option>
+          <option value="pays">Pay</option>
+          <option value="locations">Locations</option>
+        </select>
+       <canvas id="chart"></canvas>
       </div>
 
       <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
