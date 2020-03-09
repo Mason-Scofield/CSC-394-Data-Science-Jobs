@@ -6,32 +6,44 @@ dynamoDB = boto3.client(
  )
 
 table = dynamoDB.create_table(
-    TableName='PhoneBook',
+    TableName='USAJobs',
     KeySchema=[
         {
             'AttributeName': 'ID',
             'KeyType': 'HASH'  # Partition key
-        },
-        {
-            'AttributeName': 'Name',
-            'KeyType': 'RANGE'  # Sort key
         }
     ],
     AttributeDefinitions=[
         {
             'AttributeName': 'ID',
-            'AttributeType': 'N'
+            'AttributeType': 'S'
         },
+
+
+    ],
+    ProvisionedThroughput={
+        'ReadCapacityUnits': 8000,
+        'WriteCapacityUnits': 8000
+    }
+)
+
+table = dynamoDB.create_table(
+    TableName='GitHubJobs',
+    KeySchema=[
         {
-            'AttributeName': 'Name',
+            'AttributeName': 'ID',
+            'KeyType': 'HASH'  # Partition key
+        }
+    ],
+    AttributeDefinitions=[
+        {
+            'AttributeName': 'ID',
             'AttributeType': 'S'
         },
 
     ],
     ProvisionedThroughput={
-        'ReadCapacityUnits': 10,
-        'WriteCapacityUnits': 10
+        'ReadCapacityUnits': 8000,
+        'WriteCapacityUnits': 8000
     }
 )
-
-# print("Table status:", table.table_status)
