@@ -112,11 +112,11 @@
     </nav>
 
     <!-- Navbar (hidden on tablets & PCs) -->
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-top w3-hide-large w3-hide-medium">
       <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-        <a href="#" class="w3-bar-item w3-button" style="width: 25% !important;">HOME</a>
-        <a href="#skills" class="w3-bar-item w3-button" style="width: 25% !important;">SKILLS</a>
-        <a href="#data" class="w3-bar-item w3-button" style="width: 25% !important;">DATA</a>
+        <a href="#" class="w3-bar-item w3-button" style="width: 33.3% !important;">HOME</a>
+        <a href="#skills" class="w3-bar-item w3-button" style="width: 33.3% !important;">SKILLS</a>
+        <a href="#data" class="w3-bar-item w3-button" style="width: 33.3% !important;">DATA</a>
       </div>
     </div>
 
@@ -130,25 +130,26 @@
 
       <!-- Your Skills -->
       <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="skills">
-        <p class="w3-center w3-xlarge" style="margin-bottom:50px;">In order to best tailor our search results, please evaluate your skillset.</p>
-        <h3 class="w3-padding-16 w3-text-light-grey">Technologies</h3>
+        <p class="w3-center w3-xlarge" style="margin-bottom:50px;">In order to best tailor our search results, tell us your experience.</p>
+        <h3 class="w3-padding-16 w3-text-light-grey" style="position: relative; top: 2.5em">Technologies</h3>
+        <h6 class="" style="position: relative; bottom: -15px; right: 2.5vw; text-align: right;">Years of<br>Experience</h6>
 
         <div id="slider-container" class="w3-margin-bottom">
           <p style="letter-spacing: 2px;">HTML, CSS, &amp; JavaScript</p>
-          <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 1)">
-          <span class="w3-badge w3-xlarge w3-white" id="slider1">{% raw %}{{slider1}}{% endraw %}</span>
+          <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 1)">
+          <span class="badge w3-xlarge w3-white" id="value1">{% raw %}{{value1}}{% endraw %}</span>
 
           <p style="letter-spacing: 2px;">Python</p>
-          <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 2)">
-          <span class="w3-badge w3-xlarge w3-white" id="slider2">{% raw %}{{slider2}}{% endraw %}</span>
+          <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 2)">
+          <span class="badge w3-xlarge w3-white" id="value2">{% raw %}{{value2}}{% endraw %}</span>
 
           <p style="letter-spacing: 2px;">R</p>
-          <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 3)">
-          <span class="w3-badge w3-xlarge w3-white" id="slider3">{% raw %}{{slider3}}{% endraw %}</span>
+          <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 3)">
+          <span class="badge w3-xlarge w3-white" id="value3">{% raw %}{{value3}}{% endraw %}</span>
 
           <p style="letter-spacing: 2px;">SQL</p>
-          <input type="range" min="1" max="10" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 4)">
-          <span class="w3-badge w3-xlarge w3-white" id="slider4">{% raw %}{{slider4}}{% endraw %}</span>
+          <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 4)">
+          <span class="badge w3-xlarge w3-white" id="value4">{% raw %}{{value4}}{% endraw %}</span>
         </div>
 
         <h3 class="w3-padding-16 w3-text-light-grey w3-margin-top">Summary</h3>
@@ -163,31 +164,32 @@
             <i class="fab fa-js-square w3-xxxlarge w3-margin-left tooltip">
               <span class="tooltiptext w3-small" style="left: 105%; width: 75px;">JavaScript</span>
             </i><br>
-            <p class="w3-large" id="skill1">{% raw %}{{skill1}}{% endraw %}</p>
+            <p class="w3-large" id="proficiency1">{% raw %}{{proficiency1}}{% endraw %}</p>
           </div>
 
           <div class="w3-quarter w3-section">
             <i class="fab fa-python w3-xxxlarge tooltip">
               <span class="tooltiptext w3-small" style="left: 115%; width: 65px;">Python</span>
             </i><br>
-            <p class="w3-large" id="skill2">{% raw %}{{skill2}}{% endraw %}</p>
+            <p class="w3-large" id="proficiency2">{% raw %}{{proficiency2}}{% endraw %}</p>
           </div>
 
           <div class="w3-quarter w3-section">
             <i class="fab fa-r-project w3-xxxlarge tooltip">
               <span class="tooltiptext w3-small" style="left: 140%; width: 30px;">R</span>
             </i><br>
-            <p class="w3-large" id="skill3">{% raw %}{{skill3}}{% endraw %}</p>
+            <p class="w3-large" id="proficiency3">{% raw %}{{proficiency3}}{% endraw %}</p>
           </div>
 
           <div class="w3-quarter w3-section" style="margin-bottom: 50px !important;">
             <i class="fas fa-database w3-xxxlarge tooltip">
               <span class="tooltiptext w3-small" style="left: 140%; width: 45px; font-weight: normal;">SQL</span>
             </i><br>
-            <p class="w3-large" id="skill4">{% raw %}{{skill4}}{% endraw %}</p>
+            <p class="w3-large" id="proficiency4">{% raw %}{{proficiency4}}{% endraw %}</p>
           </div>
 
           <p class="w3-xlarge" id="role"><b>Expected role: </b>{% raw %}{{role}}{% endraw %}</p>
+          <div id="lock"><i class="fas fa-lock-open"></i></div>
         </div>
 
         <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" style="width: 95.5%; position: relative;">

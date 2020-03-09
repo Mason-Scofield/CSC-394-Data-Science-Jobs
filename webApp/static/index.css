@@ -19,14 +19,41 @@ select:focus { outline: none; }
 /* PHONES */
 @media only screen and (max-width: 600px) { 
   main     { margin-left: 0; }                                       /* removes the margin on phones */
-  #summary { position: static; }                                     /* not sticky on phones */
+  .badge   { font-size: 8px !important; }
 } 
 
+@media only screen and (max-width: 845px) {
+  #summary { position: static; }                                     /* not sticky on phones */
+}
+
+@media only screen and (max-width: 800px) {
+  .badge   { font-size: 3px !important; }
+}
+
+@media only screen and (max-width: 900px) {
+  .badge   { font-size: 8px !important; }
+}
+
+@media only screen and (max-width: 1000px) {
+  .badge   { font-size: 10px !important; }
+}
+
+@media only screen and (max-width: 1100px) {
+  .badge   { font-size: 12px !important; }
+}
+
+@media only screen and (max-width: 1200px) {
+  .badge   { font-size: 14px !important; }
+}
+
+@media only screen and (max-width: 1300px) {
+  .badge   { font-size: 16px !important; }
+}
 
 #slider-container { width: 100%; }
 .slider {
   -webkit-appearance: none;
-  width: 90%;
+  width: 85%;
   height: 25px;
   background: #D3D3D3;
   outline: none;
@@ -107,12 +134,24 @@ th {
   font-size: 1.3em;
 }
 
-.w3-badge {
-  max-width: 40px;
-  width: 7%;
-  position: relative; 
+#lock {
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+    font-size: 2em;
+}
+
+.badge {
+  text-align: center;
+  position: relative;
+  left: 2.5%;
+  display: inline-block;
+  // width: 3.5em;
+  width: 6vw;
   bottom: 2.5px;
-  left: 20px;
+  padding: 0 .35em;
+  background-color: #EAEAEA !important;
+  border: 2px solid white;
 }
 
 .links {
