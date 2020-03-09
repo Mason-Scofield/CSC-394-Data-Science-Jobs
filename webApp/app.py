@@ -54,6 +54,8 @@ def jobs():
 @app.route('/')
 def index():
     data = json.loads(open("webApp/static/data.json").read())
-    return render_template('index.html', keywords=data["keywords"],
+    numJobs = 120
+    return render_template('index.html', numJobs=numJobs,
+                                         keywords=data["keywords"],
                                          pays=data["pays"],
                                          locations=data["locations"])

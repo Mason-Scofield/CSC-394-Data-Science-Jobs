@@ -130,30 +130,31 @@
 
       <!-- Your Skills -->
       <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="skills">
-        <p class="w3-center w3-xlarge" style="margin-bottom:50px;">In order to best tailor our search results, tell us your experience.</p>
+        <p class="w3-center w3-xlarge" style="margin-bottom: 0;">In order to best tailor our search results, tell us your experience.</p>
         <h3 class="w3-padding-16 w3-text-light-grey" style="position: relative; top: 2.5em">Technologies</h3>
-        <h6 class="" style="position: relative; bottom: -15px; right: 2.5vw; text-align: right;">Years of<br>Experience</h6>
+        <h6 class="" style="position: relative; bottom: -15px; right: 2vw; text-align: right;">Years of<br>Experience</h6>
 
         <div id="slider-container" class="w3-margin-bottom">
           <p style="letter-spacing: 2px;">HTML, CSS, &amp; JavaScript</p>
           <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 1)">
-          <span class="badge w3-xlarge w3-white" id="value1">{% raw %}{{value1}}{% endraw %}</span>
+          <span class="badge w3-white" id="value1">{% raw %}{{value1}}{% endraw %}</span>
 
           <p style="letter-spacing: 2px;">Python</p>
           <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 2)">
-          <span class="badge w3-xlarge w3-white" id="value2">{% raw %}{{value2}}{% endraw %}</span>
+          <span class="badge w3-white" id="value2">{% raw %}{{value2}}{% endraw %}</span>
 
           <p style="letter-spacing: 2px;">R</p>
           <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 3)">
-          <span class="badge w3-xlarge w3-white" id="value3">{% raw %}{{value3}}{% endraw %}</span>
+          <span class="badge w3-white" id="value3">{% raw %}{{value3}}{% endraw %}</span>
 
           <p style="letter-spacing: 2px;">SQL</p>
           <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 4)">
-          <span class="badge w3-xlarge w3-white" id="value4">{% raw %}{{value4}}{% endraw %}</span>
+          <span class="badge w3-white" id="value4">{% raw %}{{value4}}{% endraw %}</span>
         </div>
 
         <h3 class="w3-padding-16 w3-text-light-grey w3-margin-top">Summary</h3>
         <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" id="summary">
+          <i id="minimize" class="fas fa-window-minimize w3-hover-opacity"></i>
           <div class="w3-quarter w3-section">
             <i class="fab fa-html5 w3-xxxlarge tooltip">
               <span class="tooltiptext w3-small" style="left: 150%; width: 50px;">HTML</span>
@@ -189,10 +190,10 @@
           </div>
 
           <p class="w3-xlarge" id="role"><b>Expected role: </b>{% raw %}{{role}}{% endraw %}</p>
-          <div id="lock"><i class="fas fa-lock-open"></i></div>
+          <i id="lock" class="fas fa-lock-open w3-hover-opacity"></i>
         </div>
 
-        <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" style="width: 95.5%; position: relative;">
+        <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" style="width: 97.5%; position: relative;">
           <i id="refresh" class="fas fa-sync w3-hover-opacity" style="position: absolute; right: 2.5%; font-size: 1.5em; cursor: pointer;"></i>
           <h3 style="margin-top: 0;">Job postings curated for you:</h3>
           <table class="w3-table w3-table-all w3-hoverable w3-hide" id="table">
@@ -208,7 +209,7 @@
 
       <!-- Data -->
       <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="data">
-        <p class="w3-center w3-xlarge" style="margin-bottom:75px;">Analyzing <span style="color: #FFF;">14</span> data science positions from <a href="https://jobs.github.com/" target="_blank" class="links">GitHub Jobs</a> & <a href="https://www.usajobs.gov/" target="_blank" class="links">USAJobs</a>, here are our findings.</p>
+        <p class="w3-center w3-xlarge" style="margin-bottom:75px;">Analyzing <span style="color: #FFF;">{{numJobs}}</span> data science positions from <a href="https://jobs.github.com/" target="_blank" class="links">GitHub Jobs</a> & <a href="https://www.usajobs.gov/" target="_blank" class="links">USAJobs</a>, here are our findings.</p>
         <select id="chartSelect">
           <option value="keywords">Skills</option>
           <option value="pays">Pay</option>

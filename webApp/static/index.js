@@ -1,5 +1,6 @@
 var skills = {}
-lock_state = 'unlocked';
+minimize_state = 'maximized';
+lock_state     = 'unlocked';
 
 function valid_slider(value) {
     for (var i = 1; i <= 5; ++i)
@@ -9,20 +10,53 @@ function valid_slider(value) {
 }
 
 window.addEventListener('load', function() {
+     document.getElementById('summary').onmouseenter = (e) => e.target.style.bottom = '0';
+     document.getElementById('summary').onmouseleave = (e) => e.target.style.bottom = '-125px';
+
+     // minimize state machine
+     document.getElementById('minimize').addEventListener('click', function(e) {
+        if (minimize_state === 'maximized') { // not hidden
+            document.getElementById('summary').style.position = 'relative';
+            e.target.classList.remove('fa-window-minimize');
+            e.target.classList.add('fa-plus');
+            e.target.style.top = '3%';
+            document.getElementById('summary').onmouseenter = (e) => {};
+            document.getElementById('summary').onmouseleave = (e) => {};
+            minimize_state = 'minimized';
+        }
+        else { // hidden
+            document.getElementById('summary').style.position = 'sticky';
+            e.target.classList.remove('fa-plus');
+            e.target.classList.add('fa-window-minimize');
+            e.target.style.top = '2%';
+            if (lock_state === 'unlocked') {
+                document.getElementById('summary').onmouseenter = (e) => e.target.style.bottom = '0';
+                document.getElementById('summary').onmouseleave = (e) => e.target.style.bottom = '-125px';
+            }
+            minimize_state = 'maximized';
+        }
+    });
+
+    // lock state machine
     document.getElementById('lock').addEventListener('click', function(e) {
         if (lock_state === 'unlocked') { // lock
             document.getElementById('summary').style.bottom = '0';
-            e.target.className = 'fas fa-lock';
+            e.target.classList.remove('fa-lock-open');
+            e.target.classList.add('fa-lock');
             lock_state = 'locked';
             document.getElementById('summary').onmouseenter = (e) => {};
             document.getElementById('summary').onmouseleave = (e) => {};
         }
         else { // unlock
-            document.getElementById('summary').style.bottom = '-125px';
-            e.target.className = 'fas fa-lock-open';
+            if (minimize_state === 'maximized')
+                document.getElementById('summary').style.bottom = '-125px';
+            e.target.classList.remove('fa-lock');
+            e.target.classList.add('fa-lock-open');
+            if (minimize_state === 'maximized') {
+                document.getElementById('summary').onmouseenter = (e) => e.target.style.bottom = '0';
+                document.getElementById('summary').onmouseleave = (e) => e.target.style.bottom = '-125px';
+            }
             lock_state = 'unlocked';
-            document.getElementById('summary').onmouseenter = (e) => e.target.style.bottom = '0';
-            document.getElementById('summary').onmouseleave = (e) => e.target.style.bottom = '-125px';
         }
     });
 
@@ -61,8 +95,6 @@ function slider(value, position) {
   var sliderId      = 'slider'      + position;
   var valueId       = 'value'       + position;
   var proficiencyId = 'proficiency' + position;
-
-  console.log(skills);
 
   // VALUE; i.e., 1-5
   skills.sliders[sliderId][0] = value;   // store into the JS global
