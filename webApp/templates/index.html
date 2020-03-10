@@ -92,18 +92,20 @@
         }
       });
 
-      document.getElementById('switch').addEventListener('click', (e) => {
+      document.getElementById('switch-slider').addEventListener('click', (e) => {
         var c1 = document.getElementById('chart1');
         var c2 = document.getElementById('chart2');
 
-        if (c1.classList.contains('w3-hide')) {
-          c1.classList.remove('w3-hide');
-          c2.classList.add('w3-hide');
+        if (c1.style.display === 'none') {
+          c1.style.display = 'block';
+          c2.style.display = 'none';
         }
         else {
-          c2.classList.remove('w3-hide');
-          c1.classList.add('w3-hide');
+          c2.style.display = 'block';
+          c1.style.display = 'none';
         }
+
+        e.stopPropagation();
       });
     </script>
   </head>
@@ -235,7 +237,7 @@
           <span id="switch-slider"></span>
         </label>
        <canvas id="chart1"></canvas>
-       <canvas id="chart2" class="w3-hide"></canvas>
+       <canvas id="chart2" style="display: none;"></canvas>
       </div>
 
       <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">

@@ -164,6 +164,16 @@ th {
   height: 30px;
 }
 
+/*
+#switch > * {
+  pointer-events: none;
+}
+*/
+
+canvas {
+    margin-top: 25px;
+}
+
 /* hide the default checkbox */
 #switch input {
   opacity: 0;
