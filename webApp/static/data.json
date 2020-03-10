@@ -1,23 +1,94 @@
 {
-    "keywords": {
-        "labels"  : ["HTML, CSS, & JavaScript", "Python", "R", "SQL", "C++"],
-        "dataset" : [
-            {"source": "GitHub Jobs", "data": [10, 20, 30, 40, 50] },
-            {"source": "USA Jobs",    "data": [10, 20, 30, 40, 50] }
-        ]
+    "Artificial Intelligence": {
+        "keywords": {
+            "labels"  : ["HTML, CSS, & JavaScript", "Python", "R", "SQL", "C++"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [10, 20, 30, 40, 50] },
+                {"label": "USA Jobs",    "data": [10, 20, 30, 40, 50] }
+            ]
+        },
+        "pays": {
+            "labels" : ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [30, 40, 50, 60] },
+                {"label": "USA Jobs",    "data": [30, 40, 50, 60] }
+            ]
+        },
+        "locations": {
+            "labels" : ["New York City", "Los Angeles", "Chicago", "Houston", "Phoenix"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [70, 80, 90, 100, 110] },
+                {"label": "USA Jobs",    "data": [70, 80, 90, 100, 110] }
+            ]
+        }
     },
-    "pays": {
-        "labels" : ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"],
-        "dataset" : [
-            {"source": "GitHub Jobs", "data": [30, 40, 50, 60] },
-            {"source": "USA Jobs",    "data": [30, 40, 50, 60] }
-        ]
+    "Deep Learning": {
+        "keywords": {
+            "labels"  : ["HTML, CSS, & JavaScript", "Python", "R", "SQL", "C++"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [10, 20, 30, 40, 50] },
+                {"label": "USA Jobs",    "data": [10, 20, 30, 40, 50] }
+            ]
+        },
+        "pays": {
+            "labels" : ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [30, 40, 50, 60] },
+                {"label": "USA Jobs",    "data": [30, 40, 50, 60] }
+            ]
+        },
+        "locations": {
+            "labels" : ["New York City", "Los Angeles", "Chicago", "Houston", "Phoenix"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [70, 80, 90, 100, 110] },
+                {"label": "USA Jobs",    "data": [70, 80, 90, 100, 110] }
+            ]
+        }
     },
-    "locations": {
-        "labels" : ["New York City", "Los Angeles", "Chicago", "Houston", "Phoenix"],
-        "dataset" : [
-            {"source": "GitHub Jobs", "data": [70, 80, 90, 100, 110] },
-            {"source": "USA Jobs",    "data": [70, 80, 90, 100, 110] }
-        ]
+    "Machine Learning": {
+        "keywords": {
+            "labels"  : ["HTML, CSS, & JavaScript", "Python", "R", "SQL", "C++"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [10, 20, 30, 40, 50] },
+                {"label": "USA Jobs",    "data": [10, 20, 30, 40, 50] }
+            ]
+        },
+        "pays": {
+            "labels" : ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [30, 40, 50, 60] },
+                {"label": "USA Jobs",    "data": [30, 40, 50, 60] }
+            ]
+        },
+        "locations": {
+            "labels" : ["New York City", "Los Angeles", "Chicago", "Houston", "Phoenix"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [70, 80, 90, 100, 110] },
+                {"label": "USA Jobs",    "data": [70, 80, 90, 100, 110] }
+            ]
+        }
+    },
+    "Computer Engineering": {
+        "keywords": {
+            "labels"  : ["HTML, CSS, & JavaScript", "Python", "R", "SQL", "C++"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [10, 20, 30, 40, 50] },
+                {"label": "USA Jobs",    "data": [10, 20, 30, 40, 50] }
+            ]
+        },
+        "pays": {
+            "labels" : ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [30, 40, 50, 60] },
+                {"label": "USA Jobs",    "data": [30, 40, 50, 60] }
+            ]
+        },
+        "locations": {
+            "labels" : ["New York City", "Los Angeles", "Chicago", "Houston", "Phoenix"],
+            "datasets" : [
+                {"label": "GitHub Jobs", "data": [70, 80, 90, 100, 110] },
+                {"label": "USA Jobs",    "data": [70, 80, 90, 100, 110] }
+            ]
+        }
     }
 }

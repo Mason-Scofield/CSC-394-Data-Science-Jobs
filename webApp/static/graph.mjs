@@ -1,23 +1,22 @@
-var chart;
+var color_index = 0
+var colors = [
+    '#EC7063',
+    '#3498DB',
+    '#F7DC6F',
+    '#D2B4DE'
+];
 
-export function graphInit(graphData) {
-    var context = document.getElementById('chart');
+export function graphInit(chart, id, graphData) {
+    var context = document.getElementById(id);
+
+    color_index = 0;
+    graphData.datasets.map(dataset => { dataset['backgroundColor'] = colors[color_index]; ++color_index; })
+
     chart = new Chart(context, {
-        // bar chart
         type: 'bar',
         data: {
             labels: graphData.labels,
-            datasets: [
-            {
-                label: graphData.dataset[0].source,
-                data: graphData.dataset[0].data,
-                backgroundColor: '#82E0AA'
-            },
-            {
-                label: graphData.dataset[1].source,
-                data: graphData.dataset[1].data,
-                backgroundColor: '#3498DB'
-            }]
+            datasets: graphData.datasets
         },
         options: {
             legend: { labels: { fontSize: 15 } },
@@ -40,16 +39,14 @@ export function graphInit(graphData) {
             }
         }
     });
+
+    return chart;
 };
 
-export function drawGraph(graphData) {
-    chart.data.labels = graphData.labels;
-
-    var i = 0;
-    chart.data.datasets.forEach(function(dataset) {
-        dataset.data  = graphData.dataset[i].data;
-        ++i;
-    });
-
+export function drawGraph(chart, graphData) {
+    chart.data.labels  = graphData.labels;
+    color_index = 0;
+    graphData.datasets.map(dataset => { dataset['backgroundColor'] = colors[color_index]; ++color_index; })
+    chart.data.datasets = graphData.datasets;
     chart.update();
 }

@@ -1,3 +1,7 @@
+::selection {
+    background-color: #AEB6BF;
+}
+
 body, h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif; }
 .w3-row-padding img          { margin-bottom: 12px; }
 
@@ -10,7 +14,7 @@ tr:not(:nth-child(1)) { cursor: pointer; }
 
 main { margin-left: 120px; }                                         /* matches the width of the sidebar */
 
-#summary             { position: sticky; bottom: -125px; width: 97.5%; transition: bottom 1s; }
+#summary { position: sticky; bottom: -125px; width: 97%; transition: bottom 1s; }
 
 #minimize {
     position: absolute;
@@ -151,3 +155,44 @@ th {
     font-size: .75em;
     content: " \1F855"
 }
+
+/* the switch is the label, which activates the checkbox */
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+}
+
+/* hide the default checkbox */
+#switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+#switch-slider::before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 30px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + #switch-slider         { background-color: #52BE80; }
+input:focus   + #switch-slider         { box-shadow: 0 0 1px #52BE80; }
+input:checked + #switch-slider::before { transform: translateX(32px); }
