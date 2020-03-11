@@ -6,17 +6,20 @@ app = Flask(__name__)
 app.config['DEBUG'] = True
 
 
-@app.route('/jobs')
-def jobs():
-    # e.g., /jobs?Web=1&Python=1&R=1&SQL=1
+@app.route('/<state>/jobs')
+def jobs(state):
+    # URI-encoded; e.g., /jobs?HTML,CSS,JavaScript=1&Python=1&R=1&SQL=1
+    max_value        = 0
+    max_search_terms = ""
 
-    # extracting query string arguments
-    web_rating    = request.args.get('Web')    # HTML, CSS, & Javascript
-    python_rating = request.args.get('Python')
-    r_rating      = request.args.get('R')
-    sql_rating    = request.args.get('SQL')
+    for arg in request.args:
+        value = int(request.args[arg])
 
-    # postings = get_job_recommendations(5, web_rating, python_rating, r_rating, sql_rating)
+        if value >= max_value:
+            max_value = value
+            max_search_terms += arg if max_search_terms == "" else ("," + arg)
+
+    # postings = get_job_recommendations(state, max_search_terms)
 
     postings = [
         [

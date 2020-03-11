@@ -27,9 +27,18 @@
 
       // for job recommendations
       document.getElementById('refresh').addEventListener('click', function(e) {
-        var sliders = document.getElementsByClassName('slider');
+        var queryString = `/${document.getElementById('locationSelect').value}/jobs?`;
 
-        fetch('/jobs?Web=1&Python=2&R=3&SQL=4')
+        var sliders = document.getElementsByClassName('slider');
+        Array.from(sliders).forEach(elem => {
+          var key = encodeURI(elem.previousElementSibling.innerText.replace('&', '').replace(/\s/g, ''));
+          queryString += key + '=' + elem.value + '&';
+        });
+
+        // since there will be a trailing ampersand
+        queryString = queryString.substring(0, queryString.length - 1);
+
+        fetch(queryString)
           .then(response => response.json())
           .then(data     => updateJobs(data));
       });
@@ -126,14 +135,19 @@
         <i class="fa fa-line-chart w3-xxlarge"></i>
         <p>DATA</p>
       </a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-info w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
     </nav>
 
     <!-- Navbar (hidden on tablets & PCs) -->
     <div class="w3-top w3-hide-large w3-hide-medium">
       <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-        <a href="#" class="w3-bar-item w3-button" style="width: 33.3% !important;">HOME</a>
-        <a href="#skills" class="w3-bar-item w3-button" style="width: 33.3% !important;">SKILLS</a>
-        <a href="#data" class="w3-bar-item w3-button" style="width: 33.3% !important;">DATA</a>
+        <a href="#" class="w3-bar-item w3-button" style="width: 25% !important;">HOME</a>
+        <a href="#skills" class="w3-bar-item w3-button" style="width: 25% !important;">SKILLS</a>
+        <a href="#data" class="w3-bar-item w3-button" style="width: 25% !important;">DATA</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width: 25% !important;">ABOUT</a>
       </div>
     </div>
 
@@ -153,19 +167,19 @@
 
         <div id="slider-container" class="w3-margin-bottom">
           <p style="letter-spacing: 2px;">HTML, CSS, &amp; JavaScript</p>
-          <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 1)">
+          <input type="range" min="1" max="5" value="1" id="slider1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 1)">
           <span class="badge w3-white" id="value1">{% raw %}{{value1}}{% endraw %}</span>
 
           <p style="letter-spacing: 2px;">Python</p>
-          <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 2)">
+          <input type="range" min="1" max="5" value="1" id="slider2" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 2)">
           <span class="badge w3-white" id="value2">{% raw %}{{value2}}{% endraw %}</span>
 
           <p style="letter-spacing: 2px;">R</p>
-          <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 3)">
+          <input type="range" min="1" max="5" value="1" id="slider3" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 3)">
           <span class="badge w3-white" id="value3">{% raw %}{{value3}}{% endraw %}</span>
 
           <p style="letter-spacing: 2px;">SQL</p>
-          <input type="range" min="1" max="5" value="1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 4)">
+          <input type="range" min="1" max="5" value="1" id="slider4" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 4)">
           <span class="badge w3-white" id="value4">{% raw %}{{value4}}{% endraw %}</span>
         </div>
 
@@ -211,7 +225,59 @@
         </div>
 
         <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" style="width: 97%; position: relative;">
-          <i id="refresh" class="fas fa-sync w3-hover-opacity" style="position: absolute; right: 2.5%; font-size: 1.5em; cursor: pointer;"></i>
+          <select id="locationSelect">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select>
+          <i id="refresh" class="fas fa-sync w3-hover-opacity"></i>
           <h3 style="margin-top: 0;">Job postings curated for you:</h3>
           <table class="w3-table w3-table-all w3-hoverable w3-hide" id="table">
             <tr>
@@ -226,7 +292,7 @@
 
       <!-- Data -->
       <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="data">
-        <p class="w3-center w3-xlarge" style="margin-bottom:75px;">Analyzing <span style="color: #FFF;">{{num_jobs}}</span> data science positions from <a href="https://jobs.github.com/" target="_blank" class="links">GitHub Jobs</a> & <a href="https://www.usajobs.gov/" target="_blank" class="links">USAJobs</a>, here are our findings.</p>
+        <p class="w3-center w3-xlarge" style="margin-bottom:75px;">Analyzing <span style="color: #FFF;">{{num_jobs}}</span> data science positions from <a href="https://jobs.github.com/" target="_blank" class="links w3-hover-text-green">GitHub Jobs</a> & <a href="https://www.usajobs.gov/" target="_blank" class="links w3-hover-text-green">USAJobs</a>, here are our findings.</p>
         <select id="chartSelect">
           <option value="keywords">Skills</option>
           <option value="pays">Pay</option>
@@ -240,9 +306,37 @@
        <canvas id="chart2" style="display: none;"></canvas>
       </div>
 
+      <!-- About -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <h3 class="w3-padding-16 w3-text-light-grey w3-margin-top">About</h3>
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey" style="width: 97%; position: relative;">
+          <h3  class="w3-padding" style="margin-top: 0; text-align: left">DePaul University 2020 &mdash; Capstone</h3>
+          <p><b>Project Description:</b> Create a dashboard tool which analyzes data science job openings, pulling data from live sources.</p>
+          <div class="w3-section w3-row">
+            <div class="w3-section w3-quarter">
+              <h3>Tools</h3>
+              <img src="../static/GitHub.png" title="GitHub"><br><img src="../static/PyCharm.png" title="PyCharm">
+            </div>
+            <div class="w3-section w3-quarter">
+              <h3>Languages</h3>
+              <img src="../static/Python.png" title="Python"><br><img src="../static/JavaScript.png" title="JavaScript">
+            </div>
+            <div class="w3-section w3-quarter">
+              <h3>Front-end</h3>
+              <img src="../static/W3Schools.png" title="W3.CSS & W3.JS" style="margin-top: 35px;"><br><img src="../static/Chart.js.png" title="Chart.js" style="margin-top: 40px;">
+            </div>
+            <div class="w3-section w3-quarter">
+              <h3>Back-end</h3>
+              <img src="../static/Flask.png" title="Flask"><br><img src="../static/AmazonDynamoDB.png" title="Amazon DynamoDB">
+            </div>
+          </div>
+          <p class="w3-padding-32" style="padding-bottom: 0 !important;">Ameen Alrehn &middot; Mark Badel &middot; Brandon Hernandez &middot; Christian Kleinvehn &middot; Menasas Leal &middot; Mason Scofield</p>
+          <a href="https://github.com/Mason-Scofield/CSC-394-Data-Science-Jobs" target="_blank" class="w3-text-black w3-xlarge links w3-hover-text-green" style="display: inline-block; padding-bottom: 20px">Our Repository</a>
+        </div>
+      </div>
+
       <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">W3.CSS</a>
-        &amp; <a href="https://www.w3schools.com/w3js/default.asp" target="_blank" class="w3-hover-text-green">W3.JS</a>.</p>
+        <p class="w3-small">Favicon made by Pixel Perfect from <a href="https://www.flaticon.com/" target="_blank" class="w3-hover-text-green">www.flaticon.com</a>.</p>
       </footer>
     </main>
   </body>
