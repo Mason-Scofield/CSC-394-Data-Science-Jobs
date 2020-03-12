@@ -31,6 +31,8 @@ main { margin-left: 120px; }                                         /* matches 
     font-size: 1.5em;
 }
 
+#minimize, #lock { transition: opacity .3s; }
+
 select       { color: #FFF; background-color: #000; font-size: 1.25em; }
 select:focus { outline: none; }
 

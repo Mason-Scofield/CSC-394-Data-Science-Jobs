@@ -10,7 +10,31 @@ function valid_slider(value) {
 }
 
 window.addEventListener('load', function() {
-     document.getElementById('summary').onmouseenter = (e) => e.target.style.bottom = '0';
+    var summary = document.getElementById('summary');
+    var rect    = summary.getBoundingClientRect();
+
+    var hide = rect.top    >= 0                  &&
+               rect.left   >= 0                  &&
+               rect.bottom <= window.innerHeight &&
+               rect.right  <= window.innerWidth;
+
+    var observer = new IntersectionObserver(function() {
+        if (hide) {
+          document.getElementById('minimize').style.opacity = '0';
+          document.getElementById('lock').style.opacity     = '0';
+          hide = false;
+        }
+        else {
+          document.getElementById('minimize').style.opacity = '1';
+          document.getElementById('lock').style.opacity     = '1';
+          hide = true;
+        }
+    }, { threshold: 1.0 });
+    observer.observe(summary);
+});
+
+window.addEventListener('load', function() {
+     document.getElementById('summary').onmouseenter = (e) => e.target.style.bottom = '-5px';
      document.getElementById('summary').onmouseleave = (e) => e.target.style.bottom = '-125px';
 
      // minimize state machine
@@ -30,7 +54,7 @@ window.addEventListener('load', function() {
             e.target.classList.add('fa-window-minimize');
             e.target.style.top = '2%';
             if (lock_state === 'unlocked') {
-                document.getElementById('summary').onmouseenter = (e) => e.target.style.bottom = '0';
+                document.getElementById('summary').onmouseenter = (e) => e.target.style.bottom = '-5px';
                 document.getElementById('summary').onmouseleave = (e) => e.target.style.bottom = '-125px';
             }
             minimize_state = 'maximized';
@@ -40,7 +64,7 @@ window.addEventListener('load', function() {
     // lock state machine
     document.getElementById('lock').addEventListener('click', function(e) {
         if (lock_state === 'unlocked') { // lock
-            document.getElementById('summary').style.bottom = '0';
+            document.getElementById('summary').style.bottom = '-5px';
             e.target.classList.remove('fa-lock-open');
             e.target.classList.add('fa-lock');
             lock_state = 'locked';
@@ -53,7 +77,7 @@ window.addEventListener('load', function() {
             e.target.classList.remove('fa-lock');
             e.target.classList.add('fa-lock-open');
             if (minimize_state === 'maximized') {
-                document.getElementById('summary').onmouseenter = (e) => e.target.style.bottom = '0';
+                document.getElementById('summary').onmouseenter = (e) => e.target.style.bottom = '-5px';
                 document.getElementById('summary').onmouseleave = (e) => e.target.style.bottom = '-125px';
             }
             lock_state = 'unlocked';
