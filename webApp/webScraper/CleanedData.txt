@@ -1,0 +1,60 @@
+JobRole: Computer Engineer, AST, Software Systems
+Company: Goddard Space Flight Center
+JobType: Computer Engineering
+Pay: 121316.0
+Location: Greenbelt, Maryland
+-----------------------
+JobRole: Senior Software Developer
+Company: U.S. Tax Court
+JobType: Information Technology Management
+Pay: 142701.0
+Location: Washington, District of Columbia
+-----------------------
+JobRole: Software Developer/Engineer
+Company: Congressional Budget Office
+JobType: Computer Operation
+Pay: 95000.0
+Location: Washington, District of Columbia
+-----------------------
+JobRole: IT SPECIALIST (APPLICATION SOFTWARE)
+Company: Naval Supply Systems Command
+JobType: Information Technology Management
+Pay: 77548.0
+Location: Naval Support Activity, Mechanicsburg, Pennsylvania
+-----------------------
+JobRole: Information Technology Specialist (Applications Software)
+Company: US Army Civilian Human Resources Agency
+JobType: Information Technology Management
+Pay: 92088.0
+Location: Rock Island, Illinois
+-----------------------
+JobRole: Information Technology Specialist (Application Software)
+Company: U.S. Army Joint Munitions Command
+JobType: Information Technology Management
+Pay: 77442.0
+Location: Rock Island, Illinois
+-----------------------
+JobRole: INFORMATION TECHNOLOGY SPECIALIST (APPLICATION SOFTWARE)
+Company: U.S. Pacific Fleet, Commander in Chief
+JobType: Information Technology Management
+Pay: 84045.0
+Location: Bremerton, Washington
+-----------------------
+JobRole: Information Technology Specialist (Applications Software)
+Company: U.S. Army Cyber Command
+JobType: Information Technology Management
+Pay: 86335.0
+Location: Adams County, Pennsylvania
+-----------------------
+JobRole: Supervisory IT Specialist (Policy Planning/Application Software)
+Company: U.S. Army Africa/Southern European Task Force (USARAF/SETAF)
+JobType: Information Technology Management
+Pay: 92977.0
+Location: Vicenza, Italy
+-----------------------
+JobRole: Lead Information Technology Specialist (Applications Software)
+Company: Deputy Assistant Secretary for Information and Technology
+JobType: Information Technology Management
+Pay: 99170.0
+Location: Philadelphia, Pennsylvania
+-----------------------
