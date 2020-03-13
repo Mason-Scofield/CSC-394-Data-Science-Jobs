@@ -103,7 +103,7 @@ def query_usa(state, role, tech1):
 
     a = Attr('State').eq(state) & Attr('JobRole').contains(role)
 
-    for tech1 in tech.split(','):
+    for tech in tech1.split(','):
         a = a & Attr('Technology').contains(tech1)
 
     data = table.scan(
@@ -128,6 +128,8 @@ def query_github(state, role, tech):
     return data['Items']
 
 
+# functions to test above functions
+
 def pop_test():
     count = 0
     skills1 = ['red', 'blue', 'yellow']
@@ -141,7 +143,7 @@ def pop_test():
         tech = random.choice([tech1, tech2])
 
         dynamoDB.put_item(
-            TableName='GitHubJobs',
+            TableName='USAJobs',
             Item={
                 'ID': {
                     'S': 's' + str(count)
@@ -195,7 +197,23 @@ def query_test(state, role, tech):
         print(x)
 
 
+# function to give count of items in database
+
+
+def count():
+    t = dynamo_db.Table('GitHubJobs')
+    t2 = dynamo_db.Table('USAJobs')
+    table1 = t.scan()
+    table2 = t2.scan()
+    cnt = int(table1['Count']) + int(table2['Count'])
+
+    return cnt
+
+
 # pop_test()
 
-query_test('IL', 'entry level', 'red')
+# count()
+
+
+# query_test('IL', 'entry level', 'red')
 
