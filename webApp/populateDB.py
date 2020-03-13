@@ -17,12 +17,11 @@ def getJSON(argv):
         print("Usage: python3 populateDB.py <token> <email> <search_param>")
     else:
         token = argv[0]
-
         email = argv[1]
         search_param = argv[2]
 
         Scrape.usajob(token,
-                      email, 'PositionTitle', search_param)
+                      email, 'Keyword', search_param)
         Scrape.github(search_param)
     return ['x', 'y']
 

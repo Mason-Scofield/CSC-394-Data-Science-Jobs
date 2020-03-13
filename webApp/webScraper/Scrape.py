@@ -2,6 +2,70 @@ import requests
 import json
 
 
+def parse_usa_data(d):
+    data = []
+    id = d['MatchedObjectId']
+    for i in range(len(d['MatchedObjectDescriptor']['PositionLocation'])):
+        temp_dict = {}
+        temp_dict['ID'] = id + str(i)
+        temp_dict['JobRole'] = d['MatchedObjectDescriptor']['PositionTitle']
+        temp_dict['CompanyName'] = d['MatchedObjectDescriptor']['OrganizationName']
+        temp_dict['JobType'] = d['MatchedObjectDescriptor']['JobCategory'][0]['Name']
+        temp_dict['Pay'] = str((float(d['MatchedObjectDescriptor']['PositionRemuneration'][0]['MinimumRange']) +
+                                float(d['MatchedObjectDescriptor']['PositionRemuneration'][0]['MaximumRange'])) / 2)
+        temp_dict['City'] = d['MatchedObjectDescriptor']['PositionLocation'][i]['LocationName'][0:d['MatchedObjectDescriptor']['PositionLocation'][i]['LocationName'].find(',')]
+        temp_dict['State'] = d['MatchedObjectDescriptor']['PositionLocation'][i]['LocationName'][
+                             d['MatchedObjectDescriptor']['PositionLocation'][i]['LocationName'].find(',') + 1:].replace(' ',
+                                                                                              '')
+        temp_dict['Skills'] = get_skills(
+            (d['MatchedObjectDescriptor']['QualificationSummary'] + d['MatchedObjectDescriptor']['UserArea']['Details']['JobSummary']).lower())
+        temp_dict['Technology'] = get_techs(
+            (d['MatchedObjectDescriptor']['QualificationSummary'] + d['MatchedObjectDescriptor']['UserArea']['Details']['JobSummary']).lower())
+        temp_dict['URL'] = d['MatchedObjectDescriptor']['ApplyURI'][0]
+        data.append(temp_dict)
+    return data
+
+
+# This is where I check whether or not there is multiple locations for the job posting
+def check_for_multiple(data):
+    if data == 'Multiple Locations':
+        return True
+    return False
+
+
+# This looks for keywords in the job posting summaries and returns a list of the ones it found
+def get_skills(data):
+    keywords = ['linux', 'mac', 'windows',
+                'machine learning', 'artificial intelligence', 'algorithms',
+                'analysis', 'statistic', 'computer science', 'math', 'deep learning',
+                'software development', 'software engineering', 'data engineering',
+                'neural networks', 'communications', 'creativity', 'resilience']
+    found_keywords = []
+    for word in keywords:
+        if word in data:
+            found_keywords.append(word)
+    if len(found_keywords) == 0:
+        found_keywords.append('')
+    return found_keywords
+
+
+# This looks for keywords in the job posting summaries and returns a list of the ones it found
+def get_techs(data):
+    keywords = ['python', 'sql', 'spark',
+                'hadoop', 'aws', 'tensorflow',
+                'scala', 'c++', 'css',
+                'excel', 'azure', 'java',
+                'pytorch', 'git', 'c#',
+                'docker', 'nosql', 'javascript',
+                'html', 'keras', 'mongodb']
+    found_keywords = []
+    for word in keywords:
+        if word in data:
+            found_keywords.append(word)
+    if len(found_keywords) == 0:
+        found_keywords.append('')
+    return found_keywords
+
 
 def usajob(token, email, parameter, search):
     '''
@@ -27,7 +91,8 @@ def usajob(token, email, parameter, search):
     '''
 
     if usajob:
-        url = 'https://data.usajobs.gov/api/Search?' + parameter + '=' + search.replace(' ', '%20')
+        url = 'https://data.usajobs.gov/api/Search?ResultsPerPage=500&' + parameter + '=' + search.replace(' ',
+                                                                                                           '%20').lower()
         headers = {'Host': 'data.usajobs.gov', 'User-Agent': email, 'Authorization-Key': token}
 
         r = requests.get(url, headers=headers)
@@ -40,23 +105,13 @@ def usajob(token, email, parameter, search):
         outfile.write(json.dumps(data, indent=2))
         outfile.close()
 
-
         cleaned_data = []
         dict = {}
+        temp_dict = {}
         for d in data:
-            d = d['MatchedObjectDescriptor']
-            temp_dict = {}
-            temp_dict['JobRole'] = d['PositionTitle']
-            temp_dict['CompanyName'] = d['OrganizationName']
-            temp_dict['JobType'] = d['JobCategory'][0]['Name']
-            temp_dict['Pay'] = d['PositionRemuneration'][0]['MinimumRange']
-            temp_dict['City'] = d['PositionLocationDisplay'][0:d['PositionLocationDisplay'].find(',')]
-            temp_dict['State'] = d['PositionLocationDisplay'][d['PositionLocationDisplay'].find(',') + 1:].replace(' ', '')
-            temp_dict['Experience'] = ''
-            temp_dict['Skills'] = ''
-            # tempDict['Qualifications'] = d['QualificationSummary']
-            cleaned_data.append(temp_dict)
+            temp_dict += parse_usa_data(d)
 
+        cleaned_data.append(temp_dict)
         outfile = open('usajob_data.json', "w")
         dict = cleaned_data
         json.dump(dict, outfile, indent=2)
@@ -64,29 +119,31 @@ def usajob(token, email, parameter, search):
 
 
 def github(description):
-    url = 'https://jobs.github.com/positions.json?description=' + description.replace(' ', '%20')
-    r = requests.get(url)
-    data = r.json()
-    outfile = open("github_raw.json", "w")
-    json.dump(data, outfile, indent=2)
-    outfile.close()
-
     cleaned_data = []
-    dict = {}
-    for d in data:
-        temp_dict = {}
-        temp_dict['JobRole'] = d['title']
-        temp_dict['CompanyName'] = d['company']
-        temp_dict['JobType'] = description
-        temp_dict['Pay'] = ''
-        temp_dict['City'] = d['location'][0:d['location'].find(',')]
-        temp_dict['State'] = d['location'][d['location'].find(',')+1:].replace(' ', '')
-        temp_dict['Experience'] = ''
-        temp_dict['Skills'] = ''
-        cleaned_data.append(temp_dict)
+    for i in range(10):
+        url = 'https://jobs.github.com/positions.json?Page=' + str(i) + '&description=' + description.replace(' ',
+                                                                                                              '%20')
+        r = requests.get(url)
+        data = r.json()
+        outfile = open("github_raw.json", "w")
+        json.dump(data, outfile, indent=2)
+        outfile.close()
 
+        for d in data:
+            temp_dict = {}
+            temp_dict['ID'] = d['id']
+            temp_dict['JobRole'] = d['title']
+            temp_dict['CompanyName'] = d['company']
+            temp_dict['JobType'] = description
+            temp_dict['Pay'] = ''
+            temp_dict['City'] = d['location'][0:d['location'].find(',')]
+            temp_dict['State'] = d['location'][d['location'].find(',') + 1:].replace(' ', '')
+            temp_dict['Skills'] = get_skills(d['description'].lower())
+            temp_dict['Technology'] = get_techs(d['description'].lower())
+            temp_dict['URL'] = d['url']
+            cleaned_data.append(temp_dict)
+    dict = {}
     outfile = open("github_data.json", "w")
     dict = cleaned_data
     json.dump(dict, outfile, indent=2)
     outfile.close()
-
