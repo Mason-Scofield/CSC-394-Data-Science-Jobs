@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
-import json
-import random # JUST FOR TESTING
+import json, random, os
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -147,4 +146,5 @@ def index():
                                          locations_source = locations_source,
                                          keywords_skill   = keywords_skill,
                                          pays_skill       = pays_skill,
-                                         locations_skill  = locations_skill)
+                                         locations_skill  = locations_skill,
+                                        secret = os.getenv("AWS_KEY"))
