@@ -96,7 +96,7 @@ def pop_usa_jobs_table():
         )
 
 
-# TODO query with param state, role ie. entry level or junior, top 2 tech
+# query with param state, role ie. entry level or junior, top 2 tech
 
 def query_usa(state, role, tech1, tech2):
     table = dynamo_db.Table('USAJobs')
