@@ -41,20 +41,30 @@ def countLocation(data):
         'ohio': 0,
         'oklahoma': 0,
         'oregon': 0,
-        'Pennsylvania': 0,
-        'Rhode Island': 0,
-        'South Carolina': 0,
-        'South Dakota': 0,
-        'Tennessee': 0,
-        'Texas': 0,
-        'Utah': 0,
-        'Virginia': 0,
-        'Vermont': 0,
-        'Washington': 0,
-        'Wisconsin': 0,
-        'West Virginia': 0,
-        'Wyoming': 0
+        'pennsylvania': 0,
+        'rhode island': 0,
+        'south carolina': 0,
+        'south dakota': 0,
+        'tennessee': 0,
+        'texas': 0,
+        'utah': 0,
+        'virginia': 0,
+        'vermont': 0,
+        'washington': 0,
+        'wisconsin': 0,
+        'west Virginia': 0,
+        'wyoming': 0
     }
+
+    for d in data:
+        state = d['State'].lower()
+        if state in states:
+            states[state] += 1
+    res = ""
+    for key, value in sorted(states.items(), key=lambda item: item[1], reverse=True):
+        if key != '':
+            res += ("%s: %s" % (key, value) + "\n")
+    return res
 
 
 def countPay(data):
@@ -67,9 +77,9 @@ def countPay(data):
         elif 50000 < num <= 75000:
             res["50,000-75,000"] += 1
         elif 75001 <= num <= 100000:
-             res["75,001-100,000"] += 1
+            res["75,001-100,000"] += 1
         else:
-             res[">100,000"] += 1
+            res[">100,000"] += 1
     return res
 
 
@@ -130,6 +140,12 @@ def main():
     outfile = open(job_type + "pays.txt", "w")
     outfile.write(str(countPay(usa_data)))
     outfile.close()
+
+    outfile = open(job_type + "locations.txt", "w")
+    outfile.write("Locations for USAJOBS DATA:\n" + countLocation(usa_data))
+    outfile.write("\nLocations for GITHUB DATA:\n" + countLocation(github_data))
+    outfile.close()
+
 
 if __name__ == '__main__':
     main()

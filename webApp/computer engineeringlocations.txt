@@ -1,0 +1,105 @@
+Locations for USAJOBS DATA:
+california: 688
+florida: 473
+virginia: 432
+texas: 358
+maryland: 265
+washington: 232
+georgia: 210
+pennsylvania: 207
+colorado: 173
+illinois: 162
+ohio: 151
+missouri: 141
+massachusetts: 133
+arizona: 119
+hawaii: 117
+michigan: 112
+alaska: 104
+oklahoma: 98
+louisiana: 95
+mississippi: 95
+indiana: 84
+minnesota: 77
+tennessee: 76
+alabama: 75
+connecticut: 75
+nebraska: 69
+nevada: 67
+maine: 66
+kentucky: 65
+oregon: 61
+wisconsin: 60
+kansas: 58
+iowa: 51
+idaho: 50
+utah: 49
+arkansas: 38
+wyoming: 34
+montana: 31
+delaware: 22
+vermont: 10
+district of columbia: 0
+north carolina: 0
+north dakota: 0
+new hampshire: 0
+new jersey: 0
+new mexico: 0
+new york: 0
+rhode island: 0
+south carolina: 0
+south dakota: 0
+west Virginia: 0
+
+Locations for GITHUB DATA:
+colorado: 10
+texas: 10
+alaska: 0
+alabama: 0
+arkansas: 0
+arizona: 0
+california: 0
+connecticut: 0
+district of columbia: 0
+delaware: 0
+florida: 0
+georgia: 0
+hawaii: 0
+iowa: 0
+idaho: 0
+illinois: 0
+indiana: 0
+kansas: 0
+kentucky: 0
+louisiana: 0
+massachusetts: 0
+maryland: 0
+maine: 0
+michigan: 0
+minnesota: 0
+missouri: 0
+mississippi: 0
+montana: 0
+north carolina: 0
+north dakota: 0
+nebraska: 0
+new hampshire: 0
+new jersey: 0
+new mexico: 0
+nevada: 0
+new york: 0
+ohio: 0
+oklahoma: 0
+oregon: 0
+pennsylvania: 0
+rhode island: 0
+south carolina: 0
+south dakota: 0
+tennessee: 0
+utah: 0
+virginia: 0
+vermont: 0
+washington: 0
+wisconsin: 0
+west Virginia: 0
+wyoming: 0
