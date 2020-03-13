@@ -19,15 +19,19 @@ window.addEventListener('load', function() {
                rect.right  <= window.innerWidth;
 
     var observer = new IntersectionObserver(function() {
+        var top = summary.getBoundingClientRect().top;
         if (hide) {
           document.getElementById('minimize').style.opacity = '0';
           document.getElementById('lock').style.opacity     = '0';
           hide = false;
         }
         else {
-          document.getElementById('minimize').style.opacity = '1';
-          document.getElementById('lock').style.opacity     = '1';
-          hide = true;
+            if (top > 0) {
+              document.getElementById('minimize').style.opacity = '1';
+              document.getElementById('lock').style.opacity     = '1';
+              // hide = true;
+            }
+            hide = true;
         }
     }, { threshold: 1.0 });
     observer.observe(summary);
@@ -39,6 +43,10 @@ window.addEventListener('load', function() {
 
      // minimize state machine
      document.getElementById('minimize').addEventListener('click', function(e) {
+
+        console.log(lock_state);
+        console.log(minimize_state);
+
         if (minimize_state === 'maximized') { // not hidden
             document.getElementById('summary').style.position = 'relative';
             e.target.classList.remove('fa-window-minimize');

@@ -12,14 +12,22 @@ def jobs(state):
     max_value        = 0
     max_search_terms = ""
 
+    total = 0
+
     for arg in request.args:
         value = int(request.args[arg])
+        total += value
 
         if value >= max_value:
             max_value = value
             max_search_terms += arg if max_search_terms == "" else ("," + arg)
 
-    # postings = get_job_recommendations(state, max_search_terms)
+    role = 'Entry-level'
+    if   total >= 16: role = 'Senior-level'
+    elif total >= 10: role = 'Junior-level'
+
+    # e.g., state = 'IL'; max_search_terms = 'HTML,CSS,Javascript'
+    # postings = get_job_recommendations(state, role, max_search_terms)
 
     postings = [
         [
