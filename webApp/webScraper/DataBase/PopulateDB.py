@@ -98,26 +98,32 @@ def pop_usa_jobs_table():
 
 # query with param state, role ie. entry level or junior, top 2 tech
 
-def query_usa(state, role, tech1, tech2):
+def query_usa(state, role, tech1):
     table = dynamo_db.Table('USAJobs')
-    print(table)
+
+    a = Attr('State').eq(state) & Attr('JobRole').contains(role)
+
+    for tech1 in tech.split(','):
+        a = a & Attr('Technology').contains(tech1)
+
     data = table.scan(
-        TableName='GitHubJobs',
-        FilterExpression=Attr('State').eq(state) & Attr('JobRole').contains(role)
-        & Attr('Technology').contains(tech1)
-        & Attr('Technology').contains(tech2)
+        TableName='USAJobs',
+        FilterExpression=a
     )
     return data['Items']
 
 
-def query_github(state, role, tech1, tech2):
+def query_github(state, role, tech):
     table = dynamo_db.Table('GitHubJobs')
-    print(table)
+
+    a = Attr('State').eq(state) & Attr('JobRole').contains(role)
+
+    for tech1 in tech.split(','):
+        a = a & Attr('Technology').contains(tech1)
+
     data = table.scan(
         TableName='GitHubJobs',
-        FilterExpression=Attr('State').eq(state) & Attr('JobRole').contains(role)
-        & Attr('Technology').contains(tech1)
-        & Attr('Technology').contains(tech2)
+        FilterExpression=a
     )
     return data['Items']
 
@@ -172,13 +178,17 @@ def pop_test():
         count = count + 1
 
 
-def query_test(state, role, tech1, tech2):
+def query_test(state, role, tech):
     table = dynamo_db.Table('GitHubJobs')
+
+    a = Attr('State').eq(state) & Attr('JobRole').contains(role)
+
+    for tech1 in tech.split(','):
+        a = a & Attr('Technology').contains(tech1)
+
     data = table.scan(
         TableName='GitHubJobs',
-        FilterExpression=Attr('State').eq(state) & Attr('JobRole').contains(role)
-        & Attr('Technology').contains(tech1)
-        & Attr('Technology').contains(tech2)
+        FilterExpression=a
     )
     print(data['Count'])
     for x in data['Items']:
@@ -186,5 +196,6 @@ def query_test(state, role, tech1, tech2):
 
 
 # pop_test()
-# query_test('IL', 'entry level', 'red', 'green')
+
+query_test('IL', 'entry level', 'red')
 
