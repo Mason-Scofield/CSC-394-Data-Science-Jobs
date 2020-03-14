@@ -1636,7 +1636,7 @@
     "Pay": "",
     "City": "Zuric",
     "State": "Zurich",
-    "Skills": [
+    "Skills":  [
       "linux",
       "mac",
       "machine learning",
