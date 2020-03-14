@@ -1,0 +1,89 @@
+Technologies for: computer engineering
+USAJOBS DATA:
+git: 493
+java: 23
+aws: 17
+excel: 17
+html: 13
+scala: 2
+sql: 1
+c++: 1
+css: 1
+azure: 1
+python: 0
+spark: 0
+hadoop: 0
+tensorflow: 0
+pytorch: 0
+c#: 0
+docker: 0
+nosql: 0
+javascript: 0
+keras: 0
+mongodb: 0
+
+GITHUB DATA:
+excel: 44
+java: 42
+git: 40
+sql: 38
+javascript: 36
+python: 30
+css: 26
+html: 24
+aws: 16
+c#: 14
+scala: 10
+docker: 10
+nosql: 10
+c++: 6
+azure: 6
+mongodb: 4
+spark: 2
+hadoop: 0
+tensorflow: 0
+pytorch: 0
+keras: 0
+
+------------------------------------
+
+Skills for: computer engineering
+USAJOBS DATA:
+math: 1827
+analysis: 1725
+computer science: 1639
+statistic: 842
+mac: 610
+algorithms: 406
+communications: 305
+software development: 184
+software engineering: 104
+windows: 4
+creativity: 2
+machine learning: 1
+resilience: 1
+linux: 0
+artificial intelligence: 0
+deep learning: 0
+data engineering: 0
+neural networks: 0
+
+GITHUB DATA:
+computer science: 68
+software engineering: 28
+software development: 20
+analysis: 16
+algorithms: 14
+math: 12
+mac: 10
+statistic: 8
+machine learning: 6
+linux: 4
+windows: 4
+data engineering: 2
+communications: 2
+creativity: 2
+resilience: 2
+artificial intelligence: 0
+deep learning: 0
+neural networks: 0
