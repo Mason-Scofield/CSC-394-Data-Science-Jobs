@@ -17,13 +17,13 @@ dynamo_db = boto3.resource(
 
 
 f1 = json.loads(open('Artificial_intelligence_usajob_data.json').read())
-t1 = json.loads(open('Artificial_intelligence_github_data.json').read())
+t1 = json.loads(open('artificial_intelligience_github_data.json').read())
 f2 = json.loads(open('Computer_engineering_usajob_data.json').read())
-t2 = json.loads(open('Computer_engineering_github_data.json').read())
+t2 = json.loads(open('computer_engineering_github_data.json').read())
 f3 = json.loads(open('Deep_learning_usajob_data.json').read())
-t3 = json.loads(open('Deep_learning_github_data.json').read())
+t3 = json.loads(open('deep_learning_github_data.json').read())
 f4 = json.loads(open('Machine_learning_usajob_data.json').read())
-t4 = json.loads(open('Machine_learning_github_data.json').read())
+t4 = json.loads(open('machine_learning_github_data.json').read())
 f_all = [f1, f2, f3, f4]
 t_all = [t1, t2, t3, t4]
 
@@ -52,8 +52,7 @@ def pop_git_table():
     c_nter = 0
     for y in t_all:
         for job in y:
-            if c_nter % 10 == 0:
-                print(c_nter)
+            if c_nter % 10 ==0:
                 time.sleep(1)
             dynamoDB.put_item(
                 TableName='GitHubJobs',
@@ -98,7 +97,6 @@ def pop_usa_jobs_table():
     for y in f_all:
         for job in y:
             if c_nter % 10 == 0:
-                print(c_nter)
                 time.sleep(1)
             dynamoDB.put_item(
                 TableName='USAJobs',
@@ -248,18 +246,21 @@ def count():
     usa_table = dynamo_db.Table('USAJobs')
     table1 = git_table.scan()
     table2 = usa_table.scan()
+    data1 = table1['Items']
+    data2 = table2['Items']
     print(table1['Count'])
     print(table2['Count'])
-    cnt = int(table1['Count']) + int(table2['Count'])
+    while 'LastEvaluatedKey' in table1:
+        table1 = git_table.scan(ExclusiveStartKey=table1['LastEvaluatedKey'])
+        data1.extend(table1['Items'])
+
+    while 'LastEvaluatedKey' in table2:
+        table2 = usa_table.scan(ExclusiveStartKey=table2['LastEvaluatedKey'])
+        data2.extend(table2['Items'])
+    cnt = len(data1) + len(data2)
 
     return cnt
 
 
-# pop_test()
+pop_git_table()
 
-# query_test('IL', 'entry level', 'red')
-
-# pop_git_table()
-print(count())
-# pop_git_table()
-# pop_usa_jobs_table()
