@@ -16,110 +16,126 @@ dynamo_db = boto3.resource(
 )
 
 
-# f = open('webApp/usajob_data.json')
-t = json.loads(open('github_data.json').read())
-cnt = 0
-cnt_p = 0
-for jobs in t:
-    if jobs.get('Technology') == ['']:
-        jobs['Technology'] = ['none']
-    if jobs.get('Skills') == ['']:
-        jobs['Skills'] = ['none']
-    if jobs.get('Pay') == '':
-        jobs['Pay'] = '0'
-        cnt_p = cnt_p + 1
+f1 = json.loads(open('Artificial_intelligence_usajob_data.json').read())
+t1 = json.loads(open('Artificial_intelligence_github_data.json').read())
+f2 = json.loads(open('Computer_engineering_usajob_data.json').read())
+t2 = json.loads(open('Computer_engineering_github_data.json').read())
+f3 = json.loads(open('Deep_learning_usajob_data.json').read())
+t3 = json.loads(open('Deep_learning_github_data.json').read())
+f4 = json.loads(open('Machine_learning_usajob_data.json').read())
+t4 = json.loads(open('Machine_learning_github_data.json').read())
+f_all = [f1, f2, f3, f4]
+t_all = [t1, t2, t3, t4]
 
-    cnt = cnt+1
 
+for x in f_all:
+    for jobs in x:
+        if jobs.get('Technology') == ['']:
+            jobs['Technology'] = ['none']
+        if jobs.get('Skills') == ['']:
+            jobs['Skills'] = ['none']
+        if jobs.get('Pay') == '':
+            jobs['Pay'] = '0'
+
+
+for x in t_all:
+    for jobs in x:
+        if jobs.get('Technology') == ['']:
+            jobs['Technology'] = ['none']
+        if jobs.get('Skills') == ['']:
+            jobs['Skills'] = ['none']
+        if jobs.get('Pay') == '':
+            jobs['Pay'] = '0'
 
 
 def pop_git_table():
     c_nter = 0
-
-    for job in t:
-        if c_nter % 10 == 0:
-            print(c_nter)
-            time.sleep(1)
-        dynamoDB.put_item(
-            TableName='GitHubJobs',
-            Item={
-                'ID': {
-                    'S': job.get('ID')
-                },
-                'JobRole': {
-                    'S': job.get('JobRole')
-                },
-                'CompanyName': {
-                    'S': job.get('CompanyName')
-                },
-                'JobType': {
-                    'S': job.get('JobType')
-                },
-                'Pay': {
-                    'S': job.get('Pay')
-                },
-                'City': {
-                    'S': job.get('City')
-                },
-                'State': {
-                    'S': job.get('State')
-                },
-                'Skills': {
-                   'SS': job['Skills']
-                },
-                'Technology': {
-                   'SS': job['Technology']
-                },
-                'URL': {
-                    'S': job.get('URL')
+    for y in t_all:
+        for job in y:
+            if c_nter % 10 == 0:
+                print(c_nter)
+                time.sleep(1)
+            dynamoDB.put_item(
+                TableName='GitHubJobs',
+                Item={
+                    'ID': {
+                        'S': job.get('ID')
+                    },
+                    'JobRole': {
+                        'S': job.get('JobRole')
+                    },
+                    'CompanyName': {
+                        'S': job.get('CompanyName')
+                    },
+                    'JobType': {
+                        'S': job.get('JobType')
+                    },
+                    'Pay': {
+                        'S': job.get('Pay')
+                    },
+                    'City': {
+                        'S': job.get('City')
+                    },
+                    'State': {
+                        'S': job.get('State')
+                    },
+                    'Skills': {
+                        'SS': job['Skills']
+                    },
+                    'Technology': {
+                        'SS': job['Technology']
+                    },
+                    'URL': {
+                        'S': job.get('URL')
+                    }
                 }
-            }
-        )
-        c_nter= c_nter+1
+            )
+            c_nter = c_nter + 1
 
 
 def pop_usa_jobs_table():
     c_nter= 0
-    for job in t:
-        if c_nter % 10 == 0:
-
-            time.sleep(1)
-        dynamoDB.put_item(
-            TableName='USAJobs',
-            Item={
-                'ID': {
-                    'S': job['ID']
-                },
-                'JobRole': {
-                    'S': job['JobRole']
-                },
-                'CompanyName': {
-                    'S': job['CompanyName']
-                },
-                'JobType': {
-                    'S': job['JobType']
-                },
-                'Pay': {
-                    'S': job['Pay']
-                },
-                'City': {
-                    'S': job['City']
-                },
-                'State': {
-                    'S': job['State']
-                },
-                'Skills': {
-                   'SS': job['Skills']
-                },
-                'Technology': {
-                   'SS': job['Technology']
-                },
-                'URL': {
-                    'S': job['URL']
+    for y in f_all:
+        for job in y:
+            if c_nter % 10 == 0:
+                print(c_nter)
+                time.sleep(1)
+            dynamoDB.put_item(
+                TableName='USAJobs',
+                Item={
+                    'ID': {
+                        'S': job['ID']
+                    },
+                    'JobRole': {
+                        'S': job['JobRole']
+                    },
+                    'CompanyName': {
+                        'S': job['CompanyName']
+                    },
+                    'JobType': {
+                        'S': job['JobType']
+                    },
+                    'Pay': {
+                        'S': job['Pay']
+                    },
+                    'City': {
+                        'S': job['City']
+                    },
+                    'State': {
+                        'S': job['State']
+                    },
+                    'Skills': {
+                        'SS': job['Skills']
+                    },
+                    'Technology': {
+                        'SS': job['Technology']
+                    },
+                    'URL': {
+                        'S': job['URL']
+                    }
                 }
-            }
-        )
-        c_nter= c_nter+1
+            )
+            c_nter = c_nter + 1
 
 
 # query with param state, role ie. entry level or junior, top 2 tech
@@ -227,10 +243,13 @@ def query_test(state, role, tech):
 
 
 def count():
-    t = dynamo_db.Table('GitHubJobs')
-    t2 = dynamo_db.Table('USAJobs')
-    table1 = t.scan()
-    table2 = t2.scan()
+    cnt= 0
+    git_table = dynamo_db.Table('GitHubJobs')
+    usa_table = dynamo_db.Table('USAJobs')
+    table1 = git_table.scan()
+    table2 = usa_table.scan()
+    print(table1['Count'])
+    print(table2['Count'])
     cnt = int(table1['Count']) + int(table2['Count'])
 
     return cnt
@@ -241,3 +260,6 @@ def count():
 # query_test('IL', 'entry level', 'red')
 
 # pop_git_table()
+print(count())
+# pop_git_table()
+# pop_usa_jobs_table()
