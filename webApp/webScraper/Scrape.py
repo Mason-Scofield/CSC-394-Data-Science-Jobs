@@ -26,13 +26,6 @@ def parse_usa_data(d):
     return data
 
 
-# This is where I check whether or not there is multiple locations for the job posting
-def check_for_multiple(data):
-    if data == 'Multiple Locations':
-        return True
-    return False
-
-
 # This looks for keywords in the job posting summaries and returns a list of the ones it found
 def get_skills(data):
     keywords = ['linux', 'mac', 'windows',
@@ -107,11 +100,14 @@ def usajob(token, email, parameter, search):
 
         cleaned_data = []
         dict = {}
-        temp_dict = {}
+        temp_dict = []
         for d in data:
-            temp_dict += parse_usa_data(d)
+            temp_dict.append(parse_usa_data(d))
 
-        cleaned_data.append(temp_dict)
+        for i in range(len(temp_dict)):
+            for j in range(len(temp_dict[i])):
+                cleaned_data.append(temp_dict[i][j])
+
         outfile = open('usajob_data.json', "w")
         dict = cleaned_data
         json.dump(dict, outfile, indent=2)

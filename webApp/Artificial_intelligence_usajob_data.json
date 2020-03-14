@@ -1,0 +1,253 @@
+[
+  {
+    "ID": "5627881000",
+    "JobRole": "CHIEF HUMAN CAPITAL MANAGEMENT",
+    "CompanyName": "Defense Information Systems Agency",
+    "JobType": "Miscellaneous Administration And Program",
+    "Pay": "156750.5",
+    "City": "Arlington",
+    "State": "Virginia",
+    "Skills": [
+      "analysis"
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/562788100?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5615052000",
+    "JobRole": "IT Cybersecurity Specialist (INFOSEC)",
+    "CompanyName": "Patent and Trademark Office",
+    "JobType": "Information Technology Management",
+    "Pay": "99287.5",
+    "City": "Alexandria",
+    "State": "Virginia",
+    "Skills": [
+      ""
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/561505200?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5600001000",
+    "JobRole": "COMPUTER SCIENTIST",
+    "CompanyName": "Defense Threat Reduction Agency",
+    "JobType": "Computer Science",
+    "Pay": "139512.5",
+    "City": "Fort Belvoir",
+    "State": "Virginia",
+    "Skills": [
+      "mac",
+      "machine learning",
+      "artificial intelligence",
+      "analysis",
+      "statistic",
+      "computer science",
+      "math"
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/560000100?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5600009000",
+    "JobRole": "COMPUTER SCIENTIST",
+    "CompanyName": "Defense Threat Reduction Agency",
+    "JobType": "Computer Science",
+    "Pay": "118064.0",
+    "City": "Fort Belvoir",
+    "State": "Virginia",
+    "Skills": [
+      "mac",
+      "machine learning",
+      "artificial intelligence",
+      "analysis",
+      "statistic",
+      "computer science",
+      "math"
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/560000900?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5621616000",
+    "JobRole": "Computer Engineer, AST, Software Systems",
+    "CompanyName": "Ames Research Center",
+    "JobType": "Computer Engineering",
+    "Pay": "162743.5",
+    "City": "Moffett Field",
+    "State": "California",
+    "Skills": [
+      "analysis"
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/562161600?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5606776000",
+    "JobRole": "Professor of Strategic Game Design",
+    "CompanyName": "U.S. Army War College",
+    "JobType": "Social Science",
+    "Pay": "113828.0",
+    "City": "Carlisle Barracks",
+    "State": "Pennsylvania",
+    "Skills": [
+      "computer science"
+    ],
+    "Technology": [
+      "git"
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/560677600?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5622649000",
+    "JobRole": "R&D Scientist",
+    "CompanyName": "National Geospatial-Intelligence Agency",
+    "JobType": "General Physical Science",
+    "Pay": "93849.0",
+    "City": "Dayton",
+    "State": "Ohio",
+    "Skills": [
+      "linux",
+      "mac",
+      "windows",
+      "machine learning",
+      "artificial intelligence",
+      "analysis",
+      "statistic",
+      "computer science",
+      "math"
+    ],
+    "Technology": [
+      "aws"
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/562264900?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5525965000",
+    "JobRole": "28036 - Director of Technology - GS-15",
+    "CompanyName": "Office of the Director of National Intelligence",
+    "JobType": "Information Technology Management",
+    "Pay": "156750.5",
+    "City": "Fairfax County",
+    "State": "Virginia",
+    "Skills": [
+      "analysis",
+      "statistic",
+      "computer science",
+      "math"
+    ],
+    "Technology": [
+      "excel"
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/552596500?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5610703000",
+    "JobRole": "Assistant Chief Data Officer",
+    "CompanyName": "Farm Production and Conservation (FPAC) Business Center",
+    "JobType": "Miscellaneous Administration And Program",
+    "Pay": "184050.5",
+    "City": "Washington",
+    "State": "DistrictofColumbia",
+    "Skills": [
+      ""
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/561070300?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5610703001",
+    "JobRole": "Assistant Chief Data Officer",
+    "CompanyName": "Farm Production and Conservation (FPAC) Business Center",
+    "JobType": "Miscellaneous Administration And Program",
+    "Pay": "184050.5",
+    "City": "Kansas City",
+    "State": "Missouri",
+    "Skills": [
+      ""
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/561070300?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5622857000",
+    "JobRole": "Deputy Assistant Attorney General for Information Resources Management/Chief Information Officer",
+    "CompanyName": "Offices, Boards and Divisions",
+    "JobType": "Miscellaneous Administration And Program",
+    "Pay": "164269.5",
+    "City": "Washington",
+    "State": "DistrictofColumbia",
+    "Skills": [
+      "mac",
+      "machine learning",
+      "artificial intelligence",
+      "software development",
+      "communications"
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/562285700?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5578428000",
+    "JobRole": "Temporary Hire Student",
+    "CompanyName": "National Geospatial-Intelligence Agency",
+    "JobType": "General Student Trainee",
+    "Pay": "35258.5",
+    "City": "Arnold",
+    "State": "Missouri",
+    "Skills": [
+      "analysis"
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/557842800?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5578428001",
+    "JobRole": "Temporary Hire Student",
+    "CompanyName": "National Geospatial-Intelligence Agency",
+    "JobType": "General Student Trainee",
+    "Pay": "35258.5",
+    "City": "Saint Louis",
+    "State": "Missouri",
+    "Skills": [
+      "analysis"
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/557842800?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5578428002",
+    "JobRole": "Temporary Hire Student",
+    "CompanyName": "National Geospatial-Intelligence Agency",
+    "JobType": "General Student Trainee",
+    "Pay": "35258.5",
+    "City": "Springfield",
+    "State": "Virginia",
+    "Skills": [
+      "analysis"
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/557842800?PostingChannelID=RESTAPI"
+  }
+]

@@ -1,5 +1,72 @@
 import json
 
+
+def countLocation(data):
+    states = {
+        'alaska': 0,
+        'alabama': 0,
+        'arkansas': 0,
+        'arizona': 0,
+        'california': 0,
+        'colorado': 0,
+        'connecticut': 0,
+        'district of columbia': 0,
+        'delaware': 0,
+        'florida': 0,
+        'georgia': 0,
+        'hawaii': 0,
+        'iowa': 0,
+        'idaho': 0,
+        'illinois': 0,
+        'indiana': 0,
+        'kansas': 0,
+        'kentucky': 0,
+        'louisiana': 0,
+        'massachusetts': 0,
+        'maryland': 0,
+        'maine': 0,
+        'michigan': 0,
+        'minnesota': 0,
+        'missouri': 0,
+        'mississippi': 0,
+        'montana': 0,
+        'north carolina': 0,
+        'north dakota': 0,
+        'nebraska': 0,
+        'new hampshire': 0,
+        'new jersey': 0,
+        'new mexico': 0,
+        'nevada': 0,
+        'new york': 0,
+        'ohio': 0,
+        'oklahoma': 0,
+        'oregon': 0,
+        'pennsylvania': 0,
+        'rhode island': 0,
+        'south carolina': 0,
+        'south dakota': 0,
+        'tennessee': 0,
+        'texas': 0,
+        'utah': 0,
+        'virginia': 0,
+        'vermont': 0,
+        'washington': 0,
+        'wisconsin': 0,
+        'west Virginia': 0,
+        'wyoming': 0
+    }
+
+    for d in data:
+        state = d['State'].lower()
+        if state in states:
+            states[state] += 1
+    res = ""
+    for key, value in sorted(states.items(), key=lambda item: item[1], reverse=True):
+        if key != '':
+            res += ("%s: %s" % (key, value) + "\n")
+    return res
+
+
 def countPay(data):
     res = {"<50,000": 0, "50,000-75,000": 0, "75,001-100,000": 0, ">100,000": 0}
 
@@ -10,9 +77,9 @@ def countPay(data):
         elif 50000 < num <= 75000:
             res["50,000-75,000"] += 1
         elif 75001 <= num <= 100000:
-             res["75,001-100,000"] += 1
+            res["75,001-100,000"] += 1
         else:
-             res[">100,000"] += 1
+            res[">100,000"] += 1
     return res
 
 
@@ -61,18 +128,24 @@ def main():
 
     outfile = open(job_type + ".txt", "w")
     outfile.write("Technologies for: " + job_type + "\n")
-    outfile.write("USAJOBS DATA:\n" + countTechs(usa_data[0]))
+    outfile.write("USAJOBS DATA:\n" + countTechs(usa_data))
     outfile.write("\nGITHUB DATA:\n" + countTechs(github_data))
 
     outfile.write("\n------------------------------------\n")
     outfile.write("\nSkills for: " + job_type + "\n")
-    outfile.write("USAJOBS DATA:\n" + countSkills(usa_data[0]))
+    outfile.write("USAJOBS DATA:\n" + countSkills(usa_data))
     outfile.write("\nGITHUB DATA:\n" + countSkills(github_data))
 
     outfile.close()
-    outfile = open("pays.txt", "w")
-    outfile.write(str(countPay(usa_data[0])))
+    outfile = open(job_type + "pays.txt", "w")
+    outfile.write(str(countPay(usa_data)))
     outfile.close()
+
+    outfile = open(job_type + "locations.txt", "w")
+    outfile.write("Locations for USAJOBS DATA:\n" + countLocation(usa_data))
+    outfile.write("\nLocations for GITHUB DATA:\n" + countLocation(github_data))
+    outfile.close()
+
 
 if __name__ == '__main__':
     main()
