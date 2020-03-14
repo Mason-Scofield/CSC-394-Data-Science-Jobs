@@ -39,8 +39,8 @@
         queryString = queryString.substring(0, queryString.length - 1);
 
         fetch(queryString)
-          .then(response => response.json())
-          .then(data     => updateJobs(data));
+          .then(response => console.log(response.json()));
+          //.then(data     => updateJobs(data))
       });
 
       function updateJobs(data) {

@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
+from .webScraper.DataBase.PopulateDB import query_github, query_usa
 import json, random, os
-
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
@@ -26,8 +26,8 @@ def jobs(state):
     elif total >= 10: role = 'Junior-level'
 
     # e.g., state = 'IL'; max_search_terms = 'HTML,CSS,Javascript'
-    # postings = get_job_recommendations(state, role, max_search_terms)
-
+    postings = query_usa(state, role, max_search_terms)
+    '''
     postings = [
         [
             'Data Scientist',
@@ -61,6 +61,7 @@ def jobs(state):
         ]
     ]
     random.shuffle(postings)
+    '''
     return json.dumps(postings)
 
 
