@@ -2,63 +2,88 @@ import boto3
 from boto3.dynamodb.conditions import Key, Attr
 import random
 import json
+import time
+import os
 
 dynamoDB = boto3.client(
-    'dynamodb', aws_access_key_id='AKIA5KVCCTT2WXS2FYS3',
-    aws_secret_access_key='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', region_name='us-east-2'
+    'dynamodb', aws_access_key_id=os.getenv('AWS_PUB'),
+    aws_secret_access_key=os.getenv('AWS_PRIV'), region_name='us-east-2'
 )
 
 dynamo_db = boto3.resource(
-    'dynamodb', aws_access_key_id='AKIA5KVCCTT2WXS2FYS3',
-    aws_secret_access_key='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', region_name='us-east-2'
+    'dynamodb', aws_access_key_id=os.getenv('AWS_PUB'),
+    aws_secret_access_key=os.getenv('AWS_PRIV'), region_name='us-east-2'
 )
 
 
 # f = open('webApp/usajob_data.json')
-# t = open('webapp/github_data.jason')
+t = json.loads(open('github_data.json').read())
+cnt = 0
+cnt_p = 0
+for jobs in t:
+    if jobs.get('Technology') == ['']:
+        jobs['Technology'] = ['none']
+    if jobs.get('Skills') == ['']:
+        jobs['Skills'] = ['none']
+    if jobs.get('Pay') == '':
+        jobs['Pay'] = '0'
+        cnt_p = cnt_p + 1
+
+    cnt = cnt+1
+
 
 
 def pop_git_table():
-    for job in f:
+    c_nter = 0
+
+    for job in t:
+        if c_nter % 10 == 0:
+            print(c_nter)
+            time.sleep(1)
         dynamoDB.put_item(
             TableName='GitHubJobs',
             Item={
                 'ID': {
-                    'S': job['ID']
+                    'S': job.get('ID')
                 },
                 'JobRole': {
-                    'S': job['JobRole']
+                    'S': job.get('JobRole')
                 },
                 'CompanyName': {
-                    'S': job['CompanyName']
+                    'S': job.get('CompanyName')
                 },
                 'JobType': {
-                    'S': job['JobType']
+                    'S': job.get('JobType')
                 },
                 'Pay': {
-                    'S': job['Pay']
+                    'S': job.get('Pay')
                 },
                 'City': {
-                    'S': job['City']
+                    'S': job.get('City')
                 },
                 'State': {
-                    'S': job['State']
+                    'S': job.get('State')
                 },
                 'Skills': {
-                    'SS': [job['Skills']]
+                   'SS': job['Skills']
                 },
                 'Technology': {
-                    'SS': [job['Technology']]
+                   'SS': job['Technology']
                 },
                 'URL': {
-                    'S': job['URL']
+                    'S': job.get('URL')
                 }
             }
         )
+        c_nter= c_nter+1
 
 
 def pop_usa_jobs_table():
+    c_nter= 0
     for job in t:
+        if c_nter % 10 == 0:
+
+            time.sleep(1)
         dynamoDB.put_item(
             TableName='USAJobs',
             Item={
@@ -84,16 +109,17 @@ def pop_usa_jobs_table():
                     'S': job['State']
                 },
                 'Skills': {
-                    'SS': [job['Skills']]
+                   'SS': job['Skills']
                 },
                 'Technology': {
-                    'SS': [job['Technology']]
+                   'SS': job['Technology']
                 },
                 'URL': {
                     'S': job['URL']
                 }
             }
         )
+        c_nter= c_nter+1
 
 
 # query with param state, role ie. entry level or junior, top 2 tech
@@ -212,8 +238,6 @@ def count():
 
 # pop_test()
 
-# count()
-
-
 # query_test('IL', 'entry level', 'red')
 
+# pop_git_table()

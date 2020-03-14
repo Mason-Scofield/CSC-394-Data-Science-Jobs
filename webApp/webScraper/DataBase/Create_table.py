@@ -2,8 +2,9 @@ import boto3
 import os
 
 dynamoDB = boto3.client(
-   'dynamodb', aws_access_key_id='AKIA5KVCCTT2WXS2FYS3', aws_secret_access_key='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', region_name='us-east-2'
- )
+    'dynamodb', aws_access_key_id=os.getenv('AWS_PUB'),
+    aws_secret_access_key=os.getenv('AWS_PRIV'), region_name='us-east-2'
+)
 
 
 def create_tables():
@@ -24,8 +25,8 @@ def create_tables():
 
         ],
         ProvisionedThroughput={
-            'ReadCapacityUnits': 8000,
-            'WriteCapacityUnits': 8000
+            'ReadCapacityUnits': 10,
+            'WriteCapacityUnits': 10
         }
     )
 
@@ -45,7 +46,10 @@ def create_tables():
 
         ],
         ProvisionedThroughput={
-            'ReadCapacityUnits': 8000,
-            'WriteCapacityUnits': 8000
+            'ReadCapacityUnits': 10,
+            'WriteCapacityUnits': 10
         }
     )
+
+
+
