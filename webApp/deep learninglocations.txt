@@ -52,7 +52,7 @@ west Virginia: 0
 wyoming: 0
 
 Locations for GITHUB DATA:
-iowa: 10
+iowa: 2
 alaska: 0
 alabama: 0
 arkansas: 0
