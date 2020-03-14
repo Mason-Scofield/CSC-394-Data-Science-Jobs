@@ -17,13 +17,13 @@ dynamo_db = boto3.resource(
 
 
 f1 = json.loads(open('Artificial_intelligence_usajob_data.json').read())
-t1 = json.loads(open('Artificial_intelligence_github_data.json').read())
+t1 = json.loads(open('artificial_intelligience_github_data.json').read())
 f2 = json.loads(open('Computer_engineering_usajob_data.json').read())
-t2 = json.loads(open('Computer_engineering_github_data.json').read())
+t2 = json.loads(open('computer_engineering_github_data.json').read())
 f3 = json.loads(open('Deep_learning_usajob_data.json').read())
-t3 = json.loads(open('Deep_learning_github_data.json').read())
+t3 = json.loads(open('deep_learning_github_data.json').read())
 f4 = json.loads(open('Machine_learning_usajob_data.json').read())
-t4 = json.loads(open('Machine_learning_github_data.json').read())
+t4 = json.loads(open('machine_learning_github_data.json').read())
 f_all = [f1, f2, f3, f4]
 t_all = [t1, t2, t3, t4]
 
@@ -261,4 +261,6 @@ def count():
 
     return cnt
 
+
+pop_git_table()
 
