@@ -146,5 +146,4 @@ def index():
                                          locations_source = locations_source,
                                          keywords_skill   = keywords_skill,
                                          pays_skill       = pays_skill,
-                                         locations_skill  = locations_skill,
-                                        secret = os.getenv("AWS_KEY"))
+                                         locations_skill  = locations_skill)
