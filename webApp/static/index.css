@@ -10,6 +10,8 @@ body, h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif; }
   background: #222;
 }
 
+#table { transition: opacity .7s; }
+
 tr:nth-child(1):hover {  background-color: white !important; }
 tr:not(:nth-child(1)) { cursor: pointer; }
 
@@ -36,6 +38,18 @@ main { margin-left: 120px; }                                         /* matches 
 select       { color: #FFF; background-color: #000; font-size: 1.25em; }
 select:focus { outline: none; }
 
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+button:hover { }
+button:focus { outline: none; }
+
 img { margin-top: 30px; width: 100px; opacity: .9; }
 img:hover { opacity: 1; }
 
@@ -49,6 +63,7 @@ img:hover { opacity: 1; }
     right: 2.5%;
     font-size: 1.5em;
     cursor: pointer;
+    transition: transform .2s;
 }
 
 .badge {
@@ -71,7 +86,7 @@ img:hover { opacity: 1; }
 } 
 
 @media only screen and (max-width: 825px) {
-  #summary  { position: static; }                                     /* not sticky on phones */
+  #summary  { position: static !important; }                                     /* not sticky on phones */
   #minimize, #lock { display: none; }
 }
 
@@ -219,6 +234,6 @@ canvas {
   transition: .4s;
 }
 
-input:checked + #switch-slider         { background-color: #52BE80; }
-input:focus   + #switch-slider         { box-shadow: 0 0 1px #52BE80; }
-input:checked + #switch-slider::before { transform: translateX(32px); }
+input:checked ~ #switch-slider         { background-color: #52BE80; }
+input:focus   ~ #switch-slider         { box-shadow: 0 0 1px #52BE80; }
+input:checked ~ #switch-slider::before { transform: translateX(32px); }

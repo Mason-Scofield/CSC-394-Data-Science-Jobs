@@ -19,61 +19,19 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>                                                       <!-- W3.JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>                                               <!-- Chart.js -->
     <!-- Our JavaScript -->
-    <script src="../static/index.js"></script>
-    <script src="../static/graph.js" type="module"></script>
+    <script src="../static/sliders.js"></script>
+    <script src="../static/summary.js"></script>
+    <script src="../static/graphs.js" type="module"></script>
 
     <script type="module">
-      import { graphInit, drawGraph } from '../static/graph.js';
+      import { graphInit, drawGraph } from '../static/graphs.js';
 
-      // for job recommendations
-      document.getElementById('refresh').addEventListener('click', function(e) {
-        var queryString = `/${document.getElementById('locationSelect').value}/jobs?`;
-
-        var sliders = document.getElementsByClassName('slider');
-        Array.from(sliders).forEach(elem => {
-          var key = encodeURI(elem.previousElementSibling.innerText.replace('&', '').replace(/\s/g, ''));
-          queryString += key + '=' + elem.value + '&';
-        });
-
-        // since there will be a trailing ampersand
-        queryString = queryString.substring(0, queryString.length - 1);
-
-        fetch(queryString)
-          .then(response => response.json())
-          .then(data     => updateJobs(data));
-      });
-
-      function updateJobs(data) {
-        var table = document.getElementById('table');
-        table.classList.remove("w3-hide");
-
-        var len = table.rows.length;
-        for (var i = 1; i < len; ++i)
-          table.deleteRow(1);
-
-        for (var obj of data) {
-          var row = table.insertRow(-1);
-
-          for (let [i, prop] of obj.entries()) {
-            var cell = row.insertCell(-1);
-
-            if (i !== obj.length - 1) // not the last element
-              cell.textContent = prop;
-            else {
-              cell.innerHTML = '<i class="fas fa-external-link-alt"></i>';
-              row.onclick = function(e) {
-                window.open(prop);
-              };
-            }
-          }
-        }
-      }
-
-      // for Chart.js
+      // Chart 1
       var keywords_source  = {{keywords_source|tojson}};
       var pays_source      = {{pays_source|tojson}};
       var locations_source = {{locations_source|tojson}};
 
+      // Chart 2
       var keywords_skill  = {{keywords_skill|tojson}};
       var pays_skill      = {{pays_skill|tojson}};
       var locations_skill = {{locations_skill|tojson}};
@@ -84,7 +42,7 @@
       window.addEventListener('load', () => { chart1 = graphInit(chart1, 'chart1', keywords_source) });
       window.addEventListener('load', () => { chart2 = graphInit(chart2, 'chart2', keywords_skill)  });
 
-      document.getElementById('chartSelect').addEventListener('change', function(e) {
+      document.getElementById('chartSelect').addEventListener('change', (e) => {
         switch(e.target.value) {
           case 'keywords':
             drawGraph(chart1, keywords_source);
@@ -99,22 +57,6 @@
             drawGraph(chart2, locations_skill);
             break;
         }
-      });
-
-      document.getElementById('switch-slider').addEventListener('click', (e) => {
-        var c1 = document.getElementById('chart1');
-        var c2 = document.getElementById('chart2');
-
-        if (c1.style.display === 'none') {
-          c1.style.display = 'block';
-          c2.style.display = 'none';
-        }
-        else {
-          c2.style.display = 'block';
-          c1.style.display = 'none';
-        }
-
-        e.stopPropagation();
       });
     </script>
   </head>
@@ -277,16 +219,17 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
           </select>
-          <i id="refresh" class="fas fa-sync w3-hover-opacity"></i>
-          <h3 style="margin-top: 0;">Job postings curated for you:</h3>
-          <table class="w3-table w3-table-all w3-hoverable w3-hide" id="table">
-            <tr>
+          <i style="font-style: normal; font-weight: bold;" id="refresh" class="w3-hover-text-green">⮞ retrieve personalized jobs</i>
+          <h3 id="postings" style="margin-top: 0; visibility: hidden;"><span id="numPostings"></span> job postings curated for you:</h3>
+          <table class="w3-table w3-table-all w3-hoverable" style="opacity: 0;" id="table">
+            <tr style="display: none;">
               <th>position</th>
               <th>company</th>
               <th>location</th>
               <th></th>
             </tr>
           </table>
+          <button id="more" class="w3-hover-text-green w3-hide" style="position: absolute; right: 20px; bottom: 3px; font-size: 1.15em;">more...</button>
         </div>
       </div>
 
@@ -298,12 +241,14 @@
           <option value="pays">Pay</option>
           <option value="locations">Locations</option>
         </select>
-        <label id="switch" style="position: absolute; right: 12%;">
+        <label id="switch" style="position: absolute; right: 15%;">
           <input type="checkbox">
+          <p id="chart1Label" style="display: inline-block; position: relative; top: -36px; line-height: 95%; right: 111%; color: white; text-align: right;">data sources</p>
           <span id="switch-slider"></span>
+          <p id="chart2Label" style="opacity: .45; display: inline-block; position: relative; top: -94px; line-height: 95%; left: 110%; color: white; text-align: left;">job<br>types</p>
         </label>
-       <canvas id="chart1"></canvas>
-       <canvas id="chart2" style="display: none;"></canvas>
+        <canvas id="chart1"></canvas>
+        <canvas id="chart2" style="display: none;"></canvas>
       </div>
 
       <!-- About -->
