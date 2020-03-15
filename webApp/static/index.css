@@ -86,7 +86,7 @@ img:hover { opacity: 1; }
 } 
 
 @media only screen and (max-width: 825px) {
-  #summary  { position: static; }                                     /* not sticky on phones */
+  #summary  { position: static !important; }                                     /* not sticky on phones */
   #minimize, #lock { display: none; }
 }
 
