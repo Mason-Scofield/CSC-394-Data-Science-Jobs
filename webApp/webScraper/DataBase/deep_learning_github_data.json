@@ -1,0 +1,646 @@
+[
+  {
+    "ID": "2ca1f0fa-b6ef-4710-9506-0965ce092b99",
+    "JobRole": "Senior Backend Developer (m/f/d)",
+    "CompanyName": "DCMN GmbH",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Berli",
+    "State": "Berlin",
+    "Skills": [
+      "analysis"
+    ],
+    "Technology": [
+      "sql",
+      "aws",
+      "scala",
+      "git",
+      "nosql"
+    ],
+    "URL": "https://jobs.github.com/positions/2ca1f0fa-b6ef-4710-9506-0965ce092b99"
+  },
+  {
+    "ID": "e3e5d655-5358-44a8-b0f3-c682b6b453b0",
+    "JobRole": "Creative Technology Lead ",
+    "CompanyName": "IDEO",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Munic",
+    "State": "Munich",
+    "Skills": [
+      ""
+    ],
+    "Technology": [
+      "excel",
+      "java",
+      "git",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/e3e5d655-5358-44a8-b0f3-c682b6b453b0"
+  },
+  {
+    "ID": "ea94c57c-d0a1-11e8-9676-0d02532e57f6",
+    "JobRole": "Solutions Architect - IoT/Python/React (US/Canada)",
+    "CompanyName": "Analytics Fire",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "North Americ",
+    "State": "NorthAmerica",
+    "Skills": [
+      "linux",
+      "mac",
+      "machine learning",
+      "software development",
+      "software engineering",
+      "data engineering"
+    ],
+    "Technology": [
+      "python",
+      "aws",
+      "tensorflow",
+      "excel",
+      "java",
+      "git",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/ea94c57c-d0a1-11e8-9676-0d02532e57f6"
+  },
+  {
+    "ID": "0e46406e-d0a1-11e8-828b-ee6df9cc51d4",
+    "JobRole": "Release Manager - IoT/Python/React (US/Canada)",
+    "CompanyName": "Analytics Fire",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "North Americ",
+    "State": "NorthAmerica",
+    "Skills": [
+      "linux",
+      "mac",
+      "machine learning",
+      "software development",
+      "data engineering"
+    ],
+    "Technology": [
+      "python",
+      "aws",
+      "tensorflow",
+      "c++",
+      "excel",
+      "java",
+      "git",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/0e46406e-d0a1-11e8-828b-ee6df9cc51d4"
+  },
+  {
+    "ID": "728d85b4-e8d9-11e8-95cd-f13299063e9d",
+    "JobRole": "Software Engineer (m/f)",
+    "CompanyName": "Stylight GmbH",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Munich",
+    "State": "Germany",
+    "Skills": [
+      "computer science"
+    ],
+    "Technology": [
+      "python",
+      "sql"
+    ],
+    "URL": "https://jobs.github.com/positions/728d85b4-e8d9-11e8-95cd-f13299063e9d"
+  },
+  {
+    "ID": "0b6885c4-e8d8-11e8-96fd-a4688df0d66b",
+    "JobRole": "Senior Software Engineer (m/f)",
+    "CompanyName": "Stylight GmbH",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Munich",
+    "State": "Germany",
+    "Skills": [
+      "software development"
+    ],
+    "Technology": [
+      "python",
+      "sql",
+      "aws",
+      "scala",
+      "excel",
+      "java",
+      "docker",
+      "nosql",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/0b6885c4-e8d8-11e8-96fd-a4688df0d66b"
+  },
+  {
+    "ID": "62f8d66a-e8d6-11e8-9847-c1b90d211139",
+    "JobRole": "Lead Engineer (m/f)",
+    "CompanyName": "Stylight GmbH",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Munich",
+    "State": "Germany",
+    "Skills": [
+      "software development"
+    ],
+    "Technology": [
+      "python",
+      "sql",
+      "aws",
+      "scala",
+      "excel",
+      "java",
+      "docker",
+      "nosql",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/62f8d66a-e8d6-11e8-9847-c1b90d211139"
+  },
+  {
+    "ID": "dd8ca676-e814-11e8-9ed0-16c6818d7db3",
+    "JobRole": "Senior PHP/Laravel Developer: Your Dream Work Environment",
+    "CompanyName": "iPhone Photography School",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Remot",
+    "State": "Remote",
+    "Skills": [
+      "algorithms",
+      "deep learning"
+    ],
+    "Technology": [
+      "aws",
+      "excel",
+      "git",
+      "docker"
+    ],
+    "URL": "https://jobs.github.com/positions/dd8ca676-e814-11e8-9ed0-16c6818d7db3"
+  },
+  {
+    "ID": "f62726c8-e1d6-11e8-96fe-e8de2ac8aeb6",
+    "JobRole": "Backend Engineer (f/m) Routing algorithms",
+    "CompanyName": "moovel Group GmbH",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Berli",
+    "State": "Berlin",
+    "Skills": [
+      "algorithms",
+      "analysis"
+    ],
+    "Technology": [
+      "aws",
+      "excel",
+      "java",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/f62726c8-e1d6-11e8-96fe-e8de2ac8aeb6"
+  },
+  {
+    "ID": "f4e46e80-e116-11e8-8fac-aba5b4c6653c",
+    "JobRole": "Senior Software Engineer-Confidential",
+    "CompanyName": "HireSpeak",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Baltimore",
+    "State": "MD",
+    "Skills": [
+      "linux",
+      "windows",
+      "analysis",
+      "software development",
+      "creativity"
+    ],
+    "Technology": [
+      "sql",
+      "aws",
+      "css",
+      "java",
+      "git",
+      "javascript",
+      "html"
+    ],
+    "URL": "https://jobs.github.com/positions/f4e46e80-e116-11e8-8fac-aba5b4c6653c"
+  },
+  {
+    "ID": "dfa47394-dd33-11e8-96a4-acacdfc6a86d",
+    "JobRole": "Senior Software Engineer (Frontend)",
+    "CompanyName": "MetaCommunications, Inc.",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Iowa City",
+    "State": "Iowa",
+    "Skills": [
+      "software development",
+      "software engineering",
+      "communications",
+      "creativity"
+    ],
+    "Technology": [
+      "sql",
+      "aws",
+      "scala",
+      "css",
+      "excel",
+      "azure",
+      "java",
+      "git",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/dfa47394-dd33-11e8-96a4-acacdfc6a86d"
+  },
+  {
+    "ID": "d606d32c-dced-11e8-83b8-c94149410ae0",
+    "JobRole": "Senior Technical Lead (VR) ",
+    "CompanyName": "Labster",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Bali",
+    "State": "Indonesia",
+    "Skills": [
+      "algorithms",
+      "computer science",
+      "software engineering"
+    ],
+    "Technology": [
+      "python",
+      "aws",
+      "excel",
+      "c#"
+    ],
+    "URL": "https://jobs.github.com/positions/d606d32c-dced-11e8-83b8-c94149410ae0"
+  },
+  {
+    "ID": "5cfc5c04-d90f-11e8-9d50-d2e1d303c48e",
+    "JobRole": "Senior Python Software Engineer ",
+    "CompanyName": "http://www.paddle.com",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Londo",
+    "State": "London",
+    "Skills": [
+      ""
+    ],
+    "Technology": [
+      "python",
+      "sql",
+      "aws",
+      "java",
+      "git",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/5cfc5c04-d90f-11e8-9d50-d2e1d303c48e"
+  },
+  {
+    "ID": "95048694-1952-11e8-86d5-38e7f24d7ed9",
+    "JobRole": "SENIOR FULL-STACK DEV WITH RUBY/PYTHON/REACT -- 100% REMOTE, FLEXIBLE HOURS",
+    "CompanyName": "Analytics Fire",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Remot",
+    "State": "Remote",
+    "Skills": [
+      "linux",
+      "mac",
+      "machine learning"
+    ],
+    "Technology": [
+      "python",
+      "scala",
+      "c++",
+      "java",
+      "git",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/95048694-1952-11e8-86d5-38e7f24d7ed9"
+  },
+  {
+    "ID": "2ca1f0fa-b6ef-4710-9506-0965ce092b99",
+    "JobRole": "Senior Backend Developer (m/f/d)",
+    "CompanyName": "DCMN GmbH",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Berli",
+    "State": "Berlin",
+    "Skills": [
+      "analysis"
+    ],
+    "Technology": [
+      "sql",
+      "aws",
+      "scala",
+      "git",
+      "nosql"
+    ],
+    "URL": "https://jobs.github.com/positions/2ca1f0fa-b6ef-4710-9506-0965ce092b99"
+  },
+  {
+    "ID": "e3e5d655-5358-44a8-b0f3-c682b6b453b0",
+    "JobRole": "Creative Technology Lead ",
+    "CompanyName": "IDEO",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Munic",
+    "State": "Munich",
+    "Skills": [
+      ""
+    ],
+    "Technology": [
+      "excel",
+      "java",
+      "git",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/e3e5d655-5358-44a8-b0f3-c682b6b453b0"
+  },
+  {
+    "ID": "ea94c57c-d0a1-11e8-9676-0d02532e57f6",
+    "JobRole": "Solutions Architect - IoT/Python/React (US/Canada)",
+    "CompanyName": "Analytics Fire",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "North Americ",
+    "State": "NorthAmerica",
+    "Skills": [
+      "linux",
+      "mac",
+      "machine learning",
+      "software development",
+      "software engineering",
+      "data engineering"
+    ],
+    "Technology": [
+      "python",
+      "aws",
+      "tensorflow",
+      "excel",
+      "java",
+      "git",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/ea94c57c-d0a1-11e8-9676-0d02532e57f6"
+  },
+  {
+    "ID": "0e46406e-d0a1-11e8-828b-ee6df9cc51d4",
+    "JobRole": "Release Manager - IoT/Python/React (US/Canada)",
+    "CompanyName": "Analytics Fire",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "North Americ",
+    "State": "NorthAmerica",
+    "Skills": [
+      "linux",
+      "mac",
+      "machine learning",
+      "software development",
+      "data engineering"
+    ],
+    "Technology": [
+      "python",
+      "aws",
+      "tensorflow",
+      "c++",
+      "excel",
+      "java",
+      "git",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/0e46406e-d0a1-11e8-828b-ee6df9cc51d4"
+  },
+  {
+    "ID": "728d85b4-e8d9-11e8-95cd-f13299063e9d",
+    "JobRole": "Software Engineer (m/f)",
+    "CompanyName": "Stylight GmbH",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Munich",
+    "State": "Germany",
+    "Skills": [
+      "computer science"
+    ],
+    "Technology": [
+      "python",
+      "sql"
+    ],
+    "URL": "https://jobs.github.com/positions/728d85b4-e8d9-11e8-95cd-f13299063e9d"
+  },
+  {
+    "ID": "0b6885c4-e8d8-11e8-96fd-a4688df0d66b",
+    "JobRole": "Senior Software Engineer (m/f)",
+    "CompanyName": "Stylight GmbH",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Munich",
+    "State": "Germany",
+    "Skills": [
+      "software development"
+    ],
+    "Technology": [
+      "python",
+      "sql",
+      "aws",
+      "scala",
+      "excel",
+      "java",
+      "docker",
+      "nosql",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/0b6885c4-e8d8-11e8-96fd-a4688df0d66b"
+  },
+  {
+    "ID": "62f8d66a-e8d6-11e8-9847-c1b90d211139",
+    "JobRole": "Lead Engineer (m/f)",
+    "CompanyName": "Stylight GmbH",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Munich",
+    "State": "Germany",
+    "Skills": [
+      "software development"
+    ],
+    "Technology": [
+      "python",
+      "sql",
+      "aws",
+      "scala",
+      "excel",
+      "java",
+      "docker",
+      "nosql",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/62f8d66a-e8d6-11e8-9847-c1b90d211139"
+  },
+  {
+    "ID": "dd8ca676-e814-11e8-9ed0-16c6818d7db3",
+    "JobRole": "Senior PHP/Laravel Developer: Your Dream Work Environment",
+    "CompanyName": "iPhone Photography School",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Remot",
+    "State": "Remote",
+    "Skills": [
+      "algorithms",
+      "deep learning"
+    ],
+    "Technology": [
+      "aws",
+      "excel",
+      "git",
+      "docker"
+    ],
+    "URL": "https://jobs.github.com/positions/dd8ca676-e814-11e8-9ed0-16c6818d7db3"
+  },
+  {
+    "ID": "f62726c8-e1d6-11e8-96fe-e8de2ac8aeb6",
+    "JobRole": "Backend Engineer (f/m) Routing algorithms",
+    "CompanyName": "moovel Group GmbH",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Berli",
+    "State": "Berlin",
+    "Skills": [
+      "algorithms",
+      "analysis"
+    ],
+    "Technology": [
+      "aws",
+      "excel",
+      "java",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/f62726c8-e1d6-11e8-96fe-e8de2ac8aeb6"
+  },
+  {
+    "ID": "f4e46e80-e116-11e8-8fac-aba5b4c6653c",
+    "JobRole": "Senior Software Engineer-Confidential",
+    "CompanyName": "HireSpeak",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Baltimore",
+    "State": "MD",
+    "Skills": [
+      "linux",
+      "windows",
+      "analysis",
+      "software development",
+      "creativity"
+    ],
+    "Technology": [
+      "sql",
+      "aws",
+      "css",
+      "java",
+      "git",
+      "javascript",
+      "html"
+    ],
+    "URL": "https://jobs.github.com/positions/f4e46e80-e116-11e8-8fac-aba5b4c6653c"
+  },
+  {
+    "ID": "dfa47394-dd33-11e8-96a4-acacdfc6a86d",
+    "JobRole": "Senior Software Engineer (Frontend)",
+    "CompanyName": "MetaCommunications, Inc.",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Iowa City",
+    "State": "Iowa",
+    "Skills": [
+      "software development",
+      "software engineering",
+      "communications",
+      "creativity"
+    ],
+    "Technology": [
+      "sql",
+      "aws",
+      "scala",
+      "css",
+      "excel",
+      "azure",
+      "java",
+      "git",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/dfa47394-dd33-11e8-96a4-acacdfc6a86d"
+  },
+  {
+    "ID": "d606d32c-dced-11e8-83b8-c94149410ae0",
+    "JobRole": "Senior Technical Lead (VR) ",
+    "CompanyName": "Labster",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Bali",
+    "State": "Indonesia",
+    "Skills": [
+      "algorithms",
+      "computer science",
+      "software engineering"
+    ],
+    "Technology": [
+      "python",
+      "aws",
+      "excel",
+      "c#"
+    ],
+    "URL": "https://jobs.github.com/positions/d606d32c-dced-11e8-83b8-c94149410ae0"
+  },
+  {
+    "ID": "5cfc5c04-d90f-11e8-9d50-d2e1d303c48e",
+    "JobRole": "Senior Python Software Engineer ",
+    "CompanyName": "http://www.paddle.com",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Londo",
+    "State": "London",
+    "Skills": [
+      ""
+    ],
+    "Technology": [
+      "python",
+      "sql",
+      "aws",
+      "java",
+      "git",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/5cfc5c04-d90f-11e8-9d50-d2e1d303c48e"
+  },
+  {
+    "ID": "95048694-1952-11e8-86d5-38e7f24d7ed9",
+    "JobRole": "SENIOR FULL-STACK DEV WITH RUBY/PYTHON/REACT -- 100% REMOTE, FLEXIBLE HOURS",
+    "CompanyName": "Analytics Fire",
+    "JobType": "deep learning",
+    "Pay": "",
+    "City": "Remot",
+    "State": "Remote",
+    "Skills": [
+      "linux",
+      "mac",
+      "machine learning"
+    ],
+    "Technology": [
+      "python",
+      "scala",
+      "c++",
+      "java",
+      "git",
+      "docker",
+      "javascript"
+    ],
+    "URL": "https://jobs.github.com/positions/95048694-1952-11e8-86d5-38e7f24d7ed9"
+  }
+]

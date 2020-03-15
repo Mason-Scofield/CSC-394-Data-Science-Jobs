@@ -317,32 +317,6 @@
     "URL": "https://jobs.github.com/positions/d85b6a82-0979-410b-ab0c-66313348b95c"
   },
   {
-    "ID": "392397d8-f615-4526-963e-e830c86ae7b3",
-    "JobRole": "Java Software Developer",
-    "CompanyName": "InComm",
-    "JobType": "computer engineering",
-    "Pay": "",
-    "City": "Downtown Atlanta",
-    "State": "DowntownAtlanta",
-    "Skills": [
-      "mac",
-      "computer science",
-      "software development"
-    ],
-    "Technology": [
-      "sql",
-      "scala",
-      "css",
-      "excel",
-      "java",
-      "git",
-      "docker",
-      "javascript",
-      "html"
-    ],
-    "URL": "https://jobs.github.com/positions/392397d8-f615-4526-963e-e830c86ae7b3"
-  },
-  {
     "ID": "319d7e3a-b768-11e8-965f-a3a06c674d8e",
     "JobRole": "Software Architect",
     "CompanyName": "MojoTech",
@@ -1143,32 +1117,6 @@
       "html"
     ],
     "URL": "https://jobs.github.com/positions/d85b6a82-0979-410b-ab0c-66313348b95c"
-  },
-  {
-    "ID": "392397d8-f615-4526-963e-e830c86ae7b3",
-    "JobRole": "Java Software Developer",
-    "CompanyName": "InComm",
-    "JobType": "computer engineering",
-    "Pay": "",
-    "City": "Downtown Atlanta",
-    "State": "DowntownAtlanta",
-    "Skills": [
-      "mac",
-      "computer science",
-      "software development"
-    ],
-    "Technology": [
-      "sql",
-      "scala",
-      "css",
-      "excel",
-      "java",
-      "git",
-      "docker",
-      "javascript",
-      "html"
-    ],
-    "URL": "https://jobs.github.com/positions/392397d8-f615-4526-963e-e830c86ae7b3"
   },
   {
     "ID": "319d7e3a-b768-11e8-965f-a3a06c674d8e",
