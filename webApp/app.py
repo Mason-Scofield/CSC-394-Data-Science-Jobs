@@ -13,7 +13,6 @@ def jobs(state):
     max_search_terms = ""
 
     total = 0
-
     for arg in request.args:
         value = int(request.args[arg])
         total += value
@@ -59,6 +58,12 @@ def jobs(state):
             'Apple',
             'Chicago, IL',
             'https://www.apple.com/'
+        ],
+        [
+            'Data Scientist',
+            'Twitter',
+            'Chicago, IL',
+            'https://twitter.com/'
         ]
     ]
     random.shuffle(postings)
