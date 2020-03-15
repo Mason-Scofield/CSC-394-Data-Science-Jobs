@@ -5,7 +5,6 @@ import json
 import time
 import os
 
-print('before')
 #Open files and convert ot JSON for upload
 f1 = json.loads(open('Artificial_intelligence_usajob_data.json', 'r').read())
 t1 = json.loads(open('Artificial_intelligence_github_data.json', 'r').read())
@@ -17,7 +16,6 @@ f4 = json.loads(open('Machine_learning_usajob_data.json', 'r').read())
 t4 = json.loads(open('Machine_learning_github_data.json', 'r').read())
 f_all = [f1, f2, f3, f4]
 t_all = [t1, t2, t3, t4]
-print('after')
 
 for x in f_all:
     for jobs in x:
