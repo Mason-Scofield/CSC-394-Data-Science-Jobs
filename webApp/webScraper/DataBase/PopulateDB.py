@@ -20,13 +20,13 @@ cwd = '\webApp\webScraper\Database'
 
 #Open files and convert ot JSON for upload
 f1 = json.loads(open(cwd + '\Artificial_intelligence_usajob_data.json', 'r').read())
-t1 = json.loads(open(cwd + '\Artificial_intelligience_github_data.json').read())
-f2 = json.loads(open(cwd + '\Computer_engineering_usajob_data.json').read())
-t2 = json.loads(open(cwd + '\Computer_engineering_github_data.json').read())
-f3 = json.loads(open(cwd + '\Deep_learning_usajob_data.json').read())
-t3 = json.loads(open(cwd + '\Deep_learning_github_data.json').read())
-f4 = json.loads(open(cwd + '\Machine_learning_usajob_data.json').read())
-t4 = json.loads(open(cwd + '\Machine_learning_github_data.json').read())
+t1 = json.loads(open(cwd + '\Artificial_intelligience_github_data.json', 'r').read())
+f2 = json.loads(open(cwd + '\Computer_engineering_usajob_data.json', 'r').read())
+t2 = json.loads(open(cwd + '\Computer_engineering_github_data.json', 'r').read())
+f3 = json.loads(open(cwd + '\Deep_learning_usajob_data.json', 'r').read())
+t3 = json.loads(open(cwd + '\Deep_learning_github_data.json', 'r').read())
+f4 = json.loads(open(cwd + '\Machine_learning_usajob_data.json', 'r').read())
+t4 = json.loads(open(cwd + '\Machine_learning_github_data.json', 'r').read())
 f_all = [f1, f2, f3, f4]
 t_all = [t1, t2, t3, t4]
 
