@@ -1,0 +1,89 @@
+Technologies for: deep learning
+USAJOBS DATA:
+aws: 1
+excel: 1
+python: 0
+sql: 0
+spark: 0
+hadoop: 0
+tensorflow: 0
+scala: 0
+c++: 0
+css: 0
+azure: 0
+java: 0
+pytorch: 0
+git: 0
+c#: 0
+docker: 0
+nosql: 0
+javascript: 0
+html: 0
+keras: 0
+mongodb: 0
+
+GITHUB DATA:
+aws: 22
+java: 20
+javascript: 20
+excel: 18
+git: 18
+docker: 18
+python: 16
+sql: 14
+scala: 10
+nosql: 6
+tensorflow: 4
+c++: 4
+css: 4
+azure: 2
+c#: 2
+html: 2
+spark: 0
+hadoop: 0
+pytorch: 0
+keras: 0
+mongodb: 0
+
+------------------------------------
+
+Skills for: deep learning
+USAJOBS DATA:
+mac: 3
+machine learning: 3
+artificial intelligence: 3
+analysis: 2
+statistic: 2
+computer science: 2
+math: 2
+software development: 1
+linux: 0
+windows: 0
+algorithms: 0
+deep learning: 0
+software engineering: 0
+data engineering: 0
+neural networks: 0
+communications: 0
+creativity: 0
+resilience: 0
+
+GITHUB DATA:
+software development: 12
+linux: 8
+mac: 6
+machine learning: 6
+algorithms: 6
+analysis: 6
+software engineering: 6
+computer science: 4
+data engineering: 4
+creativity: 4
+windows: 2
+deep learning: 2
+communications: 2
+artificial intelligence: 0
+statistic: 0
+math: 0
+neural networks: 0
+resilience: 0
