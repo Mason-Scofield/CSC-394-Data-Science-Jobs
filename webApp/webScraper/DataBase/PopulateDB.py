@@ -260,7 +260,3 @@ def count():
     cnt = len(data1) + len(data2)
 
     return cnt
-
-
-pop_git_table()
-
