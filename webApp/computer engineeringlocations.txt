@@ -52,8 +52,8 @@ south dakota: 0
 west Virginia: 0
 
 Locations for GITHUB DATA:
-colorado: 10
-texas: 10
+colorado: 2
+texas: 2
 alaska: 0
 alabama: 0
 arkansas: 0

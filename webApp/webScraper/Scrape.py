@@ -116,8 +116,8 @@ def usajob(token, email, parameter, search):
 
 def github(description):
     cleaned_data = []
-    for i in range(10):
-        url = 'https://jobs.github.com/positions.json?Page=' + str(i) + '&description=' + description.replace(' ',
+    for i in range(9):
+        url = 'https://jobs.github.com/positions.json?page=' + str(i) + '&description=' + description.replace(' ',
                                                                                                               '%20')
         r = requests.get(url)
         data = r.json()

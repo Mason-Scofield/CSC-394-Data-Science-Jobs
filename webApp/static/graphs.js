@@ -39,9 +39,9 @@ export function graphInit(chart, id, graphData) {
             }
         }
     });
-
     return chart;
-};
+}
+
 
 export function drawGraph(chart, graphData) {
     chart.data.labels  = graphData.labels;
@@ -50,3 +50,24 @@ export function drawGraph(chart, graphData) {
     chart.data.datasets = graphData.datasets;
     chart.update();
 }
+
+
+document.getElementById('switch-slider').addEventListener('click', (e) => {
+    var c1 = document.getElementById('chart1');
+    var c2 = document.getElementById('chart2');
+    var c1Label = document.getElementById('chart1Label');
+    var c2Label = document.getElementById('chart2Label');
+
+    if (c1.style.display === 'none') {
+      c1.style.display = 'block';
+      c2.style.display = 'none';
+      c1Label.style.opacity = '1';
+      c2Label.style.opacity = '.45';
+    }
+    else {
+      c2.style.display = 'block';
+      c1.style.display = 'none';
+      c2Label.style.opacity = '1';
+      c1Label.style.opacity = '.45';
+    }
+});

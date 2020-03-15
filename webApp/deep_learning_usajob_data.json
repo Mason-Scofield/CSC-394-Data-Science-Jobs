@@ -1,0 +1,62 @@
+ [
+  {
+    "ID": "5600009000",
+    "JobRole": "COMPUTER SCIENTIST",
+    "CompanyName": "Defense Threat Reduction Agency",
+    "JobType": "Computer Science",
+    "Pay": "118064.0",
+    "City": "Fort Belvoir",
+    "State": "Virginia",
+    "Skills": [
+      "mac",
+      "machine learning",
+      "artificial intelligence",
+      "analysis",
+      "statistic",
+      "computer science",
+      "math"
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/560000900?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5600001000",
+    "JobRole": "COMPUTER SCIENTIST",
+    "CompanyName": "Defense Threat Reduction Agency",
+    "JobType": "Computer Science",
+    "Pay": "139512.5",
+    "City": "Fort Belvoir",
+    "State": "Virginia",
+    "Skills": [
+      "mac",
+      "machine learning",
+      "artificial intelligence",
+      "analysis",
+      "statistic",
+      "computer science",
+      "math"
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/560000100?PostingChannelID=RESTAPI"
+  },
+  {
+    "ID": "5618379000",
+    "JobRole": "Custodial Worker (Housekeeping)",
+    "CompanyName": "Commander, Navy Installations",
+    "JobType": "Custodial Working",
+    "Pay": "9.79",
+    "City": "Naval Base",
+    "State": "Norfolk,Virginia",
+    "Skills": [
+      ""
+    ],
+    "Technology": [
+      ""
+    ],
+    "URL": "https://www.usajobs.gov:443/GetJob/ViewDetails/561837900?PostingChannelID=RESTAPI"
+  }
+]

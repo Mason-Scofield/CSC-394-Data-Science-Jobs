@@ -12,7 +12,6 @@ def jobs(state):
     max_search_terms = ""
 
     total = 0
-
     for arg in request.args:
         value = int(request.args[arg])
         total += value
@@ -58,6 +57,12 @@ def jobs(state):
             'Apple',
             'Chicago, IL',
             'https://www.apple.com/'
+        ],
+        [
+            'Data Scientist',
+            'Twitter',
+            'Chicago, IL',
+            'https://twitter.com/'
         ]
     ]
     random.shuffle(postings)
@@ -133,13 +138,13 @@ def index():
     data = json.loads(open("webApp/static/data.json").read())
     num_jobs = get_num_jobs()
 
-    keywords_source  = get_json_by_source(data, "keywords", ["HTML, CSS, & JavaScript", "Python", "R", "SQL", "C++"])
+    keywords_source  = get_json_by_source(data, "keywords", ["AWS", "C++", "CSS", "Excel", "Git", "HTML", "Java", "JavaScript", "NoSQL", "Python", "Scala", "SQL"])
     pays_source      = get_json_by_source(data, "pays", ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"])
-    locations_source = get_json_by_source(data, "locations", ["New York City", "Los Angeles", "Chicago", "Houston", "Phoenix"])
+    locations_source = get_json_by_source(data, "locations", ["Midwest", "Northeast", "South", "West"])
 
-    keywords_skill  = get_json_by_skill(data, "keywords", ["HTML, CSS, & JavaScript", "Python", "R", "SQL", "C++"])
+    keywords_skill  = get_json_by_skill(data, "keywords", ["AWS", "C++", "CSS", "Excel", "Git", "HTML", "Java", "JavaScript", "NoSQL", "Python", "Scala", "SQL"])
     pays_skill      = get_json_by_skill(data, "pays", ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"])
-    locations_skill = get_json_by_skill(data, "locations", ["New York City", "Los Angeles", "Chicago", "Houston", "Phoenix"])
+    locations_skill = get_json_by_skill(data, "locations", ["Midwest", "Northeast", "South", "West"])
 
     return render_template('index.html', num_jobs         = num_jobs,
                                          keywords_source  = keywords_source,

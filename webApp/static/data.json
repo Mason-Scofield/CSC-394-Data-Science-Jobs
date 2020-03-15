@@ -1,93 +1,93 @@
 {
     "Artificial Intelligence": {
         "keywords": {
-            "labels"  : ["HTML, CSS, & JavaScript", "Python", "R", "SQL", "C++"],
+            "labels"  : ["AWS", "C++", "CSS", "Excel", "Git", "HTML", "Java", "JavaScript", "NoSQL", "Python", "Scala", "SQL"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [10, 20, 30, 40, 50] },
-                {"label": "USA Jobs",    "data": [10, 20, 30, 40, 50] }
+                {"label": "GitHub Jobs", "data": [2, 0, 2, 2, 4, 2, 2, 2, 2, 4, 0, 2] },
+                {"label": "USA Jobs",    "data": [4, 0, 2, 8, 4, 0, 0, 0, 0, 0, 0, 0] }
             ]
         },
         "pays": {
             "labels" : ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [30, 40, 50, 60] },
-                {"label": "USA Jobs",    "data": [30, 40, 50, 60] }
+                {"label": "GitHub Jobs", "data": [0, 0, 0, 0] },
+                {"label": "USA Jobs",    "data": [0, 9, 43, 54] }
             ]
         },
         "locations": {
-            "labels" : ["New York City", "Los Angeles", "Chicago", "Houston", "Phoenix"],
+            "labels" : ["Midwest", "Northeast", "South", "West"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [70, 80, 90, 100, 110] },
-                {"label": "USA Jobs",    "data": [70, 80, 90, 100, 110] }
+                {"label": "GitHub Jobs", "data": [0, 0, 0, 0] },
+                {"label": "USA Jobs",    "data": [4, 1, 6, 1] }
             ]
         }
     },
     "Deep Learning": {
         "keywords": {
-            "labels"  : ["HTML, CSS, & JavaScript", "Python", "R", "SQL", "C++"],
+            "labels"  : ["AWS", "C++", "CSS", "Excel", "Git", "HTML", "Java", "JavaScript", "NoSQL", "Python", "Scala", "SQL"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [10, 20, 30, 40, 50] },
-                {"label": "USA Jobs",    "data": [10, 20, 30, 40, 50] }
+                {"label": "GitHub Jobs", "data": [22, 4, 4, 18, 18, 2, 20, 20, 6, 16, 10, 14] },
+                {"label": "USA Jobs",    "data": [1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0] }
             ]
         },
         "pays": {
             "labels" : ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [30, 40, 50, 60] },
-                {"label": "USA Jobs",    "data": [30, 40, 50, 60] }
+                {"label": "GitHub Jobs", "data": [0, 0, 0, 0] },
+                {"label": "USA Jobs",    "data": [1, 0, 0, 2] }
             ]
         },
         "locations": {
-            "labels" : ["New York City", "Los Angeles", "Chicago", "Houston", "Phoenix"],
+            "labels" : ["Midwest", "Northeast", "South", "West"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [70, 80, 90, 100, 110] },
-                {"label": "USA Jobs",    "data": [70, 80, 90, 100, 110] }
+                {"label": "GitHub Jobs", "data": [2, 0, 0, 0] },
+                {"label": "USA Jobs",    "data": [0, 0, 2, 0] }
             ]
         }
     },
     "Machine Learning": {
         "keywords": {
-            "labels"  : ["HTML, CSS, & JavaScript", "Python", "R", "SQL", "C++"],
+            "labels"  : ["AWS", "C++", "CSS", "Excel", "Git", "HTML", "Java", "JavaScript", "NoSQL", "Python", "Scala", "SQL"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [10, 20, 30, 40, 50] },
-                {"label": "USA Jobs",    "data": [10, 20, 30, 40, 50] }
+                {"label": "GitHub Jobs", "data": [14, 6, 4, 20, 24, 4, 26, 24, 4, 18, 6, 14] },
+                {"label": "USA Jobs",    "data": [2, 0, 0, 2, 1, 0, 0, 0, 0, 0, 1, 1] }
             ]
         },
         "pays": {
             "labels" : ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [30, 40, 50, 60] },
-                {"label": "USA Jobs",    "data": [30, 40, 50, 60] }
+                {"label": "GitHub Jobs", "data": [0, 0, 0, 0] },
+                {"label": "USA Jobs",    "data": [5, 0, 4, 11] }
             ]
         },
         "locations": {
-            "labels" : ["New York City", "Los Angeles", "Chicago", "Houston", "Phoenix"],
+            "labels" : ["Midwest", "Northeast", "South", "West"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [70, 80, 90, 100, 110] },
-                {"label": "USA Jobs",    "data": [70, 80, 90, 100, 110] }
+                {"label": "GitHub Jobs", "data": [0, 0, 0, 0] },
+                {"label": "USA Jobs",    "data": [4, 0, 9, 3] }
             ]
         }
     },
     "Computer Engineering": {
         "keywords": {
-            "labels"  : ["HTML, CSS, & JavaScript", "Python", "R", "SQL", "C++"],
+            "labels"  : ["AWS", "C++", "CSS", "Excel", "Git", "HTML", "Java", "JavaScript", "NoSQL", "Python", "Scala", "SQL"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [10, 20, 30, 40, 50] },
-                {"label": "USA Jobs",    "data": [10, 20, 30, 40, 50] }
+                {"label": "GitHub Jobs", "data": [16, 6, 26, 44, 40, 24, 42, 36, 10, 30, 10, 38] },
+                {"label": "USA Jobs",    "data": [17, 1, 1, 17, 493, 13, 23, 0, 0, 0, 2, 1] }
             ]
         },
         "pays": {
             "labels" : ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [30, 40, 50, 60] },
-                {"label": "USA Jobs",    "data": [30, 40, 50, 60] }
+                {"label": "GitHub Jobs", "data": [0, 0, 0, 0] },
+                {"label": "USA Jobs",    "data": [56, 3080, 1657, 2133] }
             ]
         },
         "locations": {
-            "labels" : ["New York City", "Los Angeles", "Chicago", "Houston", "Phoenix"],
+            "labels" : ["Midwest", "Northeast", "South", "West"],
             "datasets" : [
-                {"label": "GitHub Jobs", "data": [70, 80, 90, 100, 110] },
-                {"label": "USA Jobs",    "data": [70, 80, 90, 100, 110] }
+                {"label": "GitHub Jobs", "data": [0, 0, 2, 2] },
+                {"label": "USA Jobs",    "data": [965, 491, 2302, 1725] }
             ]
         }
     }
