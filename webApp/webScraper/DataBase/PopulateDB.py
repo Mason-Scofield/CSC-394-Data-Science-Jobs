@@ -5,31 +5,19 @@ import json
 import time
 import os
 
-dynamoDB = boto3.client(
-    'dynamodb', aws_access_key_id=os.getenv('AWS_PUB'),
-    aws_secret_access_key=os.getenv('AWS_PRIV'), region_name='us-east-2'
-)
-
-dynamo_db = boto3.resource(
-    'dynamodb', aws_access_key_id=os.getenv('AWS_PUB'),
-    aws_secret_access_key=os.getenv('AWS_PRIV'), region_name='us-east-2'
-)
-
-#Working directory
-cwd = '\webApp\webScraper\Database'
-
+print('before')
 #Open files and convert ot JSON for upload
-f1 = json.loads(open(cwd + '\Artificial_intelligence_usajob_data.json', 'r').read())
-t1 = json.loads(open(cwd + '\Artificial_intelligience_github_data.json', 'r').read())
-f2 = json.loads(open(cwd + '\Computer_engineering_usajob_data.json', 'r').read())
-t2 = json.loads(open(cwd + '\Computer_engineering_github_data.json', 'r').read())
-f3 = json.loads(open(cwd + '\Deep_learning_usajob_data.json', 'r').read())
-t3 = json.loads(open(cwd + '\Deep_learning_github_data.json', 'r').read())
-f4 = json.loads(open(cwd + '\Machine_learning_usajob_data.json', 'r').read())
-t4 = json.loads(open(cwd + '\Machine_learning_github_data.json', 'r').read())
+f1 = json.loads(open('Artificial_intelligence_usajob_data.json', 'r').read())
+t1 = json.loads(open('Artificial_intelligence_github_data.json', 'r').read())
+f2 = json.loads(open('Computer_engineering_usajob_data.json', 'r').read())
+t2 = json.loads(open('Computer_engineering_github_data.json', 'r').read())
+f3 = json.loads(open('Deep_learning_usajob_data.json', 'r').read())
+t3 = json.loads(open('Deep_learning_github_data.json', 'r').read())
+f4 = json.loads(open('Machine_learning_usajob_data.json', 'r').read())
+t4 = json.loads(open('Machine_learning_github_data.json', 'r').read())
 f_all = [f1, f2, f3, f4]
 t_all = [t1, t2, t3, t4]
-
+print('after')
 
 for x in f_all:
     for jobs in x:
@@ -137,39 +125,6 @@ def pop_usa_jobs_table():
                 }
             )
             c_nter = c_nter + 1
-
-
-# query with param state, role ie. entry level or junior, top 2 tech
-
-def query_usa(state, role, tech1):
-    table = dynamo_db.Table('USAJobs')
-
-    a = Attr('State').eq(state) & Attr('JobRole').contains(role)
-
-    for tech in tech1.split(','):
-        a = a & Attr('Technology').contains(tech1)
-
-    data = table.scan(
-        TableName='USAJobs',
-        FilterExpression=a
-    )
-    return data['Items']
-
-
-def query_github(state, role, tech):
-    table = dynamo_db.Table('GitHubJobs')
-
-    a = Attr('State').eq(state) & Attr('JobRole').contains(role)
-
-    for tech1 in tech.split(','):
-        a = a & Attr('Technology').contains(tech1)
-
-    data = table.scan(
-        TableName='GitHubJobs',
-        FilterExpression=a
-    )
-    return data['Items']
-
 
 # functions to test above functions
 
