@@ -1,0 +1,89 @@
+Technologies for: artificial intelligence
+USAJOBS DATA:
+excel: 8
+aws: 4
+git: 4
+css: 2
+python: 0
+sql: 0
+spark: 0
+hadoop: 0
+tensorflow: 0
+scala: 0
+c++: 0
+azure: 0
+java: 0
+pytorch: 0
+c#: 0
+docker: 0
+nosql: 0
+javascript: 0
+html: 0
+keras: 0
+mongodb: 0
+
+GITHUB DATA:
+python: 4
+git: 4
+docker: 4
+sql: 2
+aws: 2
+css: 2
+excel: 2
+java: 2
+nosql: 2
+javascript: 2
+html: 2
+spark: 0
+hadoop: 0
+tensorflow: 0
+scala: 0
+c++: 0
+azure: 0
+pytorch: 0
+c#: 0
+keras: 0
+mongodb: 0
+
+------------------------------------
+
+Skills for: artificial intelligence
+USAJOBS DATA:
+artificial intelligence: 30
+mac: 20
+machine learning: 20
+linux: 10
+computer science: 10
+windows: 0
+algorithms: 0
+analysis: 0
+statistic: 0
+math: 0
+deep learning: 0
+software development: 0
+software engineering: 0
+data engineering: 0
+neural networks: 0
+communications: 0
+creativity: 0
+resilience: 0
+
+GITHUB DATA:
+artificial intelligence: 6
+mac: 4
+machine learning: 4
+linux: 2
+computer science: 2
+windows: 0
+algorithms: 0
+analysis: 0
+statistic: 0
+math: 0
+deep learning: 0
+software development: 0
+software engineering: 0
+data engineering: 0
+neural networks: 0
+communications: 0
+creativity: 0
+resilience: 0
