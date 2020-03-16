@@ -67,10 +67,10 @@ Or input them manually in PyCharm (Works Best):
 3. Within the drop down navigate to Edit Configurations -> Environment -> Environment Variables
 4. Click the '$' icon
 5. In the pop up window click the '+' sign in the upper right section to add the variables
-    -Both AWS_PUB and AWS_PRIV
-    -Must be set as typed above see use case in webApp/webScraper/DataBase/__init__.py
-    -Ensure region properly reflects your DB region
-6. Click OK, then click Apply
+    - Both AWS_PUB and AWS_PRIV
+    - Must be set as typed above see use case in webApp/webScraper/DataBase/__init__.py
+    - Ensure region properly reflects your DB region
+6. Click 'OK', then click 'Apply'
 7. Close the window and run the app by clicking the Green 'Play' button next to the 'RUN' drop down
 
 
@@ -94,4 +94,5 @@ http://127.0.0.1:5000/
 ```
 
 You can deploy directly to a Heroku Server by creating a Free Tier account and linking your cloned repository
+
 *You must set up environment variables within the Settings to set up your Public and Local keys*
