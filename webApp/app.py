@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from .webScraper.DataBase.PopulateDB import query_github, query_usa
+from .webScraper.DataBase.queryDB import query_github, query_usa, count
 import json, random, os
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -70,11 +70,6 @@ def jobs(state):
     return json.dumps(postings)
 
 
-def get_num_jobs():
-    # just a dummy value at this point
-    return 120
-
-
 def get_json_by_source(json, datatype, labels, skills=("Artificial Intelligence", "Deep Learning", "Machine Learning", "Computer Engineering")):
   zipped = zip(json[skills[0]][datatype]["datasets"],
                json[skills[1]][datatype]["datasets"],
@@ -136,7 +131,7 @@ def get_json_by_skill(json, datatype, labels, skills=("Artificial Intelligence",
 @app.route('/')
 def index():
     data = json.loads(open("webApp/static/data.json").read())
-    num_jobs = get_num_jobs()
+    num_jobs = count()
 
     keywords_source  = get_json_by_source(data, "keywords", ["AWS", "C++", "CSS", "Excel", "Git", "HTML", "Java", "JavaScript", "NoSQL", "Python", "Scala", "SQL"])
     pays_source      = get_json_by_source(data, "pays", ["< $50,000", "$50,000 - $75,000", "$75,001 - $100,000", "> $100,000"])

@@ -3,29 +3,7 @@ from boto3.dynamodb.conditions import Key, Attr
 import random
 import json
 import time
-import os
-
-<<<<<<< HEAD
-dynamoDB = boto3.client(
-    'dynamodb', aws_access_key_id=os.getenv('AWS_PUB'),
-    aws_secret_access_key=os.getenv('AWS_PRIV'), region_name='us-east-2'
-)
-
-dynamo_db = boto3.resource(
-    'dynamodb', aws_access_key_id=os.getenv('AWS_PUB'),
-    aws_secret_access_key=os.getenv('AWS_PRIV'), region_name='us-east-2'
-)
-
-cwd = 'webApp\webScraper\DataBase'
-f1 = json.loads(open(cwd + '\Artificial_intelligence_usajob_data.json', 'r').read())
-t1 = json.loads(open(cwd + '\Artificial_intelligence_github_data.json', 'r').read())
-f2 = json.loads(open(cwd + '\Computer_engineering_usajob_data.json', 'r').read())
-t2 = json.loads(open(cwd + '\Computer_engineering_github_data.json', 'r').read())
-f3 = json.loads(open(cwd + '\Deep_learning_usajob_data.json', 'r').read())
-t3 = json.loads(open(cwd + '\Deep_learning_github_data.json', 'r').read())
-f4 = json.loads(open(cwd + '\Machine_learning_usajob_data.json', 'r').read())
-t4 = json.loads(open(cwd + '\Machine_learning_github_data.json', 'r').read())
-=======
+from . import dynamo_db, dynamoDB
 #Open files and convert ot JSON for upload
 f1 = json.loads(open('Artificial_intelligence_usajob_data.json', 'r').read())
 t1 = json.loads(open('Artificial_intelligence_github_data.json', 'r').read())
@@ -35,7 +13,7 @@ f3 = json.loads(open('Deep_learning_usajob_data.json', 'r').read())
 t3 = json.loads(open('Deep_learning_github_data.json', 'r').read())
 f4 = json.loads(open('Machine_learning_usajob_data.json', 'r').read())
 t4 = json.loads(open('Machine_learning_github_data.json', 'r').read())
->>>>>>> master
+
 f_all = [f1, f2, f3, f4]
 t_all = [t1, t2, t3, t4]
 
@@ -213,37 +191,3 @@ def query_test(state, role, tech):
     print(data['Count'])
     for x in data['Items']:
         print(x)
-
-
-# function to give count of items in database
-
-
-def count():
-    cnt= 0
-    git_table = dynamo_db.Table('GitHubJobs')
-    usa_table = dynamo_db.Table('USAJobs')
-    table1 = git_table.scan()
-    table2 = usa_table.scan()
-    data1 = table1['Items']
-    data2 = table2['Items']
-    print(table1['Count'])
-    print(table2['Count'])
-    while 'LastEvaluatedKey' in table1:
-        table1 = git_table.scan(ExclusiveStartKey=table1['LastEvaluatedKey'])
-        data1.extend(table1['Items'])
-
-    while 'LastEvaluatedKey' in table2:
-        table2 = usa_table.scan(ExclusiveStartKey=table2['LastEvaluatedKey'])
-        data2.extend(table2['Items'])
-    cnt = len(data1) + len(data2)
-
-<<<<<<< HEAD
-# query_test('IL', 'entry level', 'red')
-
-# pop_git_table()
-#print(count())
-# pop_git_table()
-# pop_usa_jobs_table()
-=======
-    return cnt
->>>>>>> master

@@ -31,3 +31,26 @@ def query_github(state, role, tech):
         FilterExpression=a
     )
     return data['Items']
+
+# function to give count of items in database
+
+def count():
+    cnt= 0
+    git_table = dynamo_db.Table('GitHubJobs')
+    usa_table = dynamo_db.Table('USAJobs')
+    table1 = git_table.scan()
+    table2 = usa_table.scan()
+    data1 = table1['Items']
+    data2 = table2['Items']
+    print(table1['Count'])
+    print(table2['Count'])
+    while 'LastEvaluatedKey' in table1:
+        table1 = git_table.scan(ExclusiveStartKey=table1['LastEvaluatedKey'])
+        data1.extend(table1['Items'])
+
+    while 'LastEvaluatedKey' in table2:
+        table2 = usa_table.scan(ExclusiveStartKey=table2['LastEvaluatedKey'])
+        data2.extend(table2['Items'])
+    cnt = len(data1) + len(data2)
+
+    return cnt
