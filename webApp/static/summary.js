@@ -129,6 +129,7 @@ function refresh() {
     fetch(queryString)
       .then(response => response.json())
       .then(postings => {
+        if (numDisplay >= postings.length) more.classList.add('w3-hide');
         updateJobs(postings, numDisplay);
         more.onclick = () => {
           numDisplay += 5;
@@ -141,7 +142,8 @@ function refresh() {
 
 function updateJobs(postings, numDisplay) {
     var table = document.getElementById('table');
-    document.getElementById("numPostings").innerText = postings.length;
+    var number = postings.length;
+    document.getElementById("numPostings").innerText = number + ` job posting${number != 1 ? 's' : ''} curated for you`;
 
     let len = table.rows.length;
     for (let i = 1; i < len; ++i)

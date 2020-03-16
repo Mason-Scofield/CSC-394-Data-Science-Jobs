@@ -3,39 +3,83 @@ from boto3.dynamodb.conditions import Attr
 
 # query with param state, role ie. entry level or junior, top 2 tech
 
-def query_usa(state, role, tech1):
-    table = dynamo_db.Table('USAJobs')
+states = {
+        'AK': 'Alaska',
+        'AL': 'Alabama',
+        'AR': 'Arkansas',
+        'AZ': 'Arizona',
+        'CA': 'California',
+        'CO': 'Colorado',
+        'CT': 'Connecticut',
+        'DC': 'DistrictofColumbia',
+        'DE': 'Delaware',
+        'FL': 'Florida',
+        'GA': 'Georgia',
+        'HI': 'Hawaii',
+        'IA': 'Iowa',
+        'ID': 'Idaho',
+        'IL': 'Illinois',
+        'IN': 'Indiana',
+        'KS': 'Kansas',
+        'KY': 'Kentucky',
+        'LA': 'Louisiana',
+        'MA': 'Massachusetts',
+        'MD': 'Maryland',
+        'ME': 'Maine',
+        'MI': 'Michigan',
+        'MN': 'Minnesota',
+        'MO': 'Missouri',
+        'MS': 'Mississippi',
+        'MT': 'Montana',
+        'NA': 'National',
+        'NC': 'NorthCarolina',
+        'ND': 'NorthDakota',
+        'NE': 'Nebraska',
+        'NH': 'NewHampshire',
+        'NJ': 'NewJersey',
+        'NM': 'NewMexico',
+        'NV': 'Nevada',
+        'NY': 'NewYork',
+        'OH': 'Ohio',
+        'OK': 'Oklahoma',
+        'OR': 'Oregon',
+        'PA': 'Pennsylvania',
+        'RI': 'RhodeIsland',
+        'SC': 'SouthCarolina',
+        'SD': 'SouthDakota',
+        'TN': 'Tennessee',
+        'TX': 'Texas',
+        'UT': 'Utah',
+        'VA': 'Virginia',
+        'VT': 'Vermont',
+        'WA': 'Washington',
+        'WI': 'Wisconsin',
+        'WV': 'WestVirginia',
+        'WY': 'Wyoming'
+}
 
-    a = Attr('State').eq(state) & Attr('JobRole').contains(role)
+def query(table_name, state, technologies):
+    table = dynamo_db.Table(table_name)
 
-    for tech in tech1.split(','):
-        a = a & Attr('Technology').contains(tech1)
+    technologies = technologies.lower().split(',')
+    attributes = Attr('Technology').contains(technologies[0])
+    for i in range(1, len(technologies)):
+        attributes = (attributes | Attr('Technology').contains(technologies[i]))
+
+    if state != "ANY":
+        attributes = (Attr('State').eq(state) | Attr('State').eq(states[state])) & attributes
 
     data = table.scan(
-        TableName='USAJobs',
-        FilterExpression=a
+        TableName=table_name,
+        FilterExpression=attributes
     )
     return data['Items']
 
-
-def query_github(state, role, tech):
-    table = dynamo_db.Table('GitHubJobs')
-
-    a = Attr('State').eq(state) & Attr('JobRole').contains(role)
-
-    for tech1 in tech.split(','):
-        a = a & Attr('Technology').contains(tech1)
-
-    data = table.scan(
-        TableName='GitHubJobs',
-        FilterExpression=a
-    )
-    return data['Items']
 
 # function to give count of items in database
 
 def count():
-    cnt= 0
+    cnt = 0
     git_table = dynamo_db.Table('GitHubJobs')
     usa_table = dynamo_db.Table('USAJobs')
     table1 = git_table.scan()

@@ -97,13 +97,15 @@
 
       <!-- Home -->
       <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-        <h1 class="w3-jumbo">Jobs.__init__</h1>
-        <p>Data driven job aggregator, your first step to land a job. <i>By programmers for programmers.</i></p>
+        <h1 class="w3-jumbo" style="font-variant: small-caps; margin-bottom: 5px;">jobs.__init__</h1>
+        <p style="font-size: 1.3em; margin: 5px 0;">Data-driven Job Aggregation</p>
+        <!-- <p class="w3-small">Your first step to landing a career in tech.</p> -->
+        <p class="w3-small" style="margin-top: 15px;"><i>By programmers, for programmers.</i></p>
       </header>
 
       <!-- Your Skills -->
       <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="skills">
-        <p class="w3-center w3-xlarge" style="margin-bottom: 0;">In order to best tailor your search results, tell us about   your experience.</p>
+        <p class="w3-center w3-xlarge" style="margin-bottom: 0;">In order to best tailor your search results, tell us about your experience.</p>
         <h3 class="w3-padding-16 w3-text-light-grey" style="position: relative; top: 2.5em">Technologies</h3>
         <h6 class="" style="position: relative; bottom: -15px; right: 2vw; text-align: right;">Years of<br>Experience</h6>
 
@@ -166,8 +168,9 @@
           <i id="lock" class="fas fa-lock-open w3-hover-opacity"></i>
         </div>
 
-        <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" style="width: 97%; position: relative;">
+        <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" style="width: 97.5%; position: relative; padding-bottom: 54px !important;">
           <select id="locationSelect">
+            <option value="ANY">Anywhere</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -176,6 +179,7 @@
             <option value="CO">Colorado</option>
             <option value="CT">Connecticut</option>
             <option value="DE">Delaware</option>
+            <option value="DC">District of Columbia</option>
             <option value="FL">Florida</option>
             <option value="GA">Georgia</option>
             <option value="HI">Hawaii</option>
@@ -220,7 +224,7 @@
             <option value="WY">Wyoming</option>
           </select>
           <i style="font-style: normal; font-weight: bold;" id="refresh" class="w3-hover-text-green">⮞ retrieve personalized jobs</i>
-          <h3 id="postings" style="margin-top: 0; visibility: hidden;"><span id="numPostings"></span> job postings curated for you:</h3>
+          <h3 id="postings" style="margin-top: 0; visibility: hidden;"><span id="numPostings"></span></h3>
           <table class="w3-table w3-table-all w3-hoverable" style="opacity: 0;" id="table">
             <tr style="display: none;">
               <th>position</th>
@@ -229,7 +233,7 @@
               <th></th>
             </tr>
           </table>
-          <button id="more" class="w3-hover-text-green w3-hide" style="position: absolute; right: 20px; bottom: 3px; font-size: 1.15em;">more...</button>
+          <button id="more" class="w3-hover-text-green w3-hide" style="position: absolute; right: 20px; bottom: 10px; font-size: 1.4em;">more...</button>
         </div>
       </div>
 
@@ -254,7 +258,7 @@
       <!-- About -->
       <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
         <h3 class="w3-padding-16 w3-text-light-grey w3-margin-top">About</h3>
-        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey" style="width: 97%; position: relative;">
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey" style="width: 97.5%; position: relative;">
           <h3 class="w3-padding" style="margin-top: 0; text-align: left">DePaul University &mdash; 2020 Capstone</h3>
           <p class="w3-padding"><b>Project Description:</b> Create a dashboard tool which analyzes data science job openings, pulling data from live sources.</p>
           <div class="w3-section w3-row">
