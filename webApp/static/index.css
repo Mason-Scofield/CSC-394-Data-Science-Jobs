@@ -10,6 +10,59 @@ body, h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif; }
   background: #222;
 }
 
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 45px;
+  color: white;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
 #table { transition: opacity .7s; }
 
 tr:nth-child(1):hover {  background-color: white !important; }
@@ -17,7 +70,16 @@ tr:not(:nth-child(1)) { cursor: pointer; }
 
 main { margin-left: 120px; }                                         /* matches the width of the sidebar */
 
-#summary { position: sticky; bottom: -125px; width: 97.5%; transition: bottom 1s; }
+#summary { position: sticky; bottom: -250px; width: 97.5%; transition: bottom 1s; }
+#summary img { width: 48px; height: auto; filter: grayscale(100%); user-select: none; }
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+#grid p, #grid i, #grid img { margin: 0 !important; padding: 0 !important; }
 
 #minimize {
     position: absolute;
@@ -50,8 +112,7 @@ button {
 button:hover { }
 button:focus { outline: none; }
 
-img { margin-top: 30px; width: 100px; opacity: .9; }
-img:hover { opacity: 1; }
+#about img { margin-top: 30px; width: 100px; }
 
 #locationSelect {
     position: absolute;
@@ -133,50 +194,6 @@ img:hover { opacity: 1; }
   border: solid 5px blue;
 }
 
-/* tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-/* tooltip */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-
-  /* position of text */
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  margin-left: -60px;
-
-  /* fade of text */
-  opacity: 0;
-  transition: opacity 0.3s;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* tooltip arrow */
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* display text when you mouse-over the container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
 
 th {
   font-variant: small-caps;

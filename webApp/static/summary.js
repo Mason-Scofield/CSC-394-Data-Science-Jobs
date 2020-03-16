@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
     lock     = document.getElementById('lock');
 
     summary = document.getElementById('summary');
-    hidden  = () => { summary.style.bottom = '-125px' };
+    hidden  = () => { summary.style.bottom = '-250px' };
     reveal  = () => { summary.style.bottom = '-5px' };
 
     showButtons();
@@ -62,7 +62,7 @@ function showButtons() {
         else if (rect.top > 0) {
             minimize.style.cssText += 'opacity: 1; visibility: visible;';
             lock.style.cssText     += 'opacity: 1; visibility: visible;';
-            summary.style.bottom    = '-125px';
+            hidden();
             minimizeToMaximize(); lockedToUnlocked();
         }
     }, { threshold: 1.0 }).observe(summary);

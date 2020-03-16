@@ -163,13 +163,16 @@ def jobs(state):
         elif value == max_value:
             search_terms += ("," + arg)
 
+    # hack, but Flask is tossing away the + symbols
+    search_terms = search_terms.replace('C  ', 'C++')
+    print(search_terms)
+
     # not currently used, would eliminate too many entries
     # role = 'Entry'
     # if   total >= 16: role = 'Senior'
     # elif total >= 10: role = 'Junior'
 
-    # e.g., state = 'IL'; search_terms = 'HTML,CSS,Javascript'
-    # print(search_terms)
+    # e.g., state = 'IL'; search_terms = 'HTML,CSS,JavaScript'
 
     usa_jobs    = query('USAJobs',    state, search_terms)
     github_jobs = query('GitHubJobs', state, search_terms)

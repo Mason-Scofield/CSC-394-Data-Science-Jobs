@@ -97,8 +97,8 @@
 
       <!-- Home -->
       <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-        <h1 class="w3-jumbo" style="font-variant: small-caps; margin-bottom: 5px;">jobs.__init__</h1>
-        <p style="font-size: 1.3em; margin: 5px 0;">Data-driven Job Aggregation</p>
+        <h1 class="w3-jumbo" style="font-variant: small-caps; margin-bottom: 5px;">jobs.__init__<span class="blinking-cursor">|</span></h1>
+        <p style="font-size: 1.3em; margin: 5px 0;">A data-driven job aggregator.</p>
         <!-- <p class="w3-small">Your first step to landing a career in tech.</p> -->
         <p class="w3-small" style="margin-top: 15px;"><i>By programmers, for programmers.</i></p>
       </header>
@@ -110,60 +110,115 @@
         <h6 class="" style="position: relative; bottom: -15px; right: 2vw; text-align: right;">Years of<br>Experience</h6>
 
         <div id="slider-container" class="w3-margin-bottom">
-          <p style="letter-spacing: 2px;">HTML, CSS, &amp; JavaScript</p>
+          <p style="letter-spacing: 2px;">AWS</p>
           <input type="range" min="1" max="5" value="1" id="slider1" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 1)">
           <span class="badge w3-white" id="value1">{% raw %}{{value1}}{% endraw %}</span>
 
-          <p style="letter-spacing: 2px;">Python</p>
+          <p style="letter-spacing: 2px;">C++</p>
           <input type="range" min="1" max="5" value="1" id="slider2" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 2)">
           <span class="badge w3-white" id="value2">{% raw %}{{value2}}{% endraw %}</span>
 
-          <p style="letter-spacing: 2px;">R</p>
+          <p style="letter-spacing: 2px;">Excel</p>
           <input type="range" min="1" max="5" value="1" id="slider3" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 3)">
           <span class="badge w3-white" id="value3">{% raw %}{{value3}}{% endraw %}</span>
 
-          <p style="letter-spacing: 2px;">SQL</p>
+          <p style="letter-spacing: 2px;">Git</p>
           <input type="range" min="1" max="5" value="1" id="slider4" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 4)">
           <span class="badge w3-white" id="value4">{% raw %}{{value4}}{% endraw %}</span>
+
+          <p style="letter-spacing: 2px;">HTML, CSS, &amp; JavaScript</p>
+          <input type="range" min="1" max="5" value="1" id="slider5" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 5)">
+          <span class="badge w3-white" id="value5">{% raw %}{{value5}}{% endraw %}</span>
+
+          <p style="letter-spacing: 2px;">Java</p>
+          <input type="range" min="1" max="5" value="1" id="slider6" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 6)">
+          <span class="badge w3-white" id="value6">{% raw %}{{value6}}{% endraw %}</span>
+
+          <p style="letter-spacing: 2px;">NoSQL</p>
+          <input type="range" min="1" max="5" value="1" id="slider7" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 7)">
+          <span class="badge w3-white" id="value7">{% raw %}{{value7}}{% endraw %}</span>
+
+          <p style="letter-spacing: 2px;">Python</p>
+          <input type="range" min="1" max="5" value="1" id="slider8" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 8)">
+          <span class="badge w3-white" id="value8">{% raw %}{{value8}}{% endraw %}</span>
+
+          <p style="letter-spacing: 2px;">Scala</p>
+          <input type="range" min="1" max="5" value="1" id="slider9" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 9)">
+          <span class="badge w3-white" id="value9">{% raw %}{{value9}}{% endraw %}</span>
+
+          <p style="letter-spacing: 2px;">SQL</p>
+          <input type="range" min="1" max="5" value="1" id="slider10" class="slider w3-show-inline-block w3-round-large" oninput="slider(this.value, 10)">
+          <span class="badge w3-white" id="value10">{% raw %}{{value10}}{% endraw %}</span>
         </div>
 
         <h3 class="w3-padding-16 w3-text-light-grey w3-margin-top">Summary</h3>
-        <div class="w3-row w3-center w3-padding-32 w3-section w3-light-grey" id="summary">
+        <div class="w3-center w3-section w3-light-grey" style="padding-top: 48px; padding-bottom: 16px;" id="summary">
           <i id="minimize" class="fas fa-window-minimize w3-hover-opacity"></i>
-          <div class="w3-quarter w3-section">
-            <i class="fab fa-html5 w3-xxxlarge tooltip">
-              <span class="tooltiptext w3-small" style="left: 150%; width: 50px;">HTML</span>
-            </i>
-            <i class="fab fa-css3-alt w3-xxxlarge tooltip">
-              <span class="tooltiptext w3-small" style="left: 155%; width: 45px;">CSS</span>
-            </i>
-            <i class="fab fa-js-square w3-xxxlarge tooltip">
-              <span class="tooltiptext w3-small" style="left: 105%; width: 75px;">JavaScript</span>
-            </i><br>
-            <p class="w3-large" id="proficiency1">{% raw %}{{proficiency1}}{% endraw %}</p>
-          </div>
+          <div id="grid">
+            <!-- Amazon Web Services -->
+            <div class="w3-section">
+              <div style="height: 50px; overflow: hidden;"><i class="fab fa-aws w3-xxxlarge" title="Amazon Web Services"></i></div><br>
+              <p class="w3-large" id="proficiency1">{% raw %}{{proficiency1}}{% endraw %}</p>
+            </div>
 
-          <div class="w3-quarter w3-section">
-            <i class="fab fa-python w3-xxxlarge tooltip">
-              <span class="tooltiptext w3-small" style="left: 115%; width: 65px;">Python</span>
-            </i><br>
-            <p class="w3-large" id="proficiency2">{% raw %}{{proficiency2}}{% endraw %}</p>
-          </div>
+            <!-- C++ -->
+            <div class="w3-section">
+              <div style="height: 50px; overflow: hidden;"><img src="../static/CPP.png" alt="C++" title="C++"></div><br>
+              <p class="w3-large" id="proficiency2">{% raw %}{{proficiency2}}{% endraw %}</p>
+            </div>
 
-          <div class="w3-quarter w3-section">
-            <i class="fab fa-r-project w3-xxxlarge tooltip">
-              <span class="tooltiptext w3-small" style="left: 140%; width: 30px;">R</span>
-            </i><br>
-            <p class="w3-large" id="proficiency3">{% raw %}{{proficiency3}}{% endraw %}</p>
-          </div>
+            <!-- Microsoft Excel -->
+            <div class="w3-section">
+              <div style="height: 50px; overflow: hidden;"><img src="../static/MicrosoftExcel.png" alt="Microsoft Excel" title="Microsoft Excel"></div><br>
+              <p class="w3-large" id="proficiency3">{% raw %}{{proficiency3}}{% endraw %}</p>
+            </div>
 
-          <div class="w3-quarter w3-section" style="margin-bottom: 50px !important;">
-            <i class="fas fa-database w3-xxxlarge tooltip">
-              <span class="tooltiptext w3-small" style="left: 140%; width: 45px; font-weight: normal;">SQL</span>
-            </i><br>
-            <p class="w3-large" id="proficiency4">{% raw %}{{proficiency4}}{% endraw %}</p>
-          </div>
+            <!-- Git -->
+            <div class="w3-section">
+              <div style="height: 50px; overflow: hidden;"><i class="fab fa-git w3-xxxlarge" title="Git"></i></div><br>
+              <p class="w3-large" id="proficiency4">{% raw %}{{proficiency4}}{% endraw %}</p>
+            </div>
 
+            <!-- HTML, CSS, JavaScript -->
+            <div class="w3-section">
+              <div style="height: 50px; overflow: hidden;">
+                <i class="fab fa-html5 w3-xxxlarge" title="HTML"></i>
+                <i class="fab fa-css3-alt w3-xxxlarge" title="CSS"></i>
+                <i class="fab fa-js-square w3-xxxlarge" title="JavaScript"></i>
+              </div><br>
+              <p class="w3-large" id="proficiency5">{% raw %}{{proficiency5}}{% endraw %}</p>
+            </div>
+
+            <!-- Java -->
+            <div class="w3-section">
+              <div style="height: 50px; overflow: hidden;"><i class="fab fa-java w3-xxxlarge" title="Java"></i></div><br>
+              <p class="w3-large" id="proficiency6">{% raw %}{{proficiency6}}{% endraw %}</p>
+            </div>
+
+            <!-- NoSQL -->
+            <div class="w3-section">
+              <div style="height: 50px; overflow: hidden;"><span style="font-size: 1.5em; position: relative; top: 20%; user-select: none;" title="NoSQL">NoSQL</span></div><br>
+              <p class="w3-large" id="proficiency7">{% raw %}{{proficiency7}}{% endraw %}</p>
+            </div>
+
+            <!-- Python -->
+            <div class="w3-section">
+              <div style="height: 50px; overflow: hidden;"><i class="fab fa-python w3-xxxlarge" title="Python"></i></div><br>
+              <p class="w3-large" id="proficiency8">{% raw %}{{proficiency8}}{% endraw %}</p>
+            </div>
+
+            <!-- Scala -->
+            <div class="w3-section">
+              <div style="height: 50px; overflow: hidden;"><img src="../static/Scala.png" alt="Scala" title="Scala" style="width: 64px; position: relative; top: 30%;"></div><br>
+              <p class="w3-large" id="proficiency9">{% raw %}{{proficiency9}}{% endraw %}</p>
+            </div>
+
+            <!-- SQL -->
+            <div class="w3-section">
+              <div style="height: 50px; overflow: hidden;"><i class="fas fa-database w3-xxxlarge" title="SQL"></i></div><br>
+              <p class="w3-large" id="proficiency10">{% raw %}{{proficiency10}}{% endraw %}</p>
+            </div>
+          </div>
           <p class="w3-xlarge" id="role"><b>Expected role: </b>{% raw %}{{role}}{% endraw %}</p>
           <i id="lock" class="fas fa-lock-open w3-hover-opacity"></i>
         </div>
@@ -264,7 +319,7 @@
           <div class="w3-section w3-row">
             <div class="w3-section w3-quarter">
               <h3 style="font-variant: small-caps"><b>tools</b></h3>
-              <img src="../static/GitHub.png" title="GitHub"><br><img src="../static/PyCharm.png" title="PyCharm">
+              <img src="../static/Heroku.png" title="Heroku"><br><img src="../static/PyCharm.png" title="PyCharm">
             </div>
             <div class="w3-section w3-quarter">
               <h3 style="font-variant: small-caps"><b>languages</b></h3>
@@ -280,7 +335,7 @@
             </div>
           </div>
           <p class="w3-padding-32" style="padding-bottom: 0 !important;">Ameen Alrehn &middot; Mark Badel &middot; Brandon Hernandez &middot; Christian Kleinvehn &middot; Manases Leal &middot; Mason Scofield</p>
-          <a href="https://github.com/Mason-Scofield/CSC-394-Data-Science-Jobs" target="_blank" class="w3-text-black w3-xlarge links w3-hover-text-green" style="display: inline-block; padding-bottom: 20px">Our Repository</a>
+          <a href="https://github.com/Mason-Scofield/CSC-394-Data-Science-Jobs" target="_blank" class="w3-text-black w3-xlarge links w3-hover-opacity" style="display: inline-block; padding-bottom: 20px; font-weight: bold;"><img src="../static/GitHub.png" class="w3-hover-opacity" title="GitHub" style="margin-top: 0; position: relative; top: -2.5px; width: 15%;"></a>
         </div>
       </div>
 

@@ -1,18 +1,29 @@
 var skills = {}
 
 window.addEventListener('load', () => {
-    var value1 = valid_slider(localStorage.getItem('slider1'));
-    var value2 = valid_slider(localStorage.getItem('slider2'));
-    var value3 = valid_slider(localStorage.getItem('slider3'));
-    var value4 = valid_slider(localStorage.getItem('slider4'));
-    var value5 = valid_slider(localStorage.getItem('slider5'));
+    var value1  = valid_slider(localStorage.getItem('slider1'));
+    var value2  = valid_slider(localStorage.getItem('slider2'));
+    var value3  = valid_slider(localStorage.getItem('slider3'));
+    var value4  = valid_slider(localStorage.getItem('slider4'));
+    var value5  = valid_slider(localStorage.getItem('slider5'));
+    var value6  = valid_slider(localStorage.getItem('slider6'));
+    var value7  = valid_slider(localStorage.getItem('slider7'));
+    var value8  = valid_slider(localStorage.getItem('slider8'));
+    var value9  = valid_slider(localStorage.getItem('slider9'));
+    var value10 = valid_slider(localStorage.getItem('slider10'));
 
     skills = {
         sliders: {
-            'slider1': [value1, value_to_proficiency(value1)],
-            'slider2': [value2, value_to_proficiency(value2)],
-            'slider3': [value3, value_to_proficiency(value3)],
-            'slider4': [value4, value_to_proficiency(value4)],
+            'slider1' : [value1, value_to_proficiency(value1)],
+            'slider2' : [value2, value_to_proficiency(value2)],
+            'slider3' : [value3, value_to_proficiency(value3)],
+            'slider4' : [value4, value_to_proficiency(value4)],
+            'slider5' : [value5, value_to_proficiency(value5)],
+            'slider6' : [value6, value_to_proficiency(value6)],
+            'slider7' : [value7, value_to_proficiency(value7)],
+            'slider8' : [value8, value_to_proficiency(value8)],
+            'slider9' : [value9, value_to_proficiency(value9)],
+            'slider10': [value10, value_to_proficiency(value10)],
         }
     }
 
@@ -102,11 +113,11 @@ function value_to_years(value) {
 
 
 function values_to_role(total) {
-  // max possible is 20
+  // max possible is 5 * 10 = 50
   var role = 'Entry-level';
 
-  if      (total >= 16) role = 'Senior-level';
-  else if (total >= 10) role = 'Junior-level';
+  if      (total >= 35) role = 'Senior-level';
+  else if (total >= 25) role = 'Junior-level';
 
   return role;
 }
