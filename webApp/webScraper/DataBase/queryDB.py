@@ -42,8 +42,6 @@ def count():
     table2 = usa_table.scan()
     data1 = table1['Items']
     data2 = table2['Items']
-    print(table1['Count'])
-    print(table2['Count'])
     while 'LastEvaluatedKey' in table1:
         table1 = git_table.scan(ExclusiveStartKey=table1['LastEvaluatedKey'])
         data1.extend(table1['Items'])
